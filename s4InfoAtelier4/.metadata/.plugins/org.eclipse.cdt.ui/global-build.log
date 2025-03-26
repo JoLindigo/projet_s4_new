@@ -1,0 +1,31 @@
+Nothing to build in platform 'atelier4_wrapper'
+
+13:57:11 **** Incremental Build of configuration Debug for project bouya ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/sw/atelier4_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: bouya.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/sw/atelier4_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "bouya.elf"  ./src/api/ppu/ppu.o  ./src/main.o ./src/scaler.o ./src/vdma.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bouya.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size bouya.elf  |tee "bouya.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 169444	  67264	 160848	 397556	  610f4	bouya.elf
+'Finished building: bouya.elf.size'
+' '
+13:57:14 **** Incremental Build of configuration Debug for project bouya_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 50726 C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm standalone_ps7_cortexa9_0 C:/travail/s4InfoAtelier4/bouya_system/Debug/system.bif
+sdcard_gen --xpfm C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm --sys_config atelier4_wrapper --bif C:/travail/s4InfoAtelier4/bouya_system/Debug/system.bif --bitstream C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit --elf C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+Running C:/Vitis/2020.2/bin/bootgen  -image C:/travail/s4InfoAtelier4/bouya_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

@@ -1,0 +1,23 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 1814c4d5952d4bc092476e99aecaed19 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot datapath_tb_behav xil_defaultlib.datapath_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.controller [controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.viewport [viewport_default]
+Compiling architecture behavioral of entity xil_defaultlib.background_buffer_2 [background_buffer_2_default]
+Compiling architecture behavioral of entity xil_defaultlib.bg_tile_buffer_2 [bg_tile_buffer_2_default]
+Compiling architecture behavioral of entity xil_defaultlib.color_mux [color_mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.testPatternGen2 [testpatterngen2_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath_tb
+Built simulation snapshot datapath_tb_behav
