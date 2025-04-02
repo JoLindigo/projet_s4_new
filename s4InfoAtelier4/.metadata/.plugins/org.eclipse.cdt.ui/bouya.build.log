@@ -1,4 +1,4 @@
-17:27:06 **** Incremental Build of configuration Debug for project bouya ****
+17:39:00 **** Incremental Build of configuration Debug for project bouya ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -21,5 +21,5 @@ arm-none-eabi-size bouya.elf  |tee "bouya.elf.size"
 'Finished building: bouya.elf.size'
 ' '
 
-17:27:07 Build Finished (took 846ms)
+17:39:01 Build Finished (took 1s.7ms)
 

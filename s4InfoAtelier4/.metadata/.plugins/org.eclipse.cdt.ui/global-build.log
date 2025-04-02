@@ -1,6 +1,6 @@
 Nothing to build in platform 'atelier4_wrapper'
 
-17:27:06 **** Incremental Build of configuration Debug for project bouya ****
+17:39:00 **** Incremental Build of configuration Debug for project bouya ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -22,10 +22,3 @@ arm-none-eabi-size bouya.elf  |tee "bouya.elf.size"
  169508	  34496	 160848	 364852	  59134	bouya.elf
 'Finished building: bouya.elf.size'
 ' '
-17:27:07 **** Incremental Build of configuration Debug for project bouya_system ****
-make all 
-Generating bif file for the system project
-generate_system_bif.bat 52677 C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm standalone_ps7_cortexa9_0 C:/travail/s4InfoAtelier4/bouya_system/Debug/system.bif
-sdcard_gen --xpfm C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm --sys_config atelier4_wrapper --bif C:/travail/s4InfoAtelier4/bouya_system/Debug/system.bif --bitstream C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit --elf C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf,ps7_cortexa9_0
-creating BOOT.BIN using C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
-Running C:/Vitis/2020.2/bin/bootgen  -image C:/travail/s4InfoAtelier4/bouya_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

@@ -22,11 +22,11 @@ typedef union {
   */
 typedef union {
   struct {
-    uint32_t opCode       : 4;
+    uint32_t PADDING      : 10;
+    uint32_t tileID       : 5;
+    uint32_t tileRowIndex : 6;
     uint32_t tileColIndex : 7;
-    uint32_t tileRowIndex : 7;
-    uint32_t tileID       : 6;
-    uint32_t PADDING      : 8;
+    uint32_t opCode       : 4;
   } fields;
 
   uint32_t instruction;
@@ -38,12 +38,12 @@ typedef union {
   */
 typedef union {
   struct {
-    uint32_t opCode             : 4;
-    uint32_t tileIndex          : 6;
-    uint32_t tilePixelPosX      : 3;
-    uint32_t tilePixelPosY      : 3;
+    uint32_t PADDING            : 12;
     uint32_t tilePixelColorCode : 5;
-    uint32_t PADDING            : 11;
+    uint32_t tilePixelPosY      : 3;
+    uint32_t tilePixelPosX      : 3;
+    uint32_t tileIndex          : 5;
+    uint32_t opCode             : 4;
   } fields;
 
   uint32_t instruction;
@@ -55,10 +55,10 @@ typedef union {
   */
 typedef union {
   struct {
-    uint32_t opCode  : 4;
+    uint32_t PADDING : 21;
+    uint32_t tileID  : 4;
     uint32_t actorID : 3;
-    uint32_t tileID  : 6;
-    uint32_t PADDING : 19;
+    uint32_t opCode  : 4;
   } fields;
 
   uint32_t instruction;
@@ -70,12 +70,12 @@ typedef union {
   */
 typedef union {
   struct {
-    uint32_t opCode         : 4;
-    uint32_t tileID         : 6;
-    uint32_t pixelColIndex  : 4;
-    uint32_t pixelRowIndex  : 4;
+    uint32_t PADDING        : 11;
     uint32_t pixelColorCode : 5;
-    uint32_t PADDING        : 9;
+    uint32_t pixelRowIndex  : 4;
+    uint32_t pixelColIndex  : 4;
+    uint32_t tileID         : 4;
+    uint32_t opCode         : 4;
   } fields;
 
   uint32_t instruction;
@@ -87,11 +87,11 @@ typedef union {
   */
 typedef union {
   struct {
-    uint32_t opCode  : 4;
-    uint32_t x       : 10;
-    uint32_t y       : 10;
+    uint32_t PADDING : 6;
     uint32_t actorID : 3;
-    uint32_t PADDING : 5;
+    uint32_t y       : 9;
+    uint32_t x       : 10;
+    uint32_t opCode  : 4;
   } fields;
 
   uint32_t instruction;
@@ -103,11 +103,11 @@ typedef union {
   */
 typedef union {
   struct {
-    uint32_t opCode  : 4;
-    uint32_t deltaX  : 10;
-    uint32_t deltaY  : 10;
-    uint32_t actorID : 3;
     uint32_t PADDING : 5;
+    uint32_t actorID : 3;
+    uint32_t deltaY  : 10;
+    uint32_t deltaX  : 10;
+    uint32_t opCode  : 4;
   } fields;
 
   uint32_t instruction;
