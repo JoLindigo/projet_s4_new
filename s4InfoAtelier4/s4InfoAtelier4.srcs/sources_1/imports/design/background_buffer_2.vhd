@@ -51,7 +51,7 @@ architecture Behavioral of background_buffer_2 is
     signal s_buffer : BackgroundBufferArray := (others => (others => '0')); 
     
     signal s_new_tile_row       : UNSIGNED (5 downto 0) := (others => '0');
-    signal s_new_tile_row_inter : UNSIGNED (12 downto 0) := (others => '0');
+    signal s_new_tile_col_inter : UNSIGNED (12 downto 0) := (others => '0');
     signal s_new_tile_col       : UNSIGNED (6 downto 0) := (others => '0');
     signal s_new_tile_pos_index : UNSIGNED (12 downto 0) := (others => '0');
     
@@ -60,7 +60,7 @@ architecture Behavioral of background_buffer_2 is
     signal s_out_tile_y  : STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
     
     signal s_tile_index_col       : UNSIGNED (6 downto 0) := (others => '0');
-    signal s_tile_index_row_inter : UNSIGNED (12 downto 0) := (others => '0');
+    signal s_tile_index_col_inter : UNSIGNED (12 downto 0) := (others => '0');
     signal s_tile_index_row       : UNSIGNED (5 downto 0) := (others => '0');
     signal s_tile_index_pos       : UNSIGNED (12 downto 0) := (others => '0');
     
@@ -81,9 +81,9 @@ begin
     s_new_tile_row <= UNSIGNED(i_ch_tile_row);
     s_new_tile_col <= UNSIGNED(i_ch_tile_col);
     
-    s_new_tile_row_inter <= resize((s_new_tile_row * 128), 13);
+    s_new_tile_col_inter <= resize((s_new_tile_col * 128), 13);
     
-    s_new_tile_pos_index <= s_new_tile_row_inter + resize(s_new_tile_col, 13);
+    s_new_tile_pos_index <= resize(s_new_tile_row, 13) + s_new_tile_col_inter;
     
     s_out_tile_x <= i_global_x(2 downto 0);
     s_out_tile_y <= i_global_y(2 downto 0);
@@ -91,9 +91,9 @@ begin
     s_tile_index_col <= shift_right(UNSIGNED(i_global_x), 3)(6 downto 0);
     s_tile_index_row <= shift_right(UNSIGNED(i_global_y), 3)(5 downto 0);
     
-    s_tile_index_row_inter <= resize(s_tile_index_row * 128, 13);
+    s_tile_index_col_inter <= resize(s_tile_index_col * 128, 13);
     
-    s_tile_index_pos <= s_tile_index_row_inter + resize(s_tile_index_col, 13); 
+    s_tile_index_pos <= resize(s_tile_index_row, 13) + s_tile_index_col_inter; 
     s_out_tile_id <= s_buffer(TO_INTEGER(s_tile_index_pos));
 
     -- If there are weird problems with synchronization, comment the 3 lines on top and uncomment the one below

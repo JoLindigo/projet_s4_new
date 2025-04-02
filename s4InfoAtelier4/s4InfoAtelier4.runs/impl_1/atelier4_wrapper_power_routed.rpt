@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Wed Apr  2 16:18:34 2025
+| Date             : Wed Apr  2 17:18:12 2025
 | Host             : DESKTOP-E4ODHO5 running 64-bit major release  (build 9200)
 | Command          : report_power -file atelier4_wrapper_power_routed.rpt -pb atelier4_wrapper_power_summary_routed.pb -rpx atelier4_wrapper_power_routed.rpx
 | Design           : atelier4_wrapper
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.032 |        9 |       --- |             --- |
-| Slice Logic              |     0.011 |    29050 |       --- |             --- |
-|   LUT as Logic           |     0.009 |     8845 |     17600 |           50.26 |
-|   Register               |    <0.001 |    13624 |     35200 |           38.70 |
+| Slice Logic              |     0.011 |    29029 |       --- |             --- |
+|   LUT as Logic           |     0.009 |     8840 |     17600 |           50.23 |
+|   Register               |    <0.001 |    13621 |     35200 |           38.70 |
 |   CARRY4                 |    <0.001 |      402 |      4400 |            9.14 |
-|   LUT as Distributed RAM |    <0.001 |      662 |      6000 |           11.03 |
+|   LUT as Distributed RAM |    <0.001 |      654 |      6000 |           10.90 |
 |   LUT as Shift Register  |    <0.001 |      376 |      6000 |            6.27 |
 |   F7/F8 Muxes            |    <0.001 |       39 |     17600 |            0.22 |
 |   Others                 |     0.000 |     1659 |       --- |             --- |
-| Signals                  |     0.011 |    21755 |       --- |             --- |
+| Signals                  |     0.012 |    21731 |       --- |             --- |
 | Block RAM                |     0.011 |     26.5 |        60 |           44.17 |
 | MMCM                     |     0.116 |        1 |         2 |           50.00 |
 | PLL                      |     0.135 |        1 |         2 |           50.00 |

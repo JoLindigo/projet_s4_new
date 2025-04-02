@@ -1,4 +1,4 @@
-16:21:05 **** Incremental Build of configuration Debug for project bouya ****
+17:27:06 **** Incremental Build of configuration Debug for project bouya ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -17,9 +17,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size bouya.elf  |tee "bouya.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 169572	  34496	 160848	 364916	  59174	bouya.elf
+ 169508	  34496	 160848	 364852	  59134	bouya.elf
 'Finished building: bouya.elf.size'
 ' '
 
-16:21:06 Build Finished (took 1s.86ms)
+17:27:07 Build Finished (took 846ms)
 

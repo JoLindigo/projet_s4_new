@@ -23762,3 +23762,1154 @@ TRACE::2025-04-02.16:20:41::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAteli
 C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2025-04-02.16:20:41::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:46::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:46::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:46::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:46::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:46::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:46::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:46::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-04-02.16:50:48::SCWPlatform::Opened new HwDB with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWReader::Active system found as  atelier4_wrapper
+TRACE::2025-04-02.16:50:48::SCWReader::Handling sysconfig atelier4_wrapper
+TRACE::2025-04-02.16:50:48::SCWDomain::checking for install qemu data   : 
+TRACE::2025-04-02.16:50:48::SCWDomain:: Using the QEMU Data from install at  : C:/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2025-04-02.16:50:48::SCWDomain:: Using the QEMU args  from install at  : C:/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Opened existing hwdb atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Opened existing hwdb atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Opened existing hwdb atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:48::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Opened existing hwdb atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:48::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-04-02.16:50:48::SCWMssOS::No sw design opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS::mss exists loading the mss file  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS::Opened the sw design from mss  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS::Adding the swdes entry C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-04-02.16:50:48::SCWMssOS::updating the scw layer about changes
+TRACE::2025-04-02.16:50:48::SCWMssOS::Opened the sw design.  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Opened existing hwdb atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:48::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.16:50:48::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS:: library already available in sw design:  xilffs:4.4
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Opened existing hwdb atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:48::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.16:50:48::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2025-04-02.16:50:48::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-02.16:50:48::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-02.16:50:48::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.16:50:48::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-04-02.16:50:48::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Opened existing hwdb atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:48::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.16:50:48::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWReader::No isolation master present  
+TRACE::2025-04-02.16:50:48::SCWDomain::checking for install qemu data   : 
+TRACE::2025-04-02.16:50:48::SCWDomain:: Using the QEMU Data from install at  : C:/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2025-04-02.16:50:48::SCWDomain:: Using the QEMU args  from install at  : C:/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Opened existing hwdb atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Opened existing hwdb atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Opened existing hwdb atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:48::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.16:50:48::SCWMssOS::No sw design opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS::mss exists loading the mss file  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS::Opened the sw design from mss  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS::Adding the swdes entry C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2025-04-02.16:50:48::SCWMssOS::updating the scw layer about changes
+TRACE::2025-04-02.16:50:48::SCWMssOS::Opened the sw design.  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-02.16:50:48::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-02.16:50:48::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.16:50:48::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-04-02.16:50:48::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:48::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Opened existing hwdb atelier4_wrapper_0
+TRACE::2025-04-02.16:50:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:48::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.16:50:48::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:48::SCWReader::No isolation master present  
+TRACE::2025-04-02.16:50:50::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:50::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:50::SCWPlatform:: Platform location is C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa
+TRACE::2025-04-02.16:50:50::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:50::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:52::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2025-04-02.16:50:52::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:52::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:52::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:52::SCWPlatform::Opened existing hwdb atelier4_wrapper_0
+TRACE::2025-04-02.16:50:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:52::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:52::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:52::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:52::SCWPlatform::Opened existing hwdb atelier4_wrapper_0
+TRACE::2025-04-02.16:50:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:52::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:52::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.16:50:52::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:52::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa
+TRACE::2025-04-02.16:50:52::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:52::SCWPlatform::update - Opened existing hwdb atelier4_wrapper_1
+TRACE::2025-04-02.16:50:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:52::SCWMssOS::Doing hw sync for the mss in domain: standalone_ps7_cortexa9_0
+TRACE::2025-04-02.16:50:52::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:52::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:52::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:52::SCWPlatform::Opened existing hwdb atelier4_wrapper_0
+TRACE::2025-04-02.16:50:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:52::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:52::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:52::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_0
+TRACE::2025-04-02.16:50:52::SCWPlatform::Opened existing hwdb atelier4_wrapper_0
+TRACE::2025-04-02.16:50:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:52::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:52::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.16:50:52::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:52::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa
+TRACE::2025-04-02.16:50:52::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:52::SCWPlatform::update - Opened existing hwdb atelier4_wrapper_1
+TRACE::2025-04-02.16:50:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:52::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:52::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-02.16:50:52::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-02.16:50:52::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.16:50:52::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2025-04-02.16:50:52::SCWMssOS::Removing the swdes entry for  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:52::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:52::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-02.16:50:52::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-02.16:50:52::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.16:50:52::SCWMssOS::Completed hw sync for the mss in domain: standalone_ps7_cortexa9_0
+TRACE::2025-04-02.16:50:52::SCWMssOS::Removing the swdes entry for  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:52::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:52::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:52::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:52::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-04-02.16:50:54::SCWPlatform::Opened new HwDB with name atelier4_wrapper_2
+TRACE::2025-04-02.16:50:54::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:54::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-04-02.16:50:54::SCWMssOS::Writing the mss file completed C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:54::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.16:50:54::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:54::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2025-04-02.16:50:54::SCWMssOS::Writing the mss file completed C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:54::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.16:50:54::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:54::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:54::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:54::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:54::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:54::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_2
+TRACE::2025-04-02.16:50:54::SCWPlatform::Opened existing hwdb atelier4_wrapper_2
+TRACE::2025-04-02.16:50:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:54::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:54::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.16:50:54::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:50:54::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:54::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:54::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:54::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:50:54::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:50:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:50:54::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_2
+TRACE::2025-04-02.16:50:54::SCWPlatform::Opened existing hwdb atelier4_wrapper_2
+TRACE::2025-04-02.16:50:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:50:54::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:54::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.16:50:54::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:50:54::SCWWriter::formatted JSON is {
+	"platformName":	"atelier4_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"atelier4_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/atelier4_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"atelier4_wrapper",
+	"systems":	[{
+			"systemName":	"atelier4_wrapper",
+			"systemDesc":	"atelier4_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"atelier4_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"0be5ea4ab905254957fadc8566944063",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"c7b67555032dc1ffe6b30962acb1207c",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2025-04-02.16:51:00::SCWPlatform::Started generating the artifacts platform atelier4_wrapper
+TRACE::2025-04-02.16:51:00::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-04-02.16:51:00::SCWPlatform::Started generating the artifacts for system configuration atelier4_wrapper
+LOG::2025-04-02.16:51:00::SCWSystem::Checking the domain zynq_fsbl
+LOG::2025-04-02.16:51:00::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2025-04-02.16:51:00::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-04-02.16:51:00::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2025-04-02.16:51:00::SCWSystem::Checking the domain standalone_ps7_cortexa9_0
+LOG::2025-04-02.16:51:00::SCWSystem::Not a boot domain 
+LOG::2025-04-02.16:51:00::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2025-04-02.16:51:00::SCWDomain::Generating domain artifcats
+TRACE::2025-04-02.16:51:00::SCWMssOS::Generating standalone artifcats
+TRACE::2025-04-02.16:51:00::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/sw/atelier4_wrapper/qemu/
+TRACE::2025-04-02.16:51:00::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/sw/atelier4_wrapper/standalone_ps7_cortexa9_0/qemu/
+TRACE::2025-04-02.16:51:00::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-04-02.16:51:00::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:51:00::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:51:00::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_2
+TRACE::2025-04-02.16:51:00::SCWPlatform::Opened existing hwdb atelier4_wrapper_2
+TRACE::2025-04-02.16:51:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:51:00::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:51:00::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.16:51:00::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:51:00::SCWMssOS::Completed writing the mss file at C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2025-04-02.16:51:00::SCWMssOS::Mss edits present, copying mssfile into export location C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:51:00::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-04-02.16:51:00::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-04-02.16:51:00::SCWDomain::Skipping the build for domain :  standalone_ps7_cortexa9_0
+TRACE::2025-04-02.16:51:00::SCWMssOS::skipping the bsp build ... 
+TRACE::2025-04-02.16:51:00::SCWMssOS::Copying to export directory.
+TRACE::2025-04-02.16:51:00::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-04-02.16:51:00::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-04-02.16:51:00::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2025-04-02.16:51:00::SCWSystem::Completed Processing the sysconfig atelier4_wrapper
+LOG::2025-04-02.16:51:00::SCWPlatform::Completed generating the artifacts for system configuration atelier4_wrapper
+TRACE::2025-04-02.16:51:00::SCWPlatform::Started preparing the platform 
+TRACE::2025-04-02.16:51:00::SCWSystem::Writing the bif file for system config atelier4_wrapper
+TRACE::2025-04-02.16:51:00::SCWSystem::dir created 
+TRACE::2025-04-02.16:51:00::SCWSystem::Writing the bif 
+TRACE::2025-04-02.16:51:00::SCWPlatform::Started writing the spfm file 
+TRACE::2025-04-02.16:51:00::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-04-02.16:51:00::SCWPlatform::Completed generating the platform
+TRACE::2025-04-02.16:51:00::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:51:00::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-02.16:51:00::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-02.16:51:00::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.16:51:00::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:51:00::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-02.16:51:00::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-02.16:51:00::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.16:51:00::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:51:00::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:51:00::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_2
+TRACE::2025-04-02.16:51:00::SCWPlatform::Opened existing hwdb atelier4_wrapper_2
+TRACE::2025-04-02.16:51:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:51:00::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:51:00::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.16:51:00::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.16:51:00::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:51:00::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:51:00::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_2
+TRACE::2025-04-02.16:51:00::SCWPlatform::Opened existing hwdb atelier4_wrapper_2
+TRACE::2025-04-02.16:51:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:51:00::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:51:00::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.16:51:00::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:51:00::SCWWriter::formatted JSON is {
+	"platformName":	"atelier4_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"atelier4_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/atelier4_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"atelier4_wrapper",
+	"systems":	[{
+			"systemName":	"atelier4_wrapper",
+			"systemDesc":	"atelier4_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"atelier4_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"0be5ea4ab905254957fadc8566944063",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"c7b67555032dc1ffe6b30962acb1207c",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-04-02.16:51:00::SCWPlatform::updated the xpfm file.
+TRACE::2025-04-02.16:51:00::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.16:51:00::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.16:51:00::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.16:51:00::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_2
+TRACE::2025-04-02.16:51:00::SCWPlatform::Opened existing hwdb atelier4_wrapper_2
+TRACE::2025-04-02.16:51:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.16:51:00::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.16:51:00::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.16:51:00::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:26::SCWPlatform::Clearing the existing platform
+TRACE::2025-04-02.17:20:26::SCWSystem::Clearing the existing sysconfig
+TRACE::2025-04-02.17:20:26::SCWBDomain::clearing the fsbl build
+TRACE::2025-04-02.17:20:26::SCWMssOS::Removing the swdes entry for  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:26::SCWMssOS::Removing the swdes entry for  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:26::SCWSystem::Clearing the domains completed.
+TRACE::2025-04-02.17:20:26::SCWPlatform::Clearing the opened hw db.
+TRACE::2025-04-02.17:20:26::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:26::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:26::SCWPlatform:: Platform location is C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:26::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:26::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:26::SCWPlatform::Removing the HwDB with name C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:26::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:26::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:26::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:26::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:26::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:26::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:26::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-04-02.17:20:27::SCWPlatform::Opened new HwDB with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWReader::Active system found as  atelier4_wrapper
+TRACE::2025-04-02.17:20:27::SCWReader::Handling sysconfig atelier4_wrapper
+TRACE::2025-04-02.17:20:27::SCWDomain::checking for install qemu data   : 
+TRACE::2025-04-02.17:20:27::SCWDomain:: Using the QEMU Data from install at  : C:/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2025-04-02.17:20:27::SCWDomain:: Using the QEMU args  from install at  : C:/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Opened existing hwdb atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Opened existing hwdb atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Opened existing hwdb atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:27::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Opened existing hwdb atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:27::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-04-02.17:20:27::SCWMssOS::No sw design opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS::mss exists loading the mss file  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS::Opened the sw design from mss  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS::Adding the swdes entry C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-04-02.17:20:27::SCWMssOS::updating the scw layer about changes
+TRACE::2025-04-02.17:20:27::SCWMssOS::Opened the sw design.  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Opened existing hwdb atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:27::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.17:20:27::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS:: library already available in sw design:  xilffs:4.4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Opened existing hwdb atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:27::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.17:20:27::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2025-04-02.17:20:27::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-02.17:20:27::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-02.17:20:27::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.17:20:27::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-04-02.17:20:27::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Opened existing hwdb atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:27::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.17:20:27::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWReader::No isolation master present  
+TRACE::2025-04-02.17:20:27::SCWDomain::checking for install qemu data   : 
+TRACE::2025-04-02.17:20:27::SCWDomain:: Using the QEMU Data from install at  : C:/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2025-04-02.17:20:27::SCWDomain:: Using the QEMU args  from install at  : C:/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Opened existing hwdb atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Opened existing hwdb atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Opened existing hwdb atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:27::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.17:20:27::SCWMssOS::No sw design opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS::mss exists loading the mss file  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS::Opened the sw design from mss  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS::Adding the swdes entry C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2025-04-02.17:20:27::SCWMssOS::updating the scw layer about changes
+TRACE::2025-04-02.17:20:27::SCWMssOS::Opened the sw design.  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-02.17:20:27::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-02.17:20:27::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.17:20:27::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-04-02.17:20:27::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:27::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:27::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Opened existing hwdb atelier4_wrapper_4
+TRACE::2025-04-02.17:20:27::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:27::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.17:20:27::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:27::SCWReader::No isolation master present  
+TRACE::2025-04-02.17:20:30::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:30::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:30::SCWPlatform:: Platform location is C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa
+TRACE::2025-04-02.17:20:30::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:30::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:31::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2025-04-02.17:20:31::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:31::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:31::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:31::SCWPlatform::Opened existing hwdb atelier4_wrapper_4
+TRACE::2025-04-02.17:20:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:31::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:31::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:31::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:31::SCWPlatform::Opened existing hwdb atelier4_wrapper_4
+TRACE::2025-04-02.17:20:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:31::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:31::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.17:20:31::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:31::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa
+TRACE::2025-04-02.17:20:31::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:31::SCWPlatform::update - Opened existing hwdb atelier4_wrapper_5
+TRACE::2025-04-02.17:20:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:31::SCWMssOS::Doing hw sync for the mss in domain: standalone_ps7_cortexa9_0
+TRACE::2025-04-02.17:20:31::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:31::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:31::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:31::SCWPlatform::Opened existing hwdb atelier4_wrapper_4
+TRACE::2025-04-02.17:20:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:31::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:31::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:31::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_4
+TRACE::2025-04-02.17:20:31::SCWPlatform::Opened existing hwdb atelier4_wrapper_4
+TRACE::2025-04-02.17:20:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:31::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:31::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.17:20:31::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:31::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa
+TRACE::2025-04-02.17:20:31::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/tempdsa/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:31::SCWPlatform::update - Opened existing hwdb atelier4_wrapper_5
+TRACE::2025-04-02.17:20:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:31::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:31::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-02.17:20:31::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-02.17:20:31::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.17:20:31::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2025-04-02.17:20:31::SCWMssOS::Removing the swdes entry for  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:31::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:31::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-02.17:20:31::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-02.17:20:31::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.17:20:31::SCWMssOS::Completed hw sync for the mss in domain: standalone_ps7_cortexa9_0
+TRACE::2025-04-02.17:20:31::SCWMssOS::Removing the swdes entry for  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:31::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:31::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:31::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:31::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-04-02.17:20:33::SCWPlatform::Opened new HwDB with name atelier4_wrapper_6
+TRACE::2025-04-02.17:20:33::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:33::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-04-02.17:20:33::SCWMssOS::Writing the mss file completed C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:33::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.17:20:33::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:33::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2025-04-02.17:20:33::SCWMssOS::Writing the mss file completed C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:33::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.17:20:33::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:33::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:33::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:33::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:33::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:33::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:33::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_6
+TRACE::2025-04-02.17:20:33::SCWPlatform::Opened existing hwdb atelier4_wrapper_6
+TRACE::2025-04-02.17:20:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:33::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:33::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.17:20:33::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:33::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:33::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:33::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:33::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:33::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:33::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:33::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_6
+TRACE::2025-04-02.17:20:33::SCWPlatform::Opened existing hwdb atelier4_wrapper_6
+TRACE::2025-04-02.17:20:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:33::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:33::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.17:20:33::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:33::SCWWriter::formatted JSON is {
+	"platformName":	"atelier4_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"atelier4_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/atelier4_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"atelier4_wrapper",
+	"systems":	[{
+			"systemName":	"atelier4_wrapper",
+			"systemDesc":	"atelier4_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"atelier4_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"0be5ea4ab905254957fadc8566944063",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"c7b67555032dc1ffe6b30962acb1207c",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2025-04-02.17:20:43::SCWPlatform::Started generating the artifacts platform atelier4_wrapper
+TRACE::2025-04-02.17:20:43::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-04-02.17:20:43::SCWPlatform::Started generating the artifacts for system configuration atelier4_wrapper
+LOG::2025-04-02.17:20:43::SCWSystem::Checking the domain zynq_fsbl
+LOG::2025-04-02.17:20:43::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2025-04-02.17:20:43::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-04-02.17:20:43::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2025-04-02.17:20:43::SCWSystem::Checking the domain standalone_ps7_cortexa9_0
+LOG::2025-04-02.17:20:43::SCWSystem::Not a boot domain 
+LOG::2025-04-02.17:20:43::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2025-04-02.17:20:43::SCWDomain::Generating domain artifcats
+TRACE::2025-04-02.17:20:43::SCWMssOS::Generating standalone artifcats
+TRACE::2025-04-02.17:20:43::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/sw/atelier4_wrapper/qemu/
+TRACE::2025-04-02.17:20:43::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt To C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/sw/atelier4_wrapper/standalone_ps7_cortexa9_0/qemu/
+TRACE::2025-04-02.17:20:43::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-04-02.17:20:43::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:43::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:43::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_6
+TRACE::2025-04-02.17:20:43::SCWPlatform::Opened existing hwdb atelier4_wrapper_6
+TRACE::2025-04-02.17:20:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:43::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:43::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.17:20:43::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:43::SCWMssOS::Completed writing the mss file at C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2025-04-02.17:20:43::SCWMssOS::Mss edits present, copying mssfile into export location C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:43::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-04-02.17:20:43::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-04-02.17:20:43::SCWDomain::Skipping the build for domain :  standalone_ps7_cortexa9_0
+TRACE::2025-04-02.17:20:43::SCWMssOS::skipping the bsp build ... 
+TRACE::2025-04-02.17:20:43::SCWMssOS::Copying to export directory.
+TRACE::2025-04-02.17:20:43::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-04-02.17:20:43::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-04-02.17:20:43::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2025-04-02.17:20:43::SCWSystem::Completed Processing the sysconfig atelier4_wrapper
+LOG::2025-04-02.17:20:43::SCWPlatform::Completed generating the artifacts for system configuration atelier4_wrapper
+TRACE::2025-04-02.17:20:43::SCWPlatform::Started preparing the platform 
+TRACE::2025-04-02.17:20:43::SCWSystem::Writing the bif file for system config atelier4_wrapper
+TRACE::2025-04-02.17:20:43::SCWSystem::dir created 
+TRACE::2025-04-02.17:20:43::SCWSystem::Writing the bif 
+TRACE::2025-04-02.17:20:43::SCWPlatform::Started writing the spfm file 
+TRACE::2025-04-02.17:20:43::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-04-02.17:20:43::SCWPlatform::Completed generating the platform
+TRACE::2025-04-02.17:20:43::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-02.17:20:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-02.17:20:43::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.17:20:43::SCWMssOS::Saving the mss changes C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-02.17:20:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-02.17:20:43::SCWMssOS::Commit changes completed.
+TRACE::2025-04-02.17:20:43::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:43::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:43::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_6
+TRACE::2025-04-02.17:20:43::SCWPlatform::Opened existing hwdb atelier4_wrapper_6
+TRACE::2025-04-02.17:20:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:43::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:43::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.17:20:43::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-04-02.17:20:43::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:43::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:43::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_6
+TRACE::2025-04-02.17:20:43::SCWPlatform::Opened existing hwdb atelier4_wrapper_6
+TRACE::2025-04-02.17:20:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:43::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:43::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.17:20:43::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:43::SCWWriter::formatted JSON is {
+	"platformName":	"atelier4_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"atelier4_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/atelier4_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"atelier4_wrapper",
+	"systems":	[{
+			"systemName":	"atelier4_wrapper",
+			"systemDesc":	"atelier4_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"atelier4_wrapper",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"0be5ea4ab905254957fadc8566944063",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynq/sw/a9_standalone/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"c7b67555032dc1ffe6b30962acb1207c",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-04-02.17:20:43::SCWPlatform::updated the xpfm file.
+TRACE::2025-04-02.17:20:43::SCWPlatform::Trying to open the hw design at C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform::DSA given C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform::DSA absoulate path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform::DSA directory C:/travail/s4InfoAtelier4/atelier4_wrapper/hw
+TRACE::2025-04-02.17:20:43::SCWPlatform:: Platform Path C:/travail/s4InfoAtelier4/atelier4_wrapper/hw/atelier4_wrapper.xsa
+TRACE::2025-04-02.17:20:43::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2025-04-02.17:20:43::SCWPlatform::Trying to set the existing hwdb with name atelier4_wrapper_6
+TRACE::2025-04-02.17:20:43::SCWPlatform::Opened existing hwdb atelier4_wrapper_6
+TRACE::2025-04-02.17:20:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-02.17:20:43::SCWMssOS::Checking the sw design at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-04-02.17:20:43::SCWMssOS::DEBUG:  swdes dump  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+C:/travail/s4InfoAtelier4/atelier4_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-02.17:20:43::SCWMssOS::Sw design exists and opened at  C:/travail/s4InfoAtelier4/atelier4_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss

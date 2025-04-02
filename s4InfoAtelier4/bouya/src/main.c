@@ -32,11 +32,10 @@ int main()
 		}
 
 		while(1) {
-			for(int i = 0; i <= 4095; i++) {
-				PPU_SetViewportOffset(i, i);
-				usleep(100000);
+			for(int i = 0; i < 512; i++) {
+				PPU_SetViewportOffset(0, i);
+				usleep(50000);
 			}
-			sleep(1);
 		}
 	return 0;
 }

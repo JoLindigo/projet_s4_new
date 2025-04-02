@@ -157,8 +157,8 @@ inst_controller : controller
 inst_viewport : viewport
     Port map
          ( i_clk            => clk, 
-           i_print_px_y     => i_x, 
-           i_print_px_x     => i_y, 
+           i_print_px_y     => i_y, 
+           i_print_px_x     => i_x, 
            i_offset_y       => s_ch_viewport_offset_y, 
            i_offset_x       => s_ch_viewport_offset_x, 
            i_ch_offset_en   => s_ch_viewport_en,

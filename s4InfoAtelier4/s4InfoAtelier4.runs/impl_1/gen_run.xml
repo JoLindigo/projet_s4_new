@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1743624512">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1743628097">
   <File Type="BITSTR-BMM" Name="atelier4_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="atelier4_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="atelier4_wrapper_timing_summary_init.rpt"/>
@@ -194,9 +194,9 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream">
+      <Option Id="VerboseBool">1</Option>
       <Option Id="ReadbackFileBool">1</Option>
       <Option Id="LogicLocationFileBool">1</Option>
-      <Option Id="VerboseBool">1</Option>
     </Step>
   </Strategy>
 </GenRun>
