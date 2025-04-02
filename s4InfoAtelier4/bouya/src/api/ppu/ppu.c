@@ -1,5 +1,6 @@
 #include "ppu.h"
 #include "ppu_instruction_formats.h"
+#include "myColorRegister.h"
 
 
 void PPU_Init() {
@@ -9,14 +10,14 @@ void PPU_Init() {
 
 void PPU_SetViewportOffset(uint16_t x, uint16_t y) {
   Xil_AssertVoid(x <= UINT_10_VALUE_MAX && "Value of parameter x must fit in 10 bits.");
-  Xil_AssertVoid(y <= UINT_10_VALUE_MAX && "Value of parameter y must fit in 10 bits.");
+  Xil_AssertVoid(y <= UINT_9_VALUE_MAX && "Value of parameter y must fit in 10 bits.");
 
   SetViewportOffsetInstruction instr = { 0 };
   instr.fields.opCode = OPCODE_SETVIEWPORTOFFSET;
   instr.fields.viewportOffsetX = x;
   instr.fields.viewportOffsetY = y;
 
-  MYCUCKREGISTER_mWriteReg(XPAR_MYCUCKREGISTER_0_S00_AXI_BASEADDR, 0, instr.instruction);
+  MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0, instr.instruction);
 }
 
 

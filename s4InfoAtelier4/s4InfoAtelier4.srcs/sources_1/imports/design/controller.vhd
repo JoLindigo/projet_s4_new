@@ -129,8 +129,8 @@ begin
 --                o_ch_tile_id_en     <= '1';
                 
            when OPCODE_SETVIEWPORTOFFSET =>                     -- SET_OFFSET
-                o_ch_viewport_offset_x          <= i_instruction(21 downto 12);
-                o_ch_viewport_offset_y          <= i_instruction(11 downto 3);
+                o_ch_viewport_offset_x          <= i_instruction(27 downto 18);
+                o_ch_viewport_offset_y          <= i_instruction(17 downto 9);
                 o_ch_viewport_en                <= '1';               
                 
            when others =>

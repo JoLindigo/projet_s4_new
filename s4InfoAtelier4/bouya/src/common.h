@@ -9,6 +9,7 @@
 #define UINT_5_VALUE_MAX  31
 #define UINT_6_VALUE_MAX  63
 #define UINT_7_VALUE_MAX  127
+#define UINT_9_VALUE_MAX  511
 #define UINT_10_VALUE_MAX 1023
 
 #ifdef DEBUG

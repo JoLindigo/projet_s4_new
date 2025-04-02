@@ -7,10 +7,10 @@
   */
 typedef union {
   struct {
-    uint32_t opCode          : 4;
+	uint32_t PADDING         : 9;
+    uint32_t viewportOffsetY : 9;
     uint32_t viewportOffsetX : 10;
-    uint32_t viewportOffsetY : 10;
-    uint32_t PADDING         : 8;
+    uint32_t opCode          : 4;
   } fields;
 
   uint32_t instruction;

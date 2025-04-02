@@ -35,8 +35,8 @@ entity viewport is
 end viewport;
 
 architecture Behavioral of viewport is
-    constant FULL_WIDTH  : unsigned(9 downto 0) := to_unsigned(1023, 10);
-    constant FULL_HEIGHT  : unsigned(8 downto 0) := to_unsigned(511, 9);
+    constant FULL_WIDTH  : unsigned(10 downto 0) := to_unsigned(1024, 11);
+    constant FULL_HEIGHT  : unsigned(9 downto 0) := to_unsigned(512, 10);
     
 --    constant VIEWPORT_WIDTH  : unsigned(9 downto 0) := to_unsigned(640, 10); -- Remplacez par la largeur réelle
 --    constant VIEWPORT_HEIGHT : unsigned(9 downto 0) := to_unsigned(360, 10);  -- Remplacez par la hauteur réelle
