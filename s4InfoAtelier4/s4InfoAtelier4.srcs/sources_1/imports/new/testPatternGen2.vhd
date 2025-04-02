@@ -39,9 +39,7 @@ Port (
     i_y : in std_logic_vector(11 downto 0);
     o_dataValid : out std_logic;
     o_dataPixel : out std_logic_vector(23 downto 0);
-    i_instruction : in std_logic_vector(31 downto 0);
-    o_instruction                   : out std_logic_vector(31 downto 0);
-    o_opcode                        : out std_logic_vector(3 downto 0)
+    i_instruction : in std_logic_vector(31 downto 0)
 );
 end testPatternGen2;
 
@@ -51,35 +49,28 @@ architecture Behavioral of testPatternGen2 is
 component controller is
   Port ( i_instruction                   : in std_logic_vector(31 downto 0); -- 4 bits opcode
          i_clk                           : in std_logic;
-         i_reset                         : in std_logic;
-        
-         o_bg_buffer_ch_tile_id          : out std_logic_vector(5 downto 0);
-         o_bg_buffer_ch_tile_row         : out std_logic_vector(6 downto 0);
+            
+         o_bg_buffer_ch_tile_id          : out std_logic_vector(4 downto 0);
+         o_bg_buffer_ch_tile_row         : out std_logic_vector(5 downto 0);
          o_bg_buffer_ch_tile_col         : out std_logic_vector(6 downto 0);
          o_bg_buffer_ch_en               : out std_logic;
-        
+            
          o_bg_tile_buffer_ch_pixel_color : out std_logic_vector(4 downto 0);
          o_bg_tile_buffer_ch_tile_x      : out std_logic_vector(2 downto 0);
          o_bg_tile_buffer_ch_tile_y      : out std_logic_vector(2 downto 0);
-         o_bg_tile_buffer_ch_tile_id     : out std_logic_vector(5 downto 0); 
+         o_bg_tile_buffer_ch_tile_id     : out std_logic_vector(4 downto 0); 
          o_bg_tile_buffer_ch_en          : out std_logic;  
-        
+            
          o_ch_viewport_offset_x          : out std_logic_vector(9 downto 0);
-         o_ch_viewport_offset_y          : out std_logic_vector(9 downto 0); 
-         o_ch_viewport_en                : out std_logic;
-        
-         o_global_reset                  : out std_logic; 
-         
-         o_instruction                   : out std_logic_vector(31 downto 0);
-         o_opcode                        : out std_logic_vector(3 downto 0));
+         o_ch_viewport_offset_y          : out std_logic_vector(8 downto 0); 
+         o_ch_viewport_en                : out std_logic );
 end component;
 
 component viewport is
     Port ( i_clk            : in std_logic;
-           i_reset          : in std_logic;
            i_print_px_y     : in STD_LOGIC_VECTOR (11 downto 0);
            i_print_px_x     : in STD_LOGIC_VECTOR (11 downto 0);
-           i_offset_y       : in STD_LOGIC_VECTOR (9 downto 0);
+           i_offset_y       : in STD_LOGIC_VECTOR (8 downto 0);
            i_offset_x       : in STD_LOGIC_VECTOR (9 downto 0);
            i_ch_offset_en   : in std_logic;
            o_global_x       : out STD_LOGIC_VECTOR (11 downto 0);
@@ -88,28 +79,26 @@ end component;
 
 component background_buffer_2 is
     Port ( clk           : in STD_LOGIC;
-           reset         : in STD_LOGIC;
            i_global_x    : in STD_LOGIC_VECTOR (9 downto 0);
-           i_global_y    : in STD_LOGIC_VECTOR (9 downto 0);
-           i_ch_tile_id  : in STD_LOGIC_VECTOR (5 downto 0);
-           i_ch_tile_row : in STD_LOGIC_VECTOR (6 downto 0);
+           i_global_y    : in STD_LOGIC_VECTOR (8 downto 0);
+           i_ch_tile_id  : in STD_LOGIC_VECTOR (4 downto 0);
+           i_ch_tile_row : in STD_LOGIC_VECTOR (5 downto 0);
            i_ch_tile_col : in STD_LOGIC_VECTOR (6 downto 0);
            i_ch_en       : in STD_LOGIC;
-           o_tile_id     : out STD_LOGIC_VECTOR (5 downto 0);
+           o_tile_id     : out STD_LOGIC_VECTOR (4 downto 0);
            o_tile_x      : out STD_LOGIC_VECTOR (2 downto 0);
            o_tile_y      : out STD_LOGIC_VECTOR (2 downto 0));
 end component;
 
 component bg_tile_buffer_2 is
-    Port ( i_tile_id                : in STD_LOGIC_VECTOR (5 downto 0);
+    Port ( i_tile_id                : in STD_LOGIC_VECTOR (4 downto 0);
            i_tile_x                 : in STD_LOGIC_VECTOR (2 downto 0);
            i_tile_y                 : in STD_LOGIC_VECTOR (2 downto 0);
            i_ch_tile_pixel_color    : in STD_LOGIC_VECTOR (4 downto 0);
            i_ch_tile_x              : in STD_LOGIC_VECTOR (2 downto 0);
            i_ch_tile_y              : in STD_LOGIC_VECTOR (2 downto 0);
-           i_ch_tile_id             : in STD_LOGIC_VECTOR (5 downto 0);
+           i_ch_tile_id             : in STD_LOGIC_VECTOR (4 downto 0);
            i_ch_en                  : in STD_LOGIC;
-           i_reset                  : in STD_LOGIC;
            i_clk                    : in STD_LOGIC;
            o_color_code             : out STD_LOGIC_VECTOR (4 downto 0));
 end component;
@@ -120,7 +109,7 @@ component color_mux is
 end component;
 
 --Signals
-signal s_bg_tile_id     : STD_LOGIC_VECTOR (5 downto 0);
+signal s_bg_tile_id     : STD_LOGIC_VECTOR (4 downto 0);
 signal s_bg_tile_x      : STD_LOGIC_VECTOR (2 downto 0);
 signal s_bg_tile_y      : STD_LOGIC_VECTOR (2 downto 0);
 signal s_bg_color_code  : STD_LOGIC_VECTOR (4 downto 0);
@@ -128,22 +117,20 @@ signal s_bg_color_code  : STD_LOGIC_VECTOR (4 downto 0);
 signal s_global_x       : STD_LOGIC_VECTOR (11 downto 0);
 signal s_global_y       : STD_LOGIC_VECTOR (11 downto 0);
 
-signal s_bg_buffer_ch_tile_id          : std_logic_vector(5 downto 0);
-signal s_bg_buffer_ch_tile_row         : std_logic_vector(6 downto 0);
+signal s_bg_buffer_ch_tile_id          : std_logic_vector(4 downto 0);
+signal s_bg_buffer_ch_tile_row         : std_logic_vector(5 downto 0);
 signal s_bg_buffer_ch_tile_col         : std_logic_vector(6 downto 0);
 signal s_bg_buffer_ch_en               : std_logic;
 
 signal s_bg_tile_buffer_ch_pixel_color : std_logic_vector(4 downto 0);
 signal s_bg_tile_buffer_ch_tile_x      : std_logic_vector(2 downto 0);
 signal s_bg_tile_buffer_ch_tile_y      : std_logic_vector(2 downto 0);
-signal s_bg_tile_buffer_ch_tile_id     : std_logic_vector(5 downto 0); 
+signal s_bg_tile_buffer_ch_tile_id     : std_logic_vector(4 downto 0); 
 signal s_bg_tile_buffer_ch_en          : std_logic;  
 
 signal s_ch_viewport_offset_x          : std_logic_vector(9 downto 0);
-signal s_ch_viewport_offset_y          : std_logic_vector(9 downto 0); 
+signal s_ch_viewport_offset_y          : std_logic_vector(8 downto 0); 
 signal s_ch_viewport_en                : std_logic;
-
-signal s_global_reset                  : std_logic; 
 
 begin
 
@@ -151,7 +138,6 @@ inst_controller : controller
   Port map
        ( i_instruction                      => i_instruction,
          i_clk                              => clk,
-         i_reset                            => rstn,
 
          o_bg_buffer_ch_tile_id             => s_bg_buffer_ch_tile_id, 
          o_bg_buffer_ch_tile_row            => s_bg_buffer_ch_tile_row, 
@@ -166,17 +152,11 @@ inst_controller : controller
 
          o_ch_viewport_offset_x             => s_ch_viewport_offset_x, 
          o_ch_viewport_offset_y             => s_ch_viewport_offset_y,  
-         o_ch_viewport_en                   => s_ch_viewport_en, 
-
-         o_global_reset                     => s_global_reset ,
-         
-         o_instruction                      => o_instruction,
-         o_opcode                           => o_opcode ); 
+         o_ch_viewport_en                   => s_ch_viewport_en ); 
 
 inst_viewport : viewport
     Port map
-         ( i_clk            => clk,
-           i_reset          => s_global_reset, 
+         ( i_clk            => clk, 
            i_print_px_y     => i_x, 
            i_print_px_x     => i_y, 
            i_offset_y       => s_ch_viewport_offset_y, 
@@ -189,9 +169,8 @@ inst_viewport : viewport
 inst_background_buffer : background_buffer_2
     Port map
          ( clk              => clk,
-           reset            => s_global_reset,
            i_global_x       => s_global_x(9 downto 0),
-           i_global_y       => s_global_y(9 downto 0),
+           i_global_y       => s_global_y(8 downto 0),
            i_ch_tile_id     => s_bg_buffer_ch_tile_id,
            i_ch_tile_row    => s_bg_buffer_ch_tile_row,
            i_ch_tile_col    => s_bg_buffer_ch_tile_col,
@@ -210,7 +189,6 @@ inst_bg_tile_buffer : bg_tile_buffer_2
            i_ch_tile_y              => s_bg_tile_buffer_ch_tile_y,
            i_ch_tile_id             => s_bg_tile_buffer_ch_tile_id,
            i_ch_en                  => s_bg_tile_buffer_ch_en,
-           i_reset                  => s_global_reset,
            i_clk                    => clk,
            o_color_code             => s_bg_color_code );
            

@@ -3730,3 +3730,69 @@ con
 
 13:57:25 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
 13:58:06 INFO  : Disconnected from the channel tcfchan#7.
+14:23:30 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+14:23:32 INFO  : XSCT server has started successfully.
+14:23:32 INFO  : plnx-install-location is set to ''
+14:23:32 INFO  : Successfully done setting XSCT server connection channel  
+14:23:32 INFO  : Successfully done setting workspace for the tool. 
+14:23:35 INFO  : Platform repository initialization has completed.
+14:23:36 INFO  : Registering command handlers for Vitis TCF services
+14:23:39 INFO  : Successfully done query RDI_DATADIR 
+14:26:11 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+14:26:37 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+14:26:37 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+14:26:43 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+14:26:47 INFO  : The hardware specfication used by project 'bouya' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+14:26:47 INFO  : The file 'C:\travail\s4InfoAtelier4\bouya\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+14:26:47 INFO  : The updated bitstream files are copied from platform to folder 'C:\travail\s4InfoAtelier4\bouya\_ide\bitstream' in project 'bouya'.
+14:26:47 INFO  : The file 'C:\travail\s4InfoAtelier4\bouya\_ide\psinit\ps7_init.tcl' stored in project is removed.
+14:26:51 INFO  : The updated ps init files are copied from platform to folder 'C:\travail\s4InfoAtelier4\bouya\_ide\psinit' in project 'bouya'.
+14:26:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:26:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+14:26:55 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+14:26:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:26:59 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+14:26:59 INFO  : 'jtag frequency' command is executed.
+14:26:59 INFO  : Context for 'APU' is selected.
+14:26:59 INFO  : System reset is completed.
+14:27:02 INFO  : 'after 3000' command is executed.
+14:27:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+14:27:04 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+14:27:04 INFO  : Context for 'APU' is selected.
+14:27:04 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+14:27:04 INFO  : 'configparams force-mem-access 1' command is executed.
+14:27:04 INFO  : Context for 'APU' is selected.
+14:27:04 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+14:27:04 INFO  : 'ps7_init' command is executed.
+14:27:04 INFO  : 'ps7_post_config' command is executed.
+14:27:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:27:05 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:27:05 INFO  : 'configparams force-mem-access 0' command is executed.
+14:27:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:27:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:27:05 INFO  : 'con' command is executed.
+14:27:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:27:05 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+14:33:42 INFO  : Disconnected from the channel tcfchan#3.

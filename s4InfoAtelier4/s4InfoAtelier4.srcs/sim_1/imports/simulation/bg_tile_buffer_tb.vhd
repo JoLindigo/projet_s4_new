@@ -28,29 +28,26 @@ end bg_tile_buffer_tb;
 
 architecture Behavioral of bg_tile_buffer_tb is
 component bg_tile_buffer_2 is
-    Port ( i_tile_id : in STD_LOGIC_VECTOR (5 downto 0);
+    Port ( i_tile_id : in STD_LOGIC_VECTOR (4 downto 0);
            i_tile_x : in STD_LOGIC_VECTOR (2 downto 0);
            i_tile_y : in STD_LOGIC_VECTOR (2 downto 0);
            i_ch_tile_pixel_color : in STD_LOGIC_VECTOR (4 downto 0);
            i_ch_tile_x : in STD_LOGIC_VECTOR (2 downto 0);
            i_ch_tile_y : in STD_LOGIC_VECTOR (2 downto 0);
-           i_ch_tile_id : in STD_LOGIC_VECTOR (5 downto 0);
+           i_ch_tile_id : in STD_LOGIC_VECTOR (4 downto 0);
            i_ch_en : in STD_LOGIC;
-           i_reset : in STD_LOGIC;
            i_clk: in STD_LOGIC;
-           --i_bg_tile_en : in STD_LOGIC;
            o_color_code : out STD_LOGIC_VECTOR (4 downto 0));
 end component;
 
-signal i_tile_id : STD_LOGIC_VECTOR (5 downto 0);
+signal i_tile_id : STD_LOGIC_VECTOR (4 downto 0);
 signal i_tile_x : STD_LOGIC_VECTOR (2 downto 0);
 signal i_tile_y : STD_LOGIC_VECTOR (2 downto 0);
 signal i_ch_tile_pixel_color : STD_LOGIC_VECTOR (4 downto 0);
 signal i_ch_tile_x : STD_LOGIC_VECTOR (2 downto 0);
 signal i_ch_tile_y : STD_LOGIC_VECTOR (2 downto 0);
-signal i_ch_tile_id : STD_LOGIC_VECTOR (5 downto 0);
+signal i_ch_tile_id : STD_LOGIC_VECTOR (4 downto 0);
 signal i_ch_en : STD_LOGIC;
-signal i_reset : STD_LOGIC;
 signal i_clk: STD_LOGIC;
 signal o_color_code : STD_LOGIC_VECTOR (4 downto 0);
 
@@ -68,7 +65,6 @@ begin
             i_ch_tile_y => i_ch_tile_y,
             i_ch_tile_id => i_ch_tile_id,
             i_ch_en => i_ch_en,
-            i_reset => i_reset,
             i_clk => i_clk,
             o_color_code => o_color_code);
     
@@ -84,92 +80,84 @@ begin
    tb: process
    begin
         wait for COMMAND_PERIOD; --Load value arr(0,0,0)
-        i_tile_id <= "000001";
+        i_tile_id <= "00001";
         i_tile_x <= "001";
         i_tile_y <= "001";
         i_ch_tile_pixel_color <= "11111";
         i_ch_tile_x <= "000";
         i_ch_tile_y <= "000";
-        i_ch_tile_id <= "000000";
+        i_ch_tile_id <= "00000";
         i_ch_en <= '1';
-        i_reset <= '0';
         
         wait for COMMAND_PERIOD; --Load value arr(31,7,7)
-        i_tile_id <= "000001";
+        i_tile_id <= "00001";
         i_tile_x <= "001";
         i_tile_y <= "001";
         i_ch_tile_pixel_color <= "10101";
         i_ch_tile_x <= "111";
         i_ch_tile_y <= "111";
-        i_ch_tile_id <= "011111";
+        i_ch_tile_id <= "11111";
         i_ch_en <= '1';
-        i_reset <= '0';   
         
         wait for COMMAND_PERIOD; --Load value arr(16,5,4)
-        i_tile_id <= "000001";
+        i_tile_id <= "00001";
         i_tile_x <= "001";
         i_tile_y <= "001";
         i_ch_tile_pixel_color <= "01010";
         i_ch_tile_x <= "101";
         i_ch_tile_y <= "100";
-        i_ch_tile_id <= "010000";
+        i_ch_tile_id <= "10000";
         i_ch_en <= '1';
-        i_reset <= '0'; 
         
         wait for COMMAND_PERIOD; --Load value arr(10,2,3)
-        i_tile_id <= "000001";
+        i_tile_id <= "00001";
         i_tile_x <= "001";
         i_tile_y <= "001";
         i_ch_tile_pixel_color <= "01111";
         i_ch_tile_x <= "010";
         i_ch_tile_y <= "011";
-        i_ch_tile_id <= "001010";
+        i_ch_tile_id <= "01010";
         i_ch_en <= '1';
-        i_reset <= '0'; 
         
         wait for COMMAND_PERIOD; --Read value arr(0,0,0)
-        i_tile_id <= "000000";
+        i_tile_id <= "00000";
         i_tile_x <= "000";
         i_tile_y <= "000";
         i_ch_tile_pixel_color <= (others => '0');
         i_ch_tile_x <= "000";
         i_ch_tile_y <= "000";
-        i_ch_tile_id <= "000000";
+        i_ch_tile_id <= "00000";
         i_ch_en <= '0';
-        i_reset <= '0';  
         
         wait for COMMAND_PERIOD; --Read value arr(31,7,7)
-        i_tile_id <= "011111";
+        i_tile_id <= "11111";
         i_tile_x <= "111";
         i_tile_y <= "111";
         i_ch_tile_pixel_color <= (others => '0');
         i_ch_tile_x <= "000";
         i_ch_tile_y <= "000";
-        i_ch_tile_id <= "000000";
+        i_ch_tile_id <= "00000";
         i_ch_en <= '0';
-        i_reset <= '0';   
         
         wait for COMMAND_PERIOD; --Read value arr(16,5,4)
-        i_tile_id <= "010000";
+        i_tile_id <= "10000";
         i_tile_x <= "101";
         i_tile_y <= "100";
         i_ch_tile_pixel_color <= (others => '0');
         i_ch_tile_x <= "000";
         i_ch_tile_y <= "000";
-        i_ch_tile_id <= "000000";
+        i_ch_tile_id <= "00000";
         i_ch_en <= '0';
-        i_reset <= '0';  
         
         wait for COMMAND_PERIOD; --Read value arr(10,2,3)
-        i_tile_id <= "001010";
+        i_tile_id <= "01010";
         i_tile_x <= "010";
         i_tile_y <= "011";
         i_ch_tile_pixel_color <= (others => '0');
         i_ch_tile_x <= "000";
         i_ch_tile_y <= "000";
-        i_ch_tile_id <= "000000";
+        i_ch_tile_id <= "00000";
         i_ch_en <= '0';
-        i_reset <= '0';    
         
         WAIT;
    end process;

@@ -26,27 +26,21 @@ entity controller is
   Port (
     i_instruction                   : in std_logic_vector(31 downto 0); -- 4 bits opcode
     i_clk                           : in std_logic;
-    i_reset                         : in std_logic;
     
-    o_bg_buffer_ch_tile_id          : out std_logic_vector(5 downto 0);
-    o_bg_buffer_ch_tile_row         : out std_logic_vector(6 downto 0);
+    o_bg_buffer_ch_tile_id          : out std_logic_vector(4 downto 0);
+    o_bg_buffer_ch_tile_row         : out std_logic_vector(5 downto 0);
     o_bg_buffer_ch_tile_col         : out std_logic_vector(6 downto 0);
     o_bg_buffer_ch_en               : out std_logic;
     
     o_bg_tile_buffer_ch_pixel_color : out std_logic_vector(4 downto 0);
     o_bg_tile_buffer_ch_tile_x      : out std_logic_vector(2 downto 0);
     o_bg_tile_buffer_ch_tile_y      : out std_logic_vector(2 downto 0);
-    o_bg_tile_buffer_ch_tile_id     : out std_logic_vector(5 downto 0); 
+    o_bg_tile_buffer_ch_tile_id     : out std_logic_vector(4 downto 0); 
     o_bg_tile_buffer_ch_en          : out std_logic;  
     
     o_ch_viewport_offset_x          : out std_logic_vector(9 downto 0);
-    o_ch_viewport_offset_y          : out std_logic_vector(9 downto 0); 
-    o_ch_viewport_en                : out std_logic;
-    
-    o_global_reset                  : out std_logic;
-    
-    o_instruction                   : out std_logic_vector(31 downto 0);
-    o_opcode                        : out std_logic_vector(3 downto 0)
+    o_ch_viewport_offset_y          : out std_logic_vector(8 downto 0); 
+    o_ch_viewport_en                : out std_logic
     
 --    o_global_actor_en   : out std_logic;
 --    o_actor_buffer_en   : out std_logic;
@@ -65,19 +59,16 @@ constant OPCODE_SETBACKGROUNDTILEID     : std_logic_vector(3 downto 0) := "0100"
 constant OPCODE_MOVEACTORPOSITION       : std_logic_vector(3 downto 0) := "0101";
 constant OPCODE_SETACTORPOSITION        : std_logic_vector(3 downto 0) := "0110";
 constant OPCODE_SETVIEWPORTOFFSET       : std_logic_vector(3 downto 0) := "0111";
-constant OPCODE_GLOBALRESET             : std_logic_vector(3 downto 0) := "1111";
 
 signal s_OPCODE : std_logic_vector(3 downto 0);
 
 begin
 
 s_OPCODE <= i_instruction(31 downto 28);
-o_opcode <= s_OPCODE;
-o_instruction <= i_instruction;
 
-process(i_clk, i_reset)
-begin 
-    if i_reset = '0' then
+process(i_clk)
+begin         
+     if rising_edge(i_clk) then
         o_bg_buffer_ch_tile_id          <= (others => '0');
         o_bg_buffer_ch_tile_row         <= (others => '0');
         o_bg_buffer_ch_tile_col         <= (others => '0');
@@ -92,26 +83,6 @@ begin
         o_ch_viewport_offset_x          <= (others => '0');
         o_ch_viewport_offset_y          <= (others => '0');
         o_ch_viewport_en                <= '0';
-
-        o_global_reset                  <= '0';
-        
-     elsif rising_edge(i_clk) then
-        o_bg_buffer_ch_tile_id          <= (others => '0');
-        o_bg_buffer_ch_tile_row         <= (others => '0');
-        o_bg_buffer_ch_tile_col         <= (others => '0');
-        o_bg_buffer_ch_en               <= '0';
-
-        o_bg_tile_buffer_ch_pixel_color <= (others => '0');
-        o_bg_tile_buffer_ch_tile_x      <= (others => '0');
-        o_bg_tile_buffer_ch_tile_y      <= (others => '0');
-        o_bg_tile_buffer_ch_tile_id     <= (others => '0');
-        o_bg_tile_buffer_ch_en          <= '0';
-
-        o_ch_viewport_offset_x          <= (others => '0');
-        o_ch_viewport_offset_y          <= (others => '0');
-        o_ch_viewport_en                <= '0';
-
-        o_global_reset                  <= '0';
         
         case s_OPCODE is
             when OPCODE_NOP =>   
@@ -124,10 +95,10 @@ begin
 --                o_actor_buffer_en   <= '1';
                 
             when OPCODE_SETBACKGROUNDTILECOLOR =>               -- SET_BG_TILE_BUFFER_ID
-                o_bg_tile_buffer_ch_tile_id     <= i_instruction(27 downto 22);
-                o_bg_tile_buffer_ch_tile_x      <= i_instruction(21 downto 19);
-                o_bg_tile_buffer_ch_tile_y      <= i_instruction(18 downto 16);
-                o_bg_tile_buffer_ch_pixel_color <= i_instruction(15 downto 11);
+                o_bg_tile_buffer_ch_tile_id     <= i_instruction(27 downto 23);
+                o_bg_tile_buffer_ch_tile_x      <= i_instruction(22 downto 20);
+                o_bg_tile_buffer_ch_tile_y      <= i_instruction(19 downto 17);
+                o_bg_tile_buffer_ch_pixel_color <= i_instruction(16 downto 12);
                 o_bg_tile_buffer_ch_en          <= '1';
                 
             when OPCODE_SETACTORTILEID =>                       -- SET_ACTOR_TILE_ID
@@ -136,9 +107,9 @@ begin
 --                o_ch_tile_id_en     <= '1';
                 
             when OPCODE_SETBACKGROUNDTILEID =>                  -- SET_BG_TILE_ID
-                o_bg_buffer_ch_tile_id          <= i_instruction(27 downto 22);
-                o_bg_buffer_ch_tile_col         <= i_instruction(21 downto 15);
-                o_bg_buffer_ch_tile_row         <= i_instruction(14 downto 8);
+                o_bg_buffer_ch_tile_id          <= i_instruction(27 downto 23);
+                o_bg_buffer_ch_tile_col         <= i_instruction(22 downto 16);
+                o_bg_buffer_ch_tile_row         <= i_instruction(15 downto 10);
                 o_bg_buffer_ch_en               <= '1';
                 
             when OPCODE_MOVEACTORPOSITION =>                    -- MOVE_ACTOR_RELATIVE
@@ -159,11 +130,8 @@ begin
                 
            when OPCODE_SETVIEWPORTOFFSET =>                     -- SET_OFFSET
                 o_ch_viewport_offset_x          <= i_instruction(21 downto 12);
-                o_ch_viewport_offset_y          <= i_instruction(11 downto 2);
-                o_ch_viewport_en                <= '1';
-                
-           when OPCODE_GLOBALRESET =>
-                o_global_reset      <= '1';
+                o_ch_viewport_offset_y          <= i_instruction(11 downto 3);
+                o_ch_viewport_en                <= '1';               
                 
            when others =>
                 o_bg_buffer_ch_tile_id          <= (others => '0');
@@ -180,8 +148,6 @@ begin
                 o_ch_viewport_offset_x          <= (others => '0');
                 o_ch_viewport_offset_y          <= (others => '0');
                 o_ch_viewport_en                <= '0';
-        
-                o_global_reset                  <= '0';
         end case;
     end if;
 end process;

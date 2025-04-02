@@ -61,9 +61,7 @@ ENTITY atelier4_testPatternGen2_0_0 IS
     i_y : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
     o_dataValid : OUT STD_LOGIC;
     o_dataPixel : OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
-    i_instruction : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    o_instruction : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-    o_opcode : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+    i_instruction : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
 END atelier4_testPatternGen2_0_0;
 
@@ -78,9 +76,7 @@ ARCHITECTURE atelier4_testPatternGen2_0_0_arch OF atelier4_testPatternGen2_0_0 I
       i_y : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
       o_dataValid : OUT STD_LOGIC;
       o_dataPixel : OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
-      i_instruction : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-      o_instruction : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-      o_opcode : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+      i_instruction : IN STD_LOGIC_VECTOR(31 DOWNTO 0)
     );
   END COMPONENT testPatternGen2;
   ATTRIBUTE X_CORE_INFO : STRING;
@@ -106,8 +102,6 @@ BEGIN
       i_y => i_y,
       o_dataValid => o_dataValid,
       o_dataPixel => o_dataPixel,
-      i_instruction => i_instruction,
-      o_instruction => o_instruction,
-      o_opcode => o_opcode
+      i_instruction => i_instruction
     );
 END atelier4_testPatternGen2_0_0_arch;

@@ -480,15 +480,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_pi
 # IP: bd/atelier4/ip/atelier4_mycolorRegister_0_0/atelier4_mycolorRegister_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_mycolorRegister_0_0 || ORIG_REF_NAME==atelier4_mycolorRegister_0_0} -quiet] -quiet
 
-# IP: bd/atelier4/ip/atelier4_system_ila_0_3/atelier4_system_ila_0_3.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_system_ila_0_3 || ORIG_REF_NAME==atelier4_system_ila_0_3} -quiet] -quiet
-
-# Block Designs: c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_system_ila_0_3/bd_0/bd_3e9c.bd
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_3e9c || ORIG_REF_NAME==bd_3e9c} -quiet] -quiet
-
-# IP: c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_system_ila_0_3/bd_0/ip/ip_0/bd_3e9c_ila_lib_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_3e9c_ila_lib_0 || ORIG_REF_NAME==bd_3e9c_ila_lib_0} -quiet] -quiet
-
 # IP: bd/atelier4/ip/atelier4_testPatternGen2_0_0/atelier4_testPatternGen2_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==atelier4_testPatternGen2_0_0 || ORIG_REF_NAME==atelier4_testPatternGen2_0_0} -quiet] -quiet
 
@@ -809,15 +800,5 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_tc_0_0/atelier4_v_tc_0_0_clocks.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==atelier4_v_tc_0_0 || ORIG_REF_NAME==atelier4_v_tc_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_system_ila_0_3/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_3e9c_ila_lib_0 || ORIG_REF_NAME==bd_3e9c_ila_lib_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_system_ila_0_3/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_3e9c_ila_lib_0 || ORIG_REF_NAME==bd_3e9c_ila_lib_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_system_ila_0_3/bd_0/ip/ip_0/bd_3e9c_ila_lib_0_ooc.xdc
-
-# XDC: c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_system_ila_0_3/bd_0/bd_3e9c_ooc.xdc
 
 # XDC: c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/atelier4_ooc.xdc

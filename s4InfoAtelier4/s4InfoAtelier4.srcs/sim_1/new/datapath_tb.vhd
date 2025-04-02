@@ -35,9 +35,7 @@ Port (
     i_y : in std_logic_vector(11 downto 0);
     o_dataValid : out std_logic;
     o_dataPixel : out std_logic_vector(23 downto 0);
-    i_instruction : in std_logic_vector(31 downto 0);
-    o_instruction : out std_logic_vector(31 downto 0);
-    o_opcode : out std_logic_vector(3 downto 0)
+    i_instruction : in std_logic_vector(31 downto 0)
 );
 end component;
 
@@ -50,9 +48,7 @@ signal i_y : std_logic_vector(11 downto 0);
 signal o_dataValid : std_logic;
 signal o_dataPixel : std_logic_vector(23 downto 0);
 signal i_instruction : std_logic_vector(31 downto 0);
-signal o_instruction : std_logic_vector(31 downto 0);
-signal o_opcode : std_logic_vector(3 downto 0);
-    
+
 constant PERIOD         : time :=  13.531531 ns;
 constant COMMAND_PERIOD : time :=  50 ns;
 
@@ -65,9 +61,7 @@ begin
             i_y             => i_y,          
             o_dataValid     => o_dataValid,  
             o_dataPixel     => o_dataPixel,  
-            i_instruction   => i_instruction,
-            o_instruction   => o_instruction,
-            o_opcode        => o_opcode
+            i_instruction   => i_instruction
 );         
             
    sim_clk_p: process

@@ -25,10 +25,9 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity viewport is
     Port ( i_clk            : in std_logic;
-           i_reset          : in std_logic;
            i_print_px_y     : in STD_LOGIC_VECTOR (11 downto 0);
            i_print_px_x     : in STD_LOGIC_VECTOR (11 downto 0);
-           i_offset_y       : in STD_LOGIC_VECTOR (9 downto 0);
+           i_offset_y       : in STD_LOGIC_VECTOR (8 downto 0);
            i_offset_x       : in STD_LOGIC_VECTOR (9 downto 0);
            i_ch_offset_en   : in std_logic;
            o_global_x       : out STD_LOGIC_VECTOR (11 downto 0);
@@ -37,7 +36,7 @@ end viewport;
 
 architecture Behavioral of viewport is
     constant FULL_WIDTH  : unsigned(9 downto 0) := to_unsigned(1023, 10);
-    constant FULL_HEIGHT  : unsigned(9 downto 0) := to_unsigned(1023, 10);
+    constant FULL_HEIGHT  : unsigned(8 downto 0) := to_unsigned(511, 9);
     
 --    constant VIEWPORT_WIDTH  : unsigned(9 downto 0) := to_unsigned(640, 10); -- Remplacez par la largeur réelle
 --    constant VIEWPORT_HEIGHT : unsigned(9 downto 0) := to_unsigned(360, 10);  -- Remplacez par la hauteur réelle
@@ -45,17 +44,14 @@ architecture Behavioral of viewport is
     signal sum_x, sum_y : std_logic_vector(11 downto 0);
     
     signal s_offset_x : std_logic_vector(9 downto 0) := (others => '0');
-    signal s_offset_y : std_logic_vector(9 downto 0) := (others => '0');
+    signal s_offset_y : std_logic_vector(8 downto 0) := (others => '0');
 begin
     sum_x <= std_logic_vector(unsigned(i_print_px_x) + unsigned(s_offset_x));
     sum_y <= std_logic_vector(unsigned(i_print_px_y) + unsigned(s_offset_y));
     
-    process(i_clk, i_reset)
+    process(i_clk)
     begin
-        if i_reset = '1' then
-           s_offset_x <= (others => '0');
-           s_offset_y <= (others => '0');
-        elsif rising_edge(i_clk) then
+        if rising_edge(i_clk) then
             if i_ch_offset_en = '1' then
                 s_offset_x <= i_offset_x;
                 s_offset_y <= i_offset_y;

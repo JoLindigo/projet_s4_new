@@ -23,7 +23,6 @@
       "v_tc_0": "",
       "pixelDataToVideoStre_0": "",
       "mycolorRegister_0": "",
-      "system_ila_0": "",
       "testPatternGen2_0": ""
     },
     "interface_ports": {
@@ -2399,44 +2398,6 @@
         "xci_path": "ip\\atelier4_mycolorRegister_0_0\\atelier4_mycolorRegister_0_0.xci",
         "inst_hier_path": "mycolorRegister_0"
       },
-      "system_ila_0": {
-        "vlnv": "xilinx.com:ip:system_ila:1.1",
-        "xci_name": "atelier4_system_ila_0_3",
-        "xci_path": "ip\\atelier4_system_ila_0_3\\atelier4_system_ila_0_3.xci",
-        "inst_hier_path": "system_ila_0",
-        "parameters": {
-          "C_MON_TYPE": {
-            "value": "NATIVE"
-          },
-          "C_NUM_OF_PROBES": {
-            "value": "8"
-          },
-          "C_PROBE0_TYPE": {
-            "value": "0"
-          },
-          "C_PROBE1_TYPE": {
-            "value": "0"
-          },
-          "C_PROBE2_TYPE": {
-            "value": "0"
-          },
-          "C_PROBE3_TYPE": {
-            "value": "0"
-          },
-          "C_PROBE4_TYPE": {
-            "value": "0"
-          },
-          "C_PROBE5_TYPE": {
-            "value": "0"
-          },
-          "C_PROBE6_TYPE": {
-            "value": "0"
-          },
-          "C_PROBE7_TYPE": {
-            "value": "0"
-          }
-        }
-      },
       "testPatternGen2_0": {
         "vlnv": "xilinx.com:module_ref:testPatternGen2:1.0",
         "xci_name": "atelier4_testPatternGen2_0_0",
@@ -2502,16 +2463,6 @@
             "direction": "I",
             "left": "31",
             "right": "0"
-          },
-          "o_instruction": {
-            "direction": "O",
-            "left": "31",
-            "right": "0"
-          },
-          "o_opcode": {
-            "direction": "O",
-            "left": "3",
-            "right": "0"
           }
         }
       }
@@ -2523,28 +2474,10 @@
           "v_proc_ss_0/s_axi_ctrl"
         ]
       },
-      "v_tc_0_vtiming_out": {
-        "interface_ports": [
-          "v_tc_0/vtiming_out",
-          "v_axi4s_vid_out_0/vtiming_in"
-        ]
-      },
-      "axi_vdma_0_M_AXIS_MM2S": {
-        "interface_ports": [
-          "axi_vdma_0/M_AXIS_MM2S",
-          "v_proc_ss_0/s_axis"
-        ]
-      },
       "smartconnect_1_M00_AXI": {
         "interface_ports": [
           "smartconnect_1/M00_AXI",
           "processing_system7_0/S_AXI_HP0"
-        ]
-      },
-      "processing_system7_0_M_AXI_GP0": {
-        "interface_ports": [
-          "smartconnect_0/S00_AXI",
-          "processing_system7_0/M_AXI_GP0"
         ]
       },
       "processing_system7_0_DDR": {
@@ -2553,16 +2486,16 @@
           "processing_system7_0/DDR"
         ]
       },
-      "smartconnect_0_M02_AXI": {
+      "axi_vdma_0_M_AXIS_MM2S": {
         "interface_ports": [
-          "pixelDataToVideoStre_0/S00_AXI",
-          "smartconnect_0/M02_AXI"
+          "axi_vdma_0/M_AXIS_MM2S",
+          "v_proc_ss_0/s_axis"
         ]
       },
-      "v_axi4s_vid_out_0_vid_io_out": {
+      "v_tc_0_vtiming_out": {
         "interface_ports": [
-          "v_axi4s_vid_out_0/vid_io_out",
-          "rgb2dvi_0/RGB"
+          "v_tc_0/vtiming_out",
+          "v_axi4s_vid_out_0/vtiming_in"
         ]
       },
       "smartconnect_0_M03_AXI": {
@@ -2577,10 +2510,10 @@
           "processing_system7_0/FIXED_IO"
         ]
       },
-      "v_proc_ss_0_m_axis": {
+      "smartconnect_0_M01_AXI": {
         "interface_ports": [
-          "v_proc_ss_0/m_axis",
-          "v_axi4s_vid_out_0/video_in"
+          "smartconnect_0/M01_AXI",
+          "axi_vdma_0/S_AXI_LITE"
         ]
       },
       "axi_vdma_0_M_AXI_MM2S": {
@@ -2589,16 +2522,16 @@
           "smartconnect_1/S00_AXI"
         ]
       },
-      "rgb2dvi_0_TMDS": {
+      "v_axi4s_vid_out_0_vid_io_out": {
         "interface_ports": [
-          "hdmi_out",
-          "rgb2dvi_0/TMDS"
+          "v_axi4s_vid_out_0/vid_io_out",
+          "rgb2dvi_0/RGB"
         ]
       },
-      "smartconnect_0_M01_AXI": {
+      "axi_vdma_0_M_AXI_S2MM": {
         "interface_ports": [
-          "smartconnect_0/M01_AXI",
-          "axi_vdma_0/S_AXI_LITE"
+          "axi_vdma_0/M_AXI_S2MM",
+          "smartconnect_1/S01_AXI"
         ]
       },
       "pixelDataToVideoStre_0_M00_AXIS": {
@@ -2607,10 +2540,28 @@
           "axi_vdma_0/S_AXIS_S2MM"
         ]
       },
-      "axi_vdma_0_M_AXI_S2MM": {
+      "v_proc_ss_0_m_axis": {
         "interface_ports": [
-          "axi_vdma_0/M_AXI_S2MM",
-          "smartconnect_1/S01_AXI"
+          "v_proc_ss_0/m_axis",
+          "v_axi4s_vid_out_0/video_in"
+        ]
+      },
+      "smartconnect_0_M02_AXI": {
+        "interface_ports": [
+          "pixelDataToVideoStre_0/S00_AXI",
+          "smartconnect_0/M02_AXI"
+        ]
+      },
+      "processing_system7_0_M_AXI_GP0": {
+        "interface_ports": [
+          "smartconnect_0/S00_AXI",
+          "processing_system7_0/M_AXI_GP0"
+        ]
+      },
+      "rgb2dvi_0_TMDS": {
+        "interface_ports": [
+          "hdmi_out",
+          "rgb2dvi_0/TMDS"
         ]
       }
     },
@@ -2658,7 +2609,6 @@
           "v_tc_0/clk",
           "pixelDataToVideoStre_0/s00_axi_aclk",
           "mycolorRegister_0/s00_axi_aclk",
-          "system_ila_0/clk",
           "testPatternGen2_0/clk"
         ]
       },
@@ -2682,17 +2632,8 @@
           "pixelDataToVideoStre_0/i_aresetn",
           "pixelDataToVideoStre_0/s00_axi_aresetn",
           "mycolorRegister_0/s00_axi_aresetn",
-          "system_ila_0/probe5",
           "testPatternGen2_0/rstn"
-        ],
-        "hdl_attributes": {
-          "DEBUG": {
-            "value": "true"
-          },
-          "MARK_DEBUG": {
-            "value": "true"
-          }
-        }
+        ]
       },
       "Net": {
         "ports": [
@@ -2713,105 +2654,32 @@
       "testPatternGen2_0_o_dataValid": {
         "ports": [
           "testPatternGen2_0/o_dataValid",
-          "pixelDataToVideoStre_0/i_dataValid",
-          "system_ila_0/probe7"
-        ],
-        "hdl_attributes": {
-          "DEBUG": {
-            "value": "true"
-          },
-          "MARK_DEBUG": {
-            "value": "true"
-          }
-        }
+          "pixelDataToVideoStre_0/i_dataValid"
+        ]
       },
       "testPatternGen2_0_o_dataPixel": {
         "ports": [
           "testPatternGen2_0/o_dataPixel",
-          "pixelDataToVideoStre_0/i_dataPixel",
-          "system_ila_0/probe6"
-        ],
-        "hdl_attributes": {
-          "DEBUG": {
-            "value": "true"
-          },
-          "MARK_DEBUG": {
-            "value": "true"
-          }
-        }
+          "pixelDataToVideoStre_0/i_dataPixel"
+        ]
       },
       "pixelDataToVideoStre_0_o_pixel_y": {
         "ports": [
           "pixelDataToVideoStre_0/o_pixel_y",
-          "system_ila_0/probe4",
           "testPatternGen2_0/i_y"
-        ],
-        "hdl_attributes": {
-          "DEBUG": {
-            "value": "true"
-          },
-          "MARK_DEBUG": {
-            "value": "true"
-          }
-        }
+        ]
       },
       "pixelDataToVideoStre_0_o_pixel_x": {
         "ports": [
           "pixelDataToVideoStre_0/o_pixel_x",
-          "system_ila_0/probe3",
           "testPatternGen2_0/i_x"
-        ],
-        "hdl_attributes": {
-          "DEBUG": {
-            "value": "true"
-          },
-          "MARK_DEBUG": {
-            "value": "true"
-          }
-        }
+        ]
       },
       "mycolorRegister_0_o_imageDataA": {
         "ports": [
           "mycolorRegister_0/o_imageDataA",
-          "system_ila_0/probe0",
           "testPatternGen2_0/i_instruction"
-        ],
-        "hdl_attributes": {
-          "DEBUG": {
-            "value": "true"
-          },
-          "MARK_DEBUG": {
-            "value": "true"
-          }
-        }
-      },
-      "o_instruction": {
-        "ports": [
-          "testPatternGen2_0/o_instruction",
-          "system_ila_0/probe1"
-        ],
-        "hdl_attributes": {
-          "DEBUG": {
-            "value": "true"
-          },
-          "MARK_DEBUG": {
-            "value": "true"
-          }
-        }
-      },
-      "o_opcode": {
-        "ports": [
-          "testPatternGen2_0/o_opcode",
-          "system_ila_0/probe2"
-        ],
-        "hdl_attributes": {
-          "DEBUG": {
-            "value": "true"
-          },
-          "MARK_DEBUG": {
-            "value": "true"
-          }
-        }
+        ]
       }
     },
     "addressing": {

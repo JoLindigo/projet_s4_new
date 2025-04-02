@@ -60,3 +60,6 @@ platform config -updatehw {C:/travail/s4InfoAtelier4/atelier4_wrapper.xsa}
 platform generate -domains 
 platform config -updatehw {C:/travail/s4InfoAtelier4/atelier4_wrapper.xsa}
 platform generate -domains 
+platform active {atelier4_wrapper}
+platform config -updatehw {C:/travail/s4InfoAtelier4/atelier4_wrapper.xsa}
+platform generate -domains 

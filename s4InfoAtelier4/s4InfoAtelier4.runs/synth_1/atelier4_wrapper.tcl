@@ -249,11 +249,6 @@ set_property used_in_implementation false [get_files -all c:/travail/s4InfoAteli
 set_property used_in_implementation false [get_files -all c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_6/bd_0837_axis_register_slice_0_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/bd_0837_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_tc_0_0/atelier4_v_tc_0_0_clocks.xdc]
-set_property used_in_synthesis false [get_files -all c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_system_ila_0_3/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_system_ila_0_3/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_system_ila_0_3/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_system_ila_0_3/bd_0/ip/ip_0/bd_3e9c_ila_lib_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_system_ila_0_3/bd_0/bd_3e9c_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/atelier4_ooc.xdc]
 
 OPTRACE "Adding files" END { }

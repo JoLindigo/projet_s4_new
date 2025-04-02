@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Wed Mar 26 13:22:02 2025
+--Date        : Wed Apr  2 14:03:56 2025
 --Host        : DESKTOP-E4ODHO5 running 64-bit major release  (build 9200)
 --Command     : generate_target atelier4.bd
 --Design      : atelier4
@@ -42,7 +42,7 @@ entity atelier4 is
     sys_clk : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of atelier4 : entity is "atelier4,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=atelier4,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=14,numReposBlks=14,numNonXlnxBlks=3,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_ps7_cnt=1,synth_mode=Global}";
+  attribute CORE_GENERATION_INFO of atelier4 : entity is "atelier4,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=atelier4,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=13,numReposBlks=13,numNonXlnxBlks=3,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_ps7_cnt=1,synth_mode=Global}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of atelier4 : entity is "atelier4.hwdef";
 end atelier4;
@@ -622,19 +622,6 @@ architecture STRUCTURE of atelier4 is
     s00_axi_rready : in STD_LOGIC
   );
   end component atelier4_mycolorRegister_0_0;
-  component atelier4_system_ila_0_3 is
-  port (
-    clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    probe1 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    probe2 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe3 : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    probe4 : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    probe5 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe6 : in STD_LOGIC_VECTOR ( 23 downto 0 );
-    probe7 : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component atelier4_system_ila_0_3;
   component atelier4_testPatternGen2_0_0 is
   port (
     clk : in STD_LOGIC;
@@ -643,9 +630,7 @@ architecture STRUCTURE of atelier4 is
     i_y : in STD_LOGIC_VECTOR ( 11 downto 0 );
     o_dataValid : out STD_LOGIC;
     o_dataPixel : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    i_instruction : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    o_instruction : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    o_opcode : out STD_LOGIC_VECTOR ( 3 downto 0 )
+    i_instruction : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component atelier4_testPatternGen2_0_0;
   signal Net : STD_LOGIC;
@@ -688,30 +673,14 @@ architecture STRUCTURE of atelier4 is
   signal clk_wiz_0_clk_out1 : STD_LOGIC;
   signal clk_wiz_0_locked : STD_LOGIC;
   signal mycolorRegister_0_o_imageDataA : STD_LOGIC_VECTOR ( 31 downto 0 );
-  attribute DEBUG : string;
-  attribute DEBUG of mycolorRegister_0_o_imageDataA : signal is "true";
-  attribute MARK_DEBUG : boolean;
-  attribute MARK_DEBUG of mycolorRegister_0_o_imageDataA : signal is std.standard.true;
-  signal o_instruction : STD_LOGIC_VECTOR ( 31 downto 0 );
-  attribute DEBUG of o_instruction : signal is "true";
-  attribute MARK_DEBUG of o_instruction : signal is std.standard.true;
-  signal o_opcode : STD_LOGIC_VECTOR ( 3 downto 0 );
-  attribute DEBUG of o_opcode : signal is "true";
-  attribute MARK_DEBUG of o_opcode : signal is std.standard.true;
   signal pixelDataToVideoStre_0_M00_AXIS_TDATA : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal pixelDataToVideoStre_0_M00_AXIS_TLAST : STD_LOGIC;
   signal pixelDataToVideoStre_0_M00_AXIS_TREADY : STD_LOGIC;
   signal pixelDataToVideoStre_0_M00_AXIS_TUSER : STD_LOGIC;
   signal pixelDataToVideoStre_0_M00_AXIS_TVALID : STD_LOGIC;
   signal pixelDataToVideoStre_0_o_pixel_x : STD_LOGIC_VECTOR ( 11 downto 0 );
-  attribute DEBUG of pixelDataToVideoStre_0_o_pixel_x : signal is "true";
-  attribute MARK_DEBUG of pixelDataToVideoStre_0_o_pixel_x : signal is std.standard.true;
   signal pixelDataToVideoStre_0_o_pixel_y : STD_LOGIC_VECTOR ( 11 downto 0 );
-  attribute DEBUG of pixelDataToVideoStre_0_o_pixel_y : signal is "true";
-  attribute MARK_DEBUG of pixelDataToVideoStre_0_o_pixel_y : signal is std.standard.true;
   signal proc_sys_reset_0_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
-  attribute DEBUG of proc_sys_reset_0_peripheral_aresetn : signal is "true";
-  attribute MARK_DEBUG of proc_sys_reset_0_peripheral_aresetn : signal is std.standard.true;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -884,11 +853,7 @@ architecture STRUCTURE of atelier4 is
   signal smartconnect_1_M00_AXI_WSTRB : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal smartconnect_1_M00_AXI_WVALID : STD_LOGIC;
   signal testPatternGen2_0_o_dataPixel : STD_LOGIC_VECTOR ( 23 downto 0 );
-  attribute DEBUG of testPatternGen2_0_o_dataPixel : signal is "true";
-  attribute MARK_DEBUG of testPatternGen2_0_o_dataPixel : signal is std.standard.true;
   signal testPatternGen2_0_o_dataValid : STD_LOGIC;
-  attribute DEBUG of testPatternGen2_0_o_dataValid : signal is "true";
-  attribute MARK_DEBUG of testPatternGen2_0_o_dataValid : signal is std.standard.true;
   signal v_axi4s_vid_out_0_sof_state_out : STD_LOGIC;
   signal v_axi4s_vid_out_0_vid_io_out_ACTIVE_VIDEO : STD_LOGIC;
   signal v_axi4s_vid_out_0_vid_io_out_DATA : STD_LOGIC_VECTOR ( 23 downto 0 );
@@ -1453,18 +1418,6 @@ smartconnect_1: component atelier4_smartconnect_0_1
       aclk1 => Net,
       aresetn => processing_system7_0_FCLK_RESET0_N
     );
-system_ila_0: component atelier4_system_ila_0_3
-     port map (
-      clk => clk_wiz_0_clk_out1,
-      probe0(31 downto 0) => mycolorRegister_0_o_imageDataA(31 downto 0),
-      probe1(31 downto 0) => o_instruction(31 downto 0),
-      probe2(3 downto 0) => o_opcode(3 downto 0),
-      probe3(11 downto 0) => pixelDataToVideoStre_0_o_pixel_x(11 downto 0),
-      probe4(11 downto 0) => pixelDataToVideoStre_0_o_pixel_y(11 downto 0),
-      probe5(0) => proc_sys_reset_0_peripheral_aresetn(0),
-      probe6(23 downto 0) => testPatternGen2_0_o_dataPixel(23 downto 0),
-      probe7(0) => testPatternGen2_0_o_dataValid
-    );
 testPatternGen2_0: component atelier4_testPatternGen2_0_0
      port map (
       clk => clk_wiz_0_clk_out1,
@@ -1473,8 +1426,6 @@ testPatternGen2_0: component atelier4_testPatternGen2_0_0
       i_y(11 downto 0) => pixelDataToVideoStre_0_o_pixel_y(11 downto 0),
       o_dataPixel(23 downto 0) => testPatternGen2_0_o_dataPixel(23 downto 0),
       o_dataValid => testPatternGen2_0_o_dataValid,
-      o_instruction(31 downto 0) => o_instruction(31 downto 0),
-      o_opcode(3 downto 0) => o_opcode(3 downto 0),
       rstn => proc_sys_reset_0_peripheral_aresetn(0)
     );
 v_axi4s_vid_out_0: component atelier4_v_axi4s_vid_out_0_0

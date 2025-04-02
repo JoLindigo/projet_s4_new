@@ -496,9 +496,6 @@
   "../../../bd/atelier4/ipshared/ce2a/hdl/mycolorRegister_v1_0.vhd" \
   "../../../bd/atelier4/ip/atelier4_mycolorRegister_0_0/sim/atelier4_mycolorRegister_0_0.vhd" \
   "../../../bd/atelier4/ip/atelier4_testPatternGen2_0_0/sim/atelier4_testPatternGen2_0_0.vhd" \
-  "../../../bd/atelier4/ip/atelier4_system_ila_0_3/bd_0/sim/bd_3e9c.vhd" \
-  "../../../bd/atelier4/ip/atelier4_system_ila_0_3/bd_0/ip/ip_0/sim/bd_3e9c_ila_lib_0.vhd" \
-  "../../../bd/atelier4/ip/atelier4_system_ila_0_3/sim/atelier4_system_ila_0_3.vhd" \
   "../../../bd/atelier4/sim/atelier4.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

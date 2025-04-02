@@ -1043,21 +1043,6 @@ proc create_root_design { parentCell } {
    CONFIG.NUM_SI {2} \
  ] $smartconnect_1
 
-  # Create instance: system_ila_0, and set properties
-  set system_ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0 ]
-  set_property -dict [ list \
-   CONFIG.C_MON_TYPE {NATIVE} \
-   CONFIG.C_NUM_OF_PROBES {8} \
-   CONFIG.C_PROBE0_TYPE {0} \
-   CONFIG.C_PROBE1_TYPE {0} \
-   CONFIG.C_PROBE2_TYPE {0} \
-   CONFIG.C_PROBE3_TYPE {0} \
-   CONFIG.C_PROBE4_TYPE {0} \
-   CONFIG.C_PROBE5_TYPE {0} \
-   CONFIG.C_PROBE6_TYPE {0} \
-   CONFIG.C_PROBE7_TYPE {0} \
- ] $system_ila_0
-
   # Create instance: testPatternGen2_0, and set properties
   set block_name testPatternGen2
   set block_cell_name testPatternGen2_0
@@ -1111,26 +1096,16 @@ proc create_root_design { parentCell } {
   # Create port connections
   connect_bd_net -net Net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_HP0_ACLK] [get_bd_pins smartconnect_0/aclk] [get_bd_pins smartconnect_1/aclk1]
   connect_bd_net -net clk_in1_0_1 [get_bd_ports sys_clk] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins axi_vdma_0/m_axi_mm2s_aclk] [get_bd_pins axi_vdma_0/m_axi_s2mm_aclk] [get_bd_pins axi_vdma_0/m_axis_mm2s_aclk] [get_bd_pins axi_vdma_0/s_axi_lite_aclk] [get_bd_pins axi_vdma_0/s_axis_s2mm_aclk] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins mycolorRegister_0/s00_axi_aclk] [get_bd_pins pixelDataToVideoStre_0/s00_axi_aclk] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins rgb2dvi_0/PixelClk] [get_bd_pins smartconnect_0/aclk1] [get_bd_pins smartconnect_1/aclk] [get_bd_pins system_ila_0/clk] [get_bd_pins testPatternGen2_0/clk] [get_bd_pins v_axi4s_vid_out_0/aclk] [get_bd_pins v_proc_ss_0/aclk_axis] [get_bd_pins v_proc_ss_0/aclk_ctrl] [get_bd_pins v_tc_0/clk]
+  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins axi_vdma_0/m_axi_mm2s_aclk] [get_bd_pins axi_vdma_0/m_axi_s2mm_aclk] [get_bd_pins axi_vdma_0/m_axis_mm2s_aclk] [get_bd_pins axi_vdma_0/s_axi_lite_aclk] [get_bd_pins axi_vdma_0/s_axis_s2mm_aclk] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins mycolorRegister_0/s00_axi_aclk] [get_bd_pins pixelDataToVideoStre_0/s00_axi_aclk] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins rgb2dvi_0/PixelClk] [get_bd_pins smartconnect_0/aclk1] [get_bd_pins smartconnect_1/aclk] [get_bd_pins testPatternGen2_0/clk] [get_bd_pins v_axi4s_vid_out_0/aclk] [get_bd_pins v_proc_ss_0/aclk_axis] [get_bd_pins v_proc_ss_0/aclk_ctrl] [get_bd_pins v_tc_0/clk]
   connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins proc_sys_reset_0/dcm_locked] [get_bd_pins v_axi4s_vid_out_0/aclken] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_ce] [get_bd_pins v_tc_0/clken]
-  connect_bd_net -net mycolorRegister_0_o_imageDataA [get_bd_pins mycolorRegister_0/o_imageDataA] [get_bd_pins system_ila_0/probe0] [get_bd_pins testPatternGen2_0/i_instruction]
-  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets mycolorRegister_0_o_imageDataA]
-  connect_bd_net -net o_instruction [get_bd_pins system_ila_0/probe1] [get_bd_pins testPatternGen2_0/o_instruction]
-  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets o_instruction]
-  connect_bd_net -net o_opcode [get_bd_pins system_ila_0/probe2] [get_bd_pins testPatternGen2_0/o_opcode]
-  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets o_opcode]
-  connect_bd_net -net pixelDataToVideoStre_0_o_pixel_x [get_bd_pins pixelDataToVideoStre_0/o_pixel_x] [get_bd_pins system_ila_0/probe3] [get_bd_pins testPatternGen2_0/i_x]
-  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets pixelDataToVideoStre_0_o_pixel_x]
-  connect_bd_net -net pixelDataToVideoStre_0_o_pixel_y [get_bd_pins pixelDataToVideoStre_0/o_pixel_y] [get_bd_pins system_ila_0/probe4] [get_bd_pins testPatternGen2_0/i_y]
-  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets pixelDataToVideoStre_0_o_pixel_y]
-  connect_bd_net -net proc_sys_reset_0_peripheral_aresetn [get_bd_pins axi_vdma_0/axi_resetn] [get_bd_pins mycolorRegister_0/s00_axi_aresetn] [get_bd_pins pixelDataToVideoStre_0/i_aresetn] [get_bd_pins pixelDataToVideoStre_0/s00_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins rgb2dvi_0/aRst_n] [get_bd_pins system_ila_0/probe5] [get_bd_pins testPatternGen2_0/rstn] [get_bd_pins v_axi4s_vid_out_0/aresetn] [get_bd_pins v_proc_ss_0/aresetn_ctrl] [get_bd_pins v_tc_0/resetn]
-  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets proc_sys_reset_0_peripheral_aresetn]
+  connect_bd_net -net mycolorRegister_0_o_imageDataA [get_bd_pins mycolorRegister_0/o_imageDataA] [get_bd_pins testPatternGen2_0/i_instruction]
+  connect_bd_net -net pixelDataToVideoStre_0_o_pixel_x [get_bd_pins pixelDataToVideoStre_0/o_pixel_x] [get_bd_pins testPatternGen2_0/i_x]
+  connect_bd_net -net pixelDataToVideoStre_0_o_pixel_y [get_bd_pins pixelDataToVideoStre_0/o_pixel_y] [get_bd_pins testPatternGen2_0/i_y]
+  connect_bd_net -net proc_sys_reset_0_peripheral_aresetn [get_bd_pins axi_vdma_0/axi_resetn] [get_bd_pins mycolorRegister_0/s00_axi_aresetn] [get_bd_pins pixelDataToVideoStre_0/i_aresetn] [get_bd_pins pixelDataToVideoStre_0/s00_axi_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins rgb2dvi_0/aRst_n] [get_bd_pins testPatternGen2_0/rstn] [get_bd_pins v_axi4s_vid_out_0/aresetn] [get_bd_pins v_proc_ss_0/aresetn_ctrl] [get_bd_pins v_tc_0/resetn]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins smartconnect_0/aresetn] [get_bd_pins smartconnect_1/aresetn]
   connect_bd_net -net reset_0_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset] [get_bd_pins proc_sys_reset_0/ext_reset_in]
-  connect_bd_net -net testPatternGen2_0_o_dataPixel [get_bd_pins pixelDataToVideoStre_0/i_dataPixel] [get_bd_pins system_ila_0/probe6] [get_bd_pins testPatternGen2_0/o_dataPixel]
-  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets testPatternGen2_0_o_dataPixel]
-  connect_bd_net -net testPatternGen2_0_o_dataValid [get_bd_pins pixelDataToVideoStre_0/i_dataValid] [get_bd_pins system_ila_0/probe7] [get_bd_pins testPatternGen2_0/o_dataValid]
-  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_nets testPatternGen2_0_o_dataValid]
+  connect_bd_net -net testPatternGen2_0_o_dataPixel [get_bd_pins pixelDataToVideoStre_0/i_dataPixel] [get_bd_pins testPatternGen2_0/o_dataPixel]
+  connect_bd_net -net testPatternGen2_0_o_dataValid [get_bd_pins pixelDataToVideoStre_0/i_dataValid] [get_bd_pins testPatternGen2_0/o_dataValid]
   connect_bd_net -net v_axi4s_vid_out_0_sof_state_out [get_bd_pins v_axi4s_vid_out_0/sof_state_out] [get_bd_pins v_tc_0/sof_state]
   connect_bd_net -net v_axi4s_vid_out_0_vtg_ce [get_bd_pins v_axi4s_vid_out_0/vtg_ce] [get_bd_pins v_tc_0/gen_clken]
 

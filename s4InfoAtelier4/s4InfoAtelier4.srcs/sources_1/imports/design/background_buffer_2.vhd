@@ -33,43 +33,42 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity background_buffer_2 is
     Port ( clk           : in STD_LOGIC;
-           reset         : in STD_LOGIC;
            i_global_x    : in STD_LOGIC_VECTOR (9 downto 0);
-           i_global_y    : in STD_LOGIC_VECTOR (9 downto 0);
-           i_ch_tile_id  : in STD_LOGIC_VECTOR (5 downto 0);
-           i_ch_tile_row : in STD_LOGIC_VECTOR (6 downto 0);
+           i_global_y    : in STD_LOGIC_VECTOR (8 downto 0);
+           i_ch_tile_id  : in STD_LOGIC_VECTOR (4 downto 0);
+           i_ch_tile_row : in STD_LOGIC_VECTOR (5 downto 0);
            i_ch_tile_col : in STD_LOGIC_VECTOR (6 downto 0);
            i_ch_en       : in STD_LOGIC;
-           o_tile_id     : out STD_LOGIC_VECTOR (5 downto 0);
+           o_tile_id     : out STD_LOGIC_VECTOR (4 downto 0);
            o_tile_x      : out STD_LOGIC_VECTOR (2 downto 0);
            o_tile_y      : out STD_LOGIC_VECTOR (2 downto 0));
 end background_buffer_2;
 
 architecture Behavioral of background_buffer_2 is
 
-    type BackgroundBufferArray is array(0 to 16383) of STD_LOGIC_VECTOR (5 downto 0);
+    type BackgroundBufferArray is array(0 to 8191) of STD_LOGIC_VECTOR (4 downto 0);
     
     signal s_buffer : BackgroundBufferArray := (others => (others => '0')); 
     
-    signal s_new_tile_row       : UNSIGNED (6 downto 0) := (others => '0');
+    signal s_new_tile_row       : UNSIGNED (5 downto 0) := (others => '0');
+    signal s_new_tile_row_inter : UNSIGNED (12 downto 0) := (others => '0');
     signal s_new_tile_col       : UNSIGNED (6 downto 0) := (others => '0');
-    signal s_new_tile_pos_index : UNSIGNED (13 downto 0) := (others => '0');
+    signal s_new_tile_pos_index : UNSIGNED (12 downto 0) := (others => '0');
     
-    signal s_out_tile_id : STD_LOGIC_VECTOR (5 downto 0) := (others => '0');
+    signal s_out_tile_id : STD_LOGIC_VECTOR (4 downto 0) := (others => '0');
     signal s_out_tile_x  : STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
     signal s_out_tile_y  : STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
     
-    signal s_tile_index_col : UNSIGNED (6 downto 0) := (others => '0');
-    signal s_tile_index_row : UNSIGNED (6 downto 0) := (others => '0');
-    signal s_tile_index_pos : UNSIGNED (13 downto 0) := (others => '0');
+    signal s_tile_index_col       : UNSIGNED (6 downto 0) := (others => '0');
+    signal s_tile_index_row_inter : UNSIGNED (12 downto 0) := (others => '0');
+    signal s_tile_index_row       : UNSIGNED (5 downto 0) := (others => '0');
+    signal s_tile_index_pos       : UNSIGNED (12 downto 0) := (others => '0');
     
 begin
 
-    pro_clk_reset: process(clk, reset)
+    pro_clk_reset: process(clk)
     begin
-        if reset = '1' then
-            s_buffer <= (others => (others => '0'));
-        elsif rising_edge(clk) then
+        if rising_edge(clk) then
             o_tile_id <= s_out_tile_id;
             o_tile_x  <= s_out_tile_x;
             o_tile_y  <= s_out_tile_y;
@@ -82,15 +81,19 @@ begin
     s_new_tile_row <= UNSIGNED(i_ch_tile_row);
     s_new_tile_col <= UNSIGNED(i_ch_tile_col);
     
-    s_new_tile_pos_index <= (s_new_tile_row * 128) + s_new_tile_col;
+    s_new_tile_row_inter <= resize((s_new_tile_row * 128), 13);
+    
+    s_new_tile_pos_index <= s_new_tile_row_inter + resize(s_new_tile_col, 13);
     
     s_out_tile_x <= i_global_x(2 downto 0);
     s_out_tile_y <= i_global_y(2 downto 0);
     
-    
     s_tile_index_col <= shift_right(UNSIGNED(i_global_x), 3)(6 downto 0);
-    s_tile_index_row <= shift_right(UNSIGNED(i_global_y), 3)(6 downto 0);
-    s_tile_index_pos <= (s_tile_index_row * 128) + s_tile_index_col; 
+    s_tile_index_row <= shift_right(UNSIGNED(i_global_y), 3)(5 downto 0);
+    
+    s_tile_index_row_inter <= resize(s_tile_index_row * 128, 13);
+    
+    s_tile_index_pos <= s_tile_index_row_inter + resize(s_tile_index_col, 13); 
     s_out_tile_id <= s_buffer(TO_INTEGER(s_tile_index_pos));
 
     -- If there are weird problems with synchronization, comment the 3 lines on top and uncomment the one below
