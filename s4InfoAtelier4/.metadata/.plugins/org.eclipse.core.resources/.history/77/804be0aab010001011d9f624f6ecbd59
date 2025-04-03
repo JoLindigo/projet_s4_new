@@ -1,0 +1,41 @@
+#include "scaler.h"
+#include "vdma.h"
+#include "xil_printf.h"
+#include "myColorRegister.h"
+#include "sleep.h"
+#include "instructions.h"
+#include "api/ppu/ppu.h"
+
+#define DEBUG
+
+int main()
+{
+	configureScaler();
+	configureVdma();
+
+	//int colorA = 0;
+	//int colorB = 0xFF;
+	//MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 4, colorB);
+		//MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0, colorA );
+		//MYCONTROLLERPPU_mWriteReg(XPAR_MYCONTROLLLERPPU_0_S00_AXI_BASEADDR, 0, instruction);
+		//colorA = colorA + 1024;
+		//sleep(1);
+
+		for(int i = 0; i < sizeof(tile_id_instructions)/sizeof(int); i++) {
+			MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0,  tile_id_instructions[i]);
+			usleep(1);
+		}
+
+		for(int i = 0; i < sizeof(tile_color_instructions)/sizeof(int); i++) {
+			MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0,  tile_color_instructions[i]);
+			usleep(1);
+		}
+
+		while(1) {
+			for(int i = 0; i < 512; i++) {
+				PPU_SetViewportOffset(i, i);
+				usleep(50000);
+			}
+		}
+	return 0;
+}

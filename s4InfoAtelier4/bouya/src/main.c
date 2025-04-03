@@ -1,7 +1,7 @@
 #include "scaler.h"
 #include "vdma.h"
 #include "xil_printf.h"
-#include "myColorRegister.h"
+#include "mycolorRegister.h"
 #include "sleep.h"
 #include "instructions.h"
 #include "api/ppu/ppu.h"
