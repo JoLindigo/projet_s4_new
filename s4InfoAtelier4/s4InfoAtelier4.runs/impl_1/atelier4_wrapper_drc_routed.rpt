@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Apr  2 17:17:59 2025
+| Date         : Thu Apr  3 20:25:52 2025
 | Host         : DESKTOP-E4ODHO5 running 64-bit major release  (build 9200)
 | Command      : report_drc -file atelier4_wrapper_drc_routed.rpt -pb atelier4_wrapper_drc_routed.pb -rpx atelier4_wrapper_drc_routed.rpx
 | Design       : atelier4_wrapper
@@ -24,19 +24,32 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 24
-+-----------+----------+-------------------+------------+
-| Rule      | Severity | Description       | Violations |
-+-----------+----------+-------------------+------------+
-| DPIP-1    | Warning  | Input pipelining  | 18         |
-| PDRC-153  | Warning  | Gated clock check | 1          |
-| RTSTAT-10 | Warning  | No routable loads | 1          |
-| REQP-165  | Advisory | writefirst        | 2          |
-| REQP-181  | Advisory | writefirst        | 2          |
-+-----------+----------+-------------------+------------+
+             Violations found: 66
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| CHECK-3   | Warning  | Report rule limit reached  | 2          |
+| DPIP-1    | Warning  | Input pipelining           | 18         |
+| PDRC-153  | Warning  | Gated clock check          | 1          |
+| REQP-1839 | Warning  | RAMB36 async control check | 20         |
+| REQP-1840 | Warning  | RAMB18 async control check | 20         |
+| RTSTAT-10 | Warning  | No routable loads          | 1          |
+| REQP-165  | Advisory | writefirst                 | 2          |
+| REQP-181  | Advisory | writefirst                 | 2          |
++-----------+----------+----------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+CHECK-3#2 Warning
+Report rule limit reached  
+REQP-1840 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
 DPIP-1#1 Warning
 Input pipelining  
 DSP atelier4_i/v_proc_ss_0/U0/hsc/inst/hscale_core_polyphase_U0/grp_hscale_polyphase_fu_519/mac_muladd_8ns_16s_24s_25_4_1_U40/bd_0837_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg input atelier4_i/v_proc_ss_0/U0/hsc/inst/hscale_core_polyphase_U0/grp_hscale_polyphase_fu_519/mac_muladd_8ns_16s_24s_25_4_1_U40/bd_0837_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
@@ -132,23 +145,223 @@ Gated clock check
 Net atelier4_i/pixelDataToVideoStre_0/U0/next_state is a gated clock net sourced by a combinational pin atelier4_i/pixelDataToVideoStre_0/U0/FSM_onehot_next_state_reg[3]_i_2/O, cell atelier4_i/pixelDataToVideoStre_0/U0/FSM_onehot_next_state_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[12] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[10]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[12] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[10]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[12] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[10]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[14] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[14] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[14] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[14] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[14] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[14] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[14] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[14] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0/ADDRBWRADDR[14] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[11] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[10]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[11] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[10]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[11] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[10]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[12] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[12] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[12] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#7 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[12] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#8 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[12] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#9 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[12] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#10 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[12] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#11 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[12] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[11]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#12 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#13 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#14 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#15 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#16 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#17 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#18 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#19 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#20 Warning
+RAMB18 async control check  
+The RAMB18E1 atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 has an input control pin atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1/ADDRBWRADDR[13] (net: atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_tile_index_pos[12]) which is driven by a register (atelier4_i/pixelDataToVideoStre_0/U0/lineCnt_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
 RTSTAT-10#1 Warning
 No routable loads  
 48 net(s) have no routable loads. The problem bus(es) and/or net(s) are atelier4_i/smartconnect_0/inst/m00_nodes/m00_ar_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/smartconnect_0/inst/m00_nodes/m00_aw_node/inst/mi_handler_m_sc_areset_pipe,
 atelier4_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/smartconnect_0/inst/m02_nodes/m02_aw_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/smartconnect_0/inst/m03_nodes/m03_ar_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/smartconnect_0/inst/s00_nodes/s00_ar_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/smartconnect_0/inst/m01_nodes/m01_r_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/smartconnect_0/inst/m02_nodes/m02_ar_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/smartconnect_0/inst/m02_nodes/m02_r_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/smartconnect_0/inst/m03_nodes/m03_aw_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/smartconnect_0/inst/m03_nodes/m03_w_node/inst/mi_handler_m_sc_areset_pipe,
 atelier4_i/smartconnect_0/inst/s00_nodes/s00_r_node/inst/mi_handler_m_sc_areset_pipe,
 atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m00_nodes/m00_ar_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m01_nodes/m01_aw_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m01_nodes/m01_b_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m02_nodes/m02_ar_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m00_nodes/m00_w_node/inst/mi_handler_m_sc_areset_pipe,
 atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m02_nodes/m02_aw_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m02_nodes/m02_r_node/inst/mi_handler_m_sc_areset_pipe,
-atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/s00_nodes/s00_w_node/inst/mi_handler_m_sc_areset_pipe
+atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/m02_nodes/m02_w_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/s00_nodes/s00_ar_node/inst/mi_handler_m_sc_areset_pipe,
+atelier4_i/v_proc_ss_0/U0/smartconnect_0/inst/s00_nodes/s00_r_node/inst/mi_handler_m_sc_areset_pipe
  (the first 15 of 48 listed).
 Related violations: <none>
 

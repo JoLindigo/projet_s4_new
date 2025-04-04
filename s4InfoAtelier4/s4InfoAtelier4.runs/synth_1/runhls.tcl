@@ -25,10 +25,10 @@ add_files -cflags " -I c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd
 
 create_clock -period 13.468 -name ap_clk
 
-
-#config_rtl -form_dsp
-config_schedule -verbose
-#config_interface -input_reg_mode both -output_reg_mode both
+
+#config_rtl -form_dsp
+config_schedule -verbose
+#config_interface -input_reg_mode both -output_reg_mode both
 
 
 config_rtl -prefix bd_0837_hsc_0_

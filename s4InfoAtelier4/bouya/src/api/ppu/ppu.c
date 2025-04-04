@@ -21,7 +21,7 @@ void PPU_SetViewportOffset(uint16_t x, uint16_t y) {
 }
 
 
-void PPU_SetBackgroundTileID(uint8_t tileColIndex, uint8_t tileRowIndex, uint8_t tileID) {
+void PPU_SetBackgroundTileID( uint8_t tileID, uint8_t tileColIndex, uint8_t tileRowIndex) {
   Xil_AssertVoid(tileColIndex <= UINT_7_VALUE_MAX && "Value of parameter tileColIndex must fit in 7 bits.");
   Xil_AssertVoid(tileRowIndex <= UINT_7_VALUE_MAX && "Value of parameter tileRowIndex must fit in 7 bits.");
   Xil_AssertVoid(tileID <= UINT_6_VALUE_MAX && "Value of parameter tileID must fit in 6 bits.");
@@ -32,7 +32,7 @@ void PPU_SetBackgroundTileID(uint8_t tileColIndex, uint8_t tileRowIndex, uint8_t
   instr.fields.tileRowIndex = tileRowIndex;
   instr.fields.tileID = tileID;
 
-  MYCUCKREGISTER_mWriteReg(XPAR_MYCUCKREGISTER_0_S00_AXI_BASEADDR, 0, instr.instruction);
+  MYCOLORREGISTER_mWriteReg(XPAR_MYCUCKREGISTER_0_S00_AXI_BASEADDR, 0, instr.instruction);
 }
 
 

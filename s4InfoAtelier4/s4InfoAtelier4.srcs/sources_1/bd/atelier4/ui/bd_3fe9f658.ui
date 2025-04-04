@@ -2,7 +2,7 @@
    "ActiveEmotionalView":"Default View",
    "Default View_Layers":"/Net:true|/clk_in1_0_1:true|/clk_wiz_0_clk_out1:true|/processing_system7_0_FCLK_RESET0_N:true|/reset_0_1:true|/proc_sys_reset_0_peripheral_aresetn:true|",
    "Default View_ScaleFactor":"0.535694",
-   "Default View_TopLeft":"-105,-246",
+   "Default View_TopLeft":"-106,-241",
    "Display-PortTypeClock":"true",
    "Display-PortTypeOthers":"true",
    "Display-PortTypeReset":"true",
@@ -11,7 +11,7 @@
 #  -string -flagsOSRD
 preplace port hdmi_out -pg 1 -lvl 10 -x 3250 -y 760 -defaultsOSRD
 preplace port DDR -pg 1 -lvl 10 -x 3250 -y 980 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 10 -x 3250 -y 1000 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 10 -x 3250 -y 1010 -defaultsOSRD
 preplace port reset_rtl -pg 1 -lvl 0 -x -10 -y 90 -defaultsOSRD
 preplace port sys_clk -pg 1 -lvl 0 -x -10 -y 170 -defaultsOSRD
 preplace inst axi_vdma_0 -pg 1 -lvl 6 -x 2070 -y 800 -defaultsOSRD
@@ -27,38 +27,38 @@ preplace inst v_tc_0 -pg 1 -lvl 7 -x 2490 -y 820 -defaultsOSRD
 preplace inst pixelDataToVideoStre_0 -pg 1 -lvl 5 -x 1670 -y 490 -defaultsOSRD
 preplace inst mycolorRegister_0 -pg 1 -lvl 5 -x 1670 -y 710 -defaultsOSRD
 preplace inst testPatternGen2_0 -pg 1 -lvl 4 -x 1250 -y 330 -defaultsOSRD
-preplace netloc v_axi4s_vid_out_0_sof_state_out 1 6 3 2310 960 NJ 960 2990
-preplace netloc v_axi4s_vid_out_0_vtg_ce 1 6 3 2300 970 NJ 970 3000
+preplace netloc v_axi4s_vid_out_0_sof_state_out 1 6 3 2310 950 NJ 950 2990
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 6 3 2300 960 NJ 960 3000
 preplace netloc reset_0_1 1 0 3 10 90 NJ 90 NJ
 preplace netloc clk_in1_0_1 1 0 1 NJ 170
-preplace netloc clk_wiz_0_clk_out1 1 1 8 200 150 520 210 1050 520 1440 630 1850 640 2280 940 2670 950 3020J
-preplace netloc clk_wiz_0_locked 1 1 7 N 170 530 220 NJ 220 NJ 220 NJ 220 2290 920 2680
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 3 6 1060 460 1420 620 1860 670 2270 930 2690 940 3010J
-preplace netloc Net 1 1 3 230 960 530 920 1040
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 3 240 970 NJ 970 1080
+preplace netloc clk_wiz_0_clk_out1 1 1 8 200 150 520 210 1030 520 1450 800 1900 930 2290 930 2680 940 3010J
+preplace netloc clk_wiz_0_locked 1 1 7 N 170 530 220 NJ 220 NJ 220 NJ 220 2260 920 2690
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 3 6 1040 460 1430 630 1890 630 2280 540 2670 680 3010J
+preplace netloc Net 1 1 3 210 940 530 920 1050
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 3 220 950 NJ 950 1070
 preplace netloc testPatternGen2_0_o_dataValid 1 4 1 1450 320n
 preplace netloc testPatternGen2_0_o_dataPixel 1 4 1 1440 340n
-preplace netloc pixelDataToVideoStre_0_o_pixel_y 1 3 3 1080 450 1430J 380 1820
-preplace netloc pixelDataToVideoStre_0_o_pixel_x 1 3 3 1070 440 1420J 370 1830
-preplace netloc mycolorRegister_0_o_imageDataA 1 3 3 1090 430 1410 360 1840
-preplace netloc smartconnect_0_M00_AXI 1 4 3 1470 600 NJ 600 NJ
-preplace netloc rgb2dvi_0_TMDS 1 9 1 NJ 760
-preplace netloc axi_vdma_0_M_AXI_S2MM 1 1 6 220 950 NJ 950 NJ 950 NJ 950 NJ 950 2240
-preplace netloc pixelDataToVideoStre_0_M00_AXIS 1 5 1 1870 440n
-preplace netloc processing_system7_0_FIXED_IO 1 3 7 1010J 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1000 NJ
-preplace netloc smartconnect_0_M01_AXI 1 4 2 N 790 1830J
-preplace netloc processing_system7_0_DDR 1 3 7 1030J 980 NJ 980 NJ 980 NJ 980 NJ 980 NJ 980 NJ
-preplace netloc v_axi4s_vid_out_0_vid_io_out 1 8 1 N 740
-preplace netloc smartconnect_1_M00_AXI 1 2 1 520 800n
-preplace netloc v_proc_ss_0_m_axis 1 7 1 2660 630n
-preplace netloc smartconnect_0_M02_AXI 1 4 1 1460 440n
+preplace netloc pixelDataToVideoStre_0_o_pixel_y 1 3 3 1060 450 1430J 380 1820
+preplace netloc pixelDataToVideoStre_0_o_pixel_x 1 3 3 1050 440 1410J 360 1830
+preplace netloc mycolorRegister_0_o_imageDataA 1 3 3 1070 430 1420 370 1840
 preplace netloc smartconnect_0_M03_AXI 1 4 1 1480 690n
-preplace netloc axi_vdma_0_M_AXI_MM2S 1 1 6 210 940 NJ 940 NJ 940 NJ 940 NJ 940 2250
-preplace netloc axi_vdma_0_M_AXIS_MM2S 1 6 1 2260 620n
-preplace netloc processing_system7_0_M_AXI_GP0 1 3 1 1020 770n
 preplace netloc v_tc_0_vtiming_out 1 7 1 2660 770n
+preplace netloc smartconnect_0_M00_AXI 1 4 3 1470 620 1870J 600 NJ
+preplace netloc pixelDataToVideoStre_0_M00_AXIS 1 5 1 1880 440n
+preplace netloc smartconnect_0_M01_AXI 1 4 2 N 790 1850J
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 6 1 2270 620n
+preplace netloc smartconnect_0_M02_AXI 1 4 1 1460 440n
+preplace netloc rgb2dvi_0_TMDS 1 9 1 NJ 760
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 1 6 220 610 NJ 610 NJ 610 NJ 610 1850J 620 2240
+preplace netloc v_proc_ss_0_m_axis 1 7 1 2660 630n
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 1 1020 770n
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 1 6 210 600 NJ 600 NJ 600 NJ 600 1860J 610 2250
+preplace netloc v_axi4s_vid_out_0_vid_io_out 1 8 1 N 740
+preplace netloc processing_system7_0_DDR 1 3 7 1020J 710 1410J 980 NJ 980 NJ 980 NJ 980 NJ 980 NJ
+preplace netloc smartconnect_1_M00_AXI 1 2 1 520 800n
+preplace netloc processing_system7_0_FIXED_IO 1 3 7 1010J 970 NJ 970 1860J 1010 NJ 1010 NJ 1010 NJ 1010 NJ
 levelinfo -pg 1 -10 110 380 780 1250 1670 2070 2490 2850 3130 3250
-pagesize -pg 1 -db -bbox -sgen -110 0 3370 1020
+pagesize -pg 1 -db -bbox -sgen -110 0 3370 1030
 "
 }
 {

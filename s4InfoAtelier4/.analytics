@@ -267,3 +267,60 @@ timestamp=[2025-04-02 17:37:27], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00
 timestamp=[2025-04-02 17:38:15], mode=PLATFORM_GENERATION, duration=0:00:28.265, duration_ms=28265, data={name=atelier4_wrapper}
 timestamp=[2025-04-02 17:38:19], mode=BUILD, duration=0:00:01.649, duration_ms=1649, data={name=bouya, configuration=Debug, clean_build=false}
 timestamp=[2025-04-02 17:39:01], mode=BUILD, duration=0:00:01.018, duration_ms=1018, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 13:23:27], mode=WORKBENCH_START, duration=0:00:06.445, duration_ms=6445, data={}
+timestamp=[2025-04-03 13:23:27], mode=WORKBENCH_UI_INIT, duration=0:00:00.639, duration_ms=639, data={editors_count=6, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,atelier4_wrapper,bouya,bouya_system}
+timestamp=[2025-04-03 13:23:30], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.621, duration_ms=2621, data={}
+timestamp=[2025-04-03 13:28:55], mode=PLATFORM_GENERATION, duration=0:00:36.773, duration_ms=36773, data={name=atelier4_wrapper}
+timestamp=[2025-04-03 13:29:05], mode=BUILD, duration=0:00:03.138, duration_ms=3138, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 13:29:23], mode=BUILD, duration=0:00:09.810, duration_ms=9810, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 14:19:22], mode=PLATFORM_GENERATION, duration=0:00:02.960, duration_ms=2960, data={name=atelier4_wrapper}
+timestamp=[2025-04-03 15:03:11], mode=BUILD, duration=0:00:02.578, duration_ms=2578, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:03:30], mode=BUILD, duration=0:00:09.618, duration_ms=9618, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:03:44], mode=BUILD, duration=0:00:04.048, duration_ms=4048, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:03:52], mode=BUILD, duration=0:00:07.578, duration_ms=7578, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:07:32], mode=BUILD, duration=0:00:01.346, duration_ms=1346, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:07:40], mode=BUILD, duration=0:00:07.776, duration_ms=7776, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:08:31], mode=BUILD, duration=0:00:01.276, duration_ms=1276, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:08:39], mode=BUILD, duration=0:00:07.817, duration_ms=7817, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:15:10], mode=BUILD, duration=0:00:01.593, duration_ms=1593, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:15:18], mode=BUILD, duration=0:00:07.409, duration_ms=7409, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:20:30], mode=BUILD, duration=0:00:00.599, duration_ms=599, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:20:39], mode=BUILD, duration=0:00:08.556, duration_ms=8556, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:20:43], mode=BUILD, duration=0:00:01.284, duration_ms=1284, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:20:51], mode=BUILD, duration=0:00:08.053, duration_ms=8053, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:25:36], mode=BUILD, duration=0:00:01.274, duration_ms=1274, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:25:45], mode=BUILD, duration=0:00:07.865, duration_ms=7865, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:27:15], mode=BUILD, duration=0:00:01.369, duration_ms=1369, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:27:24], mode=BUILD, duration=0:00:08.075, duration_ms=8075, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:30:46], mode=BUILD, duration=0:00:01.234, duration_ms=1234, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 15:30:54], mode=BUILD, duration=0:00:07.799, duration_ms=7799, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:24:49], mode=WORKBENCH_START, duration=0:00:10.362, duration_ms=10362, data={}
+timestamp=[2025-04-03 18:24:50], mode=WORKBENCH_UI_INIT, duration=0:00:00.963, duration_ms=963, data={editors_count=7, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,atelier4_wrapper,bouya,bouya_system}
+timestamp=[2025-04-03 18:24:50], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.099, duration_ms=99, data={}
+timestamp=[2025-04-03 18:25:54], mode=PLATFORM_GENERATION, duration=0:00:25.293, duration_ms=25293, data={name=atelier4_wrapper}
+timestamp=[2025-04-03 18:27:26], mode=BUILD, duration=0:00:01.620, duration_ms=1620, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:27:32], mode=BUILD, duration=0:00:05.763, duration_ms=5763, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:32:36], mode=BUILD, duration=0:00:00.478, duration_ms=478, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:32:42], mode=BUILD, duration=0:00:05.390, duration_ms=5390, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:32:51], mode=BUILD, duration=0:00:00.859, duration_ms=859, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:32:56], mode=BUILD, duration=0:00:05.385, duration_ms=5385, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:34:11], mode=BUILD, duration=0:00:00.862, duration_ms=862, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:34:17], mode=BUILD, duration=0:00:05.369, duration_ms=5369, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:34:43], mode=BUILD, duration=0:00:00.847, duration_ms=847, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:34:48], mode=BUILD, duration=0:00:05.454, duration_ms=5454, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:36:13], mode=BUILD, duration=0:00:00.856, duration_ms=856, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:36:19], mode=BUILD, duration=0:00:05.392, duration_ms=5392, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:39:30], mode=BUILD, duration=0:00:00.860, duration_ms=860, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:39:36], mode=BUILD, duration=0:00:05.455, duration_ms=5455, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:45:34], mode=BUILD, duration=0:00:00.861, duration_ms=861, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 18:45:40], mode=BUILD, duration=0:00:05.416, duration_ms=5416, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 19:30:01], mode=PLATFORM_GENERATION, duration=0:00:02.627, duration_ms=2627, data={name=atelier4_wrapper}
+timestamp=[2025-04-03 19:30:28], mode=BUILD, duration=0:00:01.177, duration_ms=1177, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 19:30:38], mode=BUILD, duration=0:00:05.614, duration_ms=5614, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 20:23:53], mode=BUILD, duration=0:00:00.497, duration_ms=497, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 20:23:59], mode=BUILD, duration=0:00:05.538, duration_ms=5538, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 20:24:13], mode=BUILD, duration=0:00:00.863, duration_ms=863, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 20:24:19], mode=BUILD, duration=0:00:05.485, duration_ms=5485, data={name=bouya_system, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 20:27:21], mode=PLATFORM_GENERATION, duration=0:00:02.453, duration_ms=2453, data={name=atelier4_wrapper}
+timestamp=[2025-04-03 20:27:40], mode=BUILD, duration=0:00:00.364, duration_ms=364, data={name=bouya, configuration=Debug, clean_build=false}
+timestamp=[2025-04-03 20:27:50], mode=BUILD, duration=0:00:05.538, duration_ms=5538, data={name=bouya_system, configuration=Debug, clean_build=false}

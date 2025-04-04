@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Apr  2 17:18:13 2025
+| Date         : Thu Apr  3 20:26:07 2025
 | Host         : DESKTOP-E4ODHO5 running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file atelier4_wrapper_clock_utilization_routed.rpt
 | Design       : atelier4_wrapper
@@ -51,7 +51,7 @@ Table of Contents
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+-------------------------------+--------------------------------------------------------------------------+-------------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site           | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                         | Driver Pin                                                               | Net                                                               |
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+-------------------------------+--------------------------------------------------------------------------+-------------------------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 4 |       12552 |               0 |       13.468 | clk_out1_atelier4_clk_wiz_0_0 | atelier4_i/clk_wiz_0/inst/clkout1_buf/O                                  | atelier4_i/clk_wiz_0/inst/clk_out1                                |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 4 |       12569 |               0 |       13.468 | clk_out1_atelier4_clk_wiz_0_0 | atelier4_i/clk_wiz_0/inst/clkout1_buf/O                                  | atelier4_i/clk_wiz_0/inst/clk_out1                                |
 | g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |                 3 |        2151 |               0 |       20.000 | clk_fpga_0                    | atelier4_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O | atelier4_i/processing_system7_0/inst/FCLK_CLK0                    |
 | g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y1  | n/a          |                 1 |           8 |               0 |       13.468 | PixelClkIO                    | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/PixelClk_BUFG_inst/O  | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/PixelClk_BUFG  |
 | g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y2  | n/a          |                 1 |           8 |               0 |        2.694 | SerialClkIO                   | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/SerialClk_BUFG_inst/O | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/SerialClk_BUFG |
@@ -85,10 +85,10 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 3704 |  1100 | 1326 |   400 |    1 |    20 |    0 |    10 |    4 |    20 |
-| X1Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 3862 |  1100 | 1445 |   350 |    1 |    40 |    8 |    20 |    2 |    20 |
-| X0Y1              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 2972 |  1100 | 1229 |   400 |    0 |    20 |    3 |    10 |   16 |    20 |
-| X1Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 | 3079 |  1100 | 1113 |   350 |    4 |    40 |    6 |    20 |   14 |    20 |
+| X0Y0              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 3661 |  1100 | 1332 |   400 |    2 |    20 |    0 |    10 |    2 |    20 |
+| X1Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 3860 |  1100 | 1479 |   350 |    2 |    40 |    6 |    20 |    4 |    20 |
+| X0Y1              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 3029 |  1100 | 1207 |   400 |    1 |    20 |    4 |    10 |   16 |    20 |
+| X1Y1              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 | 3083 |  1100 | 1209 |   350 |    1 |    40 |    8 |    20 |   14 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
@@ -111,7 +111,7 @@ All Modules
 +-----------+-----------------+-------------------+-------------------------------+-------------+---------------+-------------+----------+----------------+----------+------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock                         | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                |
 +-----------+-----------------+-------------------+-------------------------------+-------------+---------------+-------------+----------+----------------+----------+------------------------------------+
-| g0        | BUFG/O          | n/a               | clk_out1_atelier4_clk_wiz_0_0 |      13.468 | {0.000 6.734} |       12226 |        0 |              1 |        0 | atelier4_i/clk_wiz_0/inst/clk_out1 |
+| g0        | BUFG/O          | n/a               | clk_out1_atelier4_clk_wiz_0_0 |      13.468 | {0.000 6.734} |       12244 |        0 |              1 |        0 | atelier4_i/clk_wiz_0/inst/clk_out1 |
 +-----------+-----------------+-------------------+-------------------------------+-------------+---------------+-------------+----------+----------------+----------+------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -122,8 +122,8 @@ All Modules
 +----+-------+-------+-----------------------+
 |    | X0    | X1    | HORIZONTAL PROG DELAY |
 +----+-------+-------+-----------------------+
-| Y1 |  2789 |  3297 |                     0 |
-| Y0 |  2147 |  3994 |                     0 |
+| Y1 |  2802 |  3321 |                     0 |
+| Y0 |  2095 |  4027 |                     0 |
 +----+-------+-------+-----------------------+
 
 
@@ -144,8 +144,8 @@ All Modules
 +----+-------+-----+-----------------------+
 |    | X0    | X1  | HORIZONTAL PROG DELAY |
 +----+-------+-----+-----------------------+
-| Y1 |   366 |   0 |                     0 |
-| Y0 |  1678 |  89 |                     0 |
+| Y1 |   389 |   0 |                     0 |
+| Y0 |  1687 |  57 |                     0 |
 +----+-------+-----+-----------------------+
 
 
@@ -221,8 +221,8 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                            |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        2147 |               0 | 2049 |     92 |    1 |   4 |  0 |    0 |   0 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1             |
-| g1        | n/a   | BUFG/O          | None       |        1678 |               0 | 1655 |     23 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/processing_system7_0/inst/FCLK_CLK0 |
+| g0        | n/a   | BUFG/O          | None       |        2095 |               0 | 1997 |     92 |    2 |   2 |  0 |    0 |   0 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1             |
+| g1        | n/a   | BUFG/O          | None       |        1687 |               0 | 1664 |     23 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/processing_system7_0/inst/FCLK_CLK0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -235,8 +235,8 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                            |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        3994 |               0 | 3775 |    201 |    9 |   2 |  0 |    0 |   1 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1             |
-| g1        | n/a   | BUFG/O          | None       |          89 |               0 |   87 |      2 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/processing_system7_0/inst/FCLK_CLK0 |
+| g0        | n/a   | BUFG/O          | None       |        4027 |               0 | 3805 |    201 |    8 |   4 |  0 |    0 |   1 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1             |
+| g1        | n/a   | BUFG/O          | None       |          57 |               0 |   55 |      2 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/processing_system7_0/inst/FCLK_CLK0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -249,8 +249,8 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                            |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        2789 |               0 | 2609 |    160 |    3 |  16 |  0 |    0 |   0 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1             |
-| g1        | n/a   | BUFG/O          | None       |         366 |               0 |  363 |      2 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/processing_system7_0/inst/FCLK_CLK0 |
+| g0        | n/a   | BUFG/O          | None       |        2802 |               0 | 2643 |    136 |    5 |  16 |  0 |    0 |   0 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1             |
+| g1        | n/a   | BUFG/O          | None       |         389 |               0 |  386 |      2 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/processing_system7_0/inst/FCLK_CLK0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -263,7 +263,7 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                               |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        3297 |               0 | 3079 |    189 |   10 |  14 |  0 |    0 |   0 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1                                |
+| g0        | n/a   | BUFG/O          | None       |        3321 |               0 | 3083 |    213 |    9 |  14 |  0 |    0 |   0 |       0 | atelier4_i/clk_wiz_0/inst/clk_out1                                |
 | g2        | n/a   | BUFG/O          | None       |           8 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/PixelClk_BUFG  |
 | g3        | n/a   | BUFG/O          | None       |           8 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | atelier4_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/SerialClk_BUFG |
 | g4        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | atelier4_i/clk_wiz_0/inst/clkfbout_buf_atelier4_clk_wiz_0_0       |

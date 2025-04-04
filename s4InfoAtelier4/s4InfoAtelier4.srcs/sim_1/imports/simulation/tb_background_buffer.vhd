@@ -130,6 +130,10 @@ begin
         s_global_y <=  "000000000";
         wait for DELAY_BETWEEN_TESTS;
         
+        s_global_x <= "0000001000";
+        s_global_y <=  "000000000";
+        wait for DELAY_BETWEEN_TESTS;
+        
         -- First tile (Top left) with bottom right pixel at 7, 7
         s_global_x <= "0000000111";
         s_global_y <=  "000000111";

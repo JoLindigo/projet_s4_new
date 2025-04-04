@@ -37,14 +37,14 @@ entity color_mux is
 end color_mux;
 
 architecture Behavioral of color_mux is
-    constant COLOR0 : std_logic_vector(23 downto 0) := x"777777";
-    constant COLOR1 : std_logic_vector(23 downto 0) := x"9b8787";
-    constant COLOR2 : std_logic_vector(23 downto 0) := x"ac3232";
-    constant COLOR3 : std_logic_vector(23 downto 0) := x"000000";
-    constant COLOR4 : std_logic_vector(23 downto 0) := x"000000";
-    constant COLOR5 : std_logic_vector(23 downto 0) := x"000000";
-    constant COLOR6 : std_logic_vector(23 downto 0) := x"000000";
-    constant COLOR7 : std_logic_vector(23 downto 0) := x"000000";
+    constant COLOR0 : std_logic_vector(23 downto 0) := x"000000";
+    constant COLOR1 : std_logic_vector(23 downto 0) := x"35433b";
+    constant COLOR2 : std_logic_vector(23 downto 0) := x"46554c";
+    constant COLOR3 : std_logic_vector(23 downto 0) := x"7b5252";
+    constant COLOR4 : std_logic_vector(23 downto 0) := x"a66b6b";
+    constant COLOR5 : std_logic_vector(23 downto 0) := x"370c0c";
+    constant COLOR6 : std_logic_vector(23 downto 0) := x"530d0d";
+    constant COLOR7 : std_logic_vector(23 downto 0) := x"6c141f";
     constant COLOR8 : std_logic_vector(23 downto 0) := x"000000";
     constant COLOR9 : std_logic_vector(23 downto 0) := x"000000";
     constant COLOR10 : std_logic_vector(23 downto 0) := x"000000";
