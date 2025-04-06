@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="actor_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="actor_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="132601fs"></ZoomEndTime>
+      <Cursor1Time time="50100fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="254"></NameColumnWidth>
+      <ValueColumnWidth column_width="88"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/actor_tb/i_clk" type="logic">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/i_global_actor_x" type="array">
+      <obj_property name="ElementShortName">i_global_actor_x[9:0]</obj_property>
+      <obj_property name="ObjectShortName">i_global_actor_x[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/i_global_actor_y" type="array">
+      <obj_property name="ElementShortName">i_global_actor_y[8:0]</obj_property>
+      <obj_property name="ObjectShortName">i_global_actor_y[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/i_print_px_x" type="array">
+      <obj_property name="ElementShortName">i_print_px_x[9:0]</obj_property>
+      <obj_property name="ObjectShortName">i_print_px_x[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/i_print_px_y" type="array">
+      <obj_property name="ElementShortName">i_print_px_y[8:0]</obj_property>
+      <obj_property name="ObjectShortName">i_print_px_y[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/i_change_tile_id" type="array">
+      <obj_property name="ElementShortName">i_change_tile_id[3:0]</obj_property>
+      <obj_property name="ObjectShortName">i_change_tile_id[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/i_move_actor_x" type="array">
+      <obj_property name="ElementShortName">i_move_actor_x[3:0]</obj_property>
+      <obj_property name="ObjectShortName">i_move_actor_x[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/i_move_actor_y" type="array">
+      <obj_property name="ElementShortName">i_move_actor_y[3:0]</obj_property>
+      <obj_property name="ObjectShortName">i_move_actor_y[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/i_ch_tile_id_en" type="logic">
+      <obj_property name="ElementShortName">i_ch_tile_id_en</obj_property>
+      <obj_property name="ObjectShortName">i_ch_tile_id_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/i_global_actor_en" type="logic">
+      <obj_property name="ElementShortName">i_global_actor_en</obj_property>
+      <obj_property name="ObjectShortName">i_global_actor_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/i_move_actor_en" type="logic">
+      <obj_property name="ElementShortName">i_move_actor_en</obj_property>
+      <obj_property name="ObjectShortName">i_move_actor_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/i_actor_en" type="logic">
+      <obj_property name="ElementShortName">i_actor_en</obj_property>
+      <obj_property name="ObjectShortName">i_actor_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/o_tile_id" type="array">
+      <obj_property name="ElementShortName">o_tile_id[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_tile_id[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/o_tile_x" type="array">
+      <obj_property name="ElementShortName">o_tile_x[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_tile_x[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/o_tile_y" type="array">
+      <obj_property name="ElementShortName">o_tile_y[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_tile_y[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/stop_sim" type="other">
+      <obj_property name="ElementShortName">stop_sim</obj_property>
+      <obj_property name="ObjectShortName">stop_sim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/uut/actor_x" type="array">
+      <obj_property name="ElementShortName">actor_x[9:0]</obj_property>
+      <obj_property name="ObjectShortName">actor_x[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/actor_tb/uut/actor_y" type="array">
+      <obj_property name="ElementShortName">actor_y[8:0]</obj_property>
+      <obj_property name="ObjectShortName">actor_y[8:0]</obj_property>
+   </wvobject>
+</wave_config>

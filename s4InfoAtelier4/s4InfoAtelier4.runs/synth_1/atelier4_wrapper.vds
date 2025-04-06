@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Apr  3 20:15:55 2025
-# Process ID: 28556
+# Start of session at: Sun Apr  6 01:29:02 2025
+# Process ID: 24820
 # Current directory: C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1
 # Command line: vivado.exe -log atelier4_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source atelier4_wrapper.tcl
 # Log file: C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/atelier4_wrapper.vds
@@ -37,7 +37,7 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/travail/s4InfoAtelier4/s4I
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/pixelDataToVideoStream_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/rgb2dvi'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/travail/s4InfoAtelier4/s4InfoAtelier4.ipdefs/tmds_v1_0'.
-add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1116.984 ; gain = 0.000
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1113.105 ; gain = 0.000
 
 ****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
   **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
@@ -46,7 +46,7 @@ add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1
 
 source C:/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running 'C:/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'Félix-Antoine' on host 'desktop-e4odho5' (Windows NT_amd64 version 6.2) on Thu Apr 03 20:16:11 -0400 2025
+INFO: [HLS 200-10] For user 'Félix-Antoine' on host 'desktop-e4odho5' (Windows NT_amd64 version 6.2) on Sun Apr 06 01:29:18 -0400 2025
 INFO: [HLS 200-10] In directory 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1'
 Sourcing Tcl script 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/runhls.tcl'
 INFO: [HLS 200-1510] Running: open_project bd_0837_vsc_0 
@@ -107,7 +107,7 @@ INFO: [XFORM 203-701] Set the default channel type in dataflow to FIFO.
 INFO: [HLS 200-1510] Running: config_rtl -prefix bd_0837_vsc_0_ 
 WARNING: [HLS 200-483] The 'config_rtl -prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_prefix' as its replacement.
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.068 seconds; current allocated memory: 945.500 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 165.924 MB.
 INFO: [HLS 200-10] Analyzing design file 'c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/src/v_vscaler.cpp' ... 
 WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:128:1
 Resolution: For help on HLS 214-114 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=214-114.html
@@ -221,7 +221,7 @@ WARNING: [HLS 207-5301] unused parameter 'ColorMode': C:/travail/s4InfoAtelier4/
 WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:843:38
 WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1085:38
 WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1120:38
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 32.235 seconds; current allocated memory: 172.373 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 30.28 seconds; current allocated memory: 172.374 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' (C:/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:283:50)
 INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' (C:/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:286:25)
@@ -411,14 +411,14 @@ INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Sca
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Scalars' into 'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&) (.1)' (C:/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Scalars' into 'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&) (.1)' (C:/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Scalars' into 'vscale_core_polyphase(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned short&, unsigned int&, unsigned char&, short (*) [6], hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&) (.1)' (C:/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 20.224 seconds; current allocated memory: 175.218 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 175.219 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 18.326 seconds; current allocated memory: 175.218 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 175.219 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.265 seconds; current allocated memory: 187.213 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.262 seconds; current allocated memory: 187.213 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 WARNING: [SYNCHK 200-23] C:/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_ref.h:674: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.417 seconds; current allocated memory: 202.726 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.544 seconds; current allocated memory: 202.726 MB.
 INFO: [XFORM 203-510] Pipelining loop 'loop_init_coeff_tap' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:253) in function 'vscale_core_polyphase' automatically.
 INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width_for_procpix' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:213) in function 'vscale_core_polyphase' for pipelining.
 INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_1063_2' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1034) in function 'v_vcresampler_core' for pipelining.
@@ -474,30 +474,30 @@ INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/travail/s4
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1189:25) to (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1230:27) in function 'v_vcresampler_core'... converting 6 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:844:2) in function 'AXIvideo2MultiPixStream'... converting 13 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'v_vcresampler_core' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1011)...3 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.207 seconds; current allocated memory: 239.004 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.58 seconds; current allocated memory: 239.004 MB.
 INFO: [XFORM 203-541] Flattening a loop nest 'loop_init_coeff_phase' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:250:14) in function 'vscale_core_polyphase'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[3]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[1]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[4]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[1]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[3]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[2]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'LineBuf.val.V[5]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[3]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[1]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[4]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[1]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[3]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[2]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'LineBuf.val.V[5]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:212).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_y.val.V[1]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1036).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_y.val.V[0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1036).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_y.val.V[1]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1036).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_y.val.V[0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1036).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_c.val.V[0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_c.val.V[2]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_c.val.V[1]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_c.val.V[0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_c.val.V[0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_c.val.V[2]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_c.val.V[1]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_c.val.V[0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1037).
 INFO: [HLS 200-472] Inferring partial write operation for 'LineBuf.val.V[0]' (c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h:798:17)
 INFO: [HLS 200-472] Inferring partial write operation for 'LineBuf.val.V[5]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:360:39)
 INFO: [HLS 200-472] Inferring partial write operation for 'FiltCoeff[0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:255:29)
@@ -507,7 +507,7 @@ INFO: [HLS 200-472] Inferring partial write operation for 'linebuf_c.val.V[0]' (
 INFO: [HLS 200-472] Inferring partial write operation for 'linebuf_c.val.V[1]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_vsc_0/prj/.autopilot/db/v_vscaler.cpp:1173:37)
 WARNING: [HLS 200-1614] Cosimulation may deadlock if process AXIvideo2MultiPixStream has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream or using '::common::get_param hls.config_cosim.top_streamed_array true' in the TCL script.
 WARNING: [HLS 200-1449] Process vscale_core_polyphase has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.596 seconds; current allocated memory: 329.298 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.548 seconds; current allocated memory: 329.300 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'v_vscaler' ...
 WARNING: [SYN 201-103] Legalizing function name 'Block_.split4_proc' to 'Block_split4_proc'.
@@ -546,13 +546,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.572 seconds; current allocated memory: 329.590 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.562 seconds; current allocated memory: 329.592 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.145 seconds; current allocated memory: 329.717 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.145 seconds; current allocated memory: 329.719 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reg_unsigned_short_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -589,13 +589,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.565 seconds; current allocated memory: 329.764 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.581 seconds; current allocated memory: 329.766 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.143 seconds; current allocated memory: 329.833 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.149 seconds; current allocated memory: 329.835 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiPixStream' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -636,13 +636,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.653 seconds; current allocated memory: 330.109 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.635 seconds; current allocated memory: 330.109 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.186 seconds; current allocated memory: 330.546 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.185 seconds; current allocated memory: 330.547 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_vcresampler_core' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -692,13 +692,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.739 seconds; current allocated memory: 330.994 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.716 seconds; current allocated memory: 330.995 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.219 seconds; current allocated memory: 331.534 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.218 seconds; current allocated memory: 331.534 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'vscale_core_polyphase' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -855,7 +855,7 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.641 seconds; current allocated memory: 332.642 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.786 seconds; current allocated memory: 332.642 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
@@ -867,7 +867,7 @@ WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_4' wil
 WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_5' will be ignored if a simpler one can be used.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.455 seconds; current allocated memory: 333.983 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.458 seconds; current allocated memory: 333.983 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvideo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -904,13 +904,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.922 seconds; current allocated memory: 334.227 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.908 seconds; current allocated memory: 334.228 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 343.627 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.196 seconds; current allocated memory: 343.627 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_vscaler' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -945,33 +945,33 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.654 seconds; current allocated memory: 343.807 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.656 seconds; current allocated memory: 343.808 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.437 seconds; current allocated memory: 344.286 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.432 seconds; current allocated memory: 344.286 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Block_split4_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_split4_proc'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.412 seconds; current allocated memory: 344.462 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.408 seconds; current allocated memory: 344.462 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reg_unsigned_short_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.211 seconds; current allocated memory: 344.838 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.205 seconds; current allocated memory: 344.839 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiPixStream' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiPixStream'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.168 seconds; current allocated memory: 345.570 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.167 seconds; current allocated memory: 345.570 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_vcresampler_core' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_vcresampler_core'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.376 seconds; current allocated memory: 347.780 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.376 seconds; current allocated memory: 347.781 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'vscale_core_polyphase' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -982,12 +982,12 @@ INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_16s_26s_26_4_1': 3 
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_16s_26s_27_4_1': 3 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_16s_27s_27_4_1': 3 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'vscale_core_polyphase'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.814 seconds; current allocated memory: 352.207 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.815 seconds; current allocated memory: 352.208 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvideo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.189 seconds; current allocated memory: 357.104 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.263 seconds; current allocated memory: 357.104 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_vscaler' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1015,7 +1015,7 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'v_vscaler/m_axis_video_V_d
 INFO: [RTGEN 206-500] Setting interface mode on function 'v_vscaler' to 's_axilite & ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Bundling port 'HeightIn', 'Width', 'HeightOut', 'LineRate', 'ColorMode', 'vfltCoeff' to AXI-Lite port CTRL.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_vscaler'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.751 seconds; current allocated memory: 359.187 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.739 seconds; current allocated memory: 359.187 MB.
 INFO: [RTMG 210-278] Implementing memory 'bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_0_ram (RAM)' using auto RAMs.
 INFO: [RTMG 210-278] Implementing memory 'bd_0837_vsc_0_v_vcresampler_core_linebuf_y_val_V_1_ram (RAM)' using auto RAMs.
 WARNING: [RTMG 210-274] Memory 'bd_0837_vsc_0_v_vcresampler_core_linebuf_c_val_V_2' is read-only, switch it to a ROM.
@@ -1042,12 +1042,12 @@ INFO: [RTMG 210-285] Implementing FIFO 'HwReg_HeightOut_c21_U(bd_0837_vsc_0_fifo
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_AXIvideo2MultiPixStream_U0_U(bd_0837_vsc_0_start_for_AXIvideo2MultiPixStream_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_vcresampler_core_U0_U(bd_0837_vsc_0_start_for_v_vcresampler_core_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPixStream2AXIvideo_U0_U(bd_0837_vsc_0_start_for_MultiPixStream2AXIvideo_U0)' using Shift Registers.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 4.037 seconds; current allocated memory: 365.160 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 4.028 seconds; current allocated memory: 365.144 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for v_vscaler with prefix bd_0837_vsc_0_.
 INFO: [VLOG 209-307] Generating Verilog RTL for v_vscaler with prefix bd_0837_vsc_0_.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 101.88 MHz
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 18 seconds. CPU system time: 3 seconds. Elapsed time: 76.03 seconds; current allocated memory: 366.000 MB.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 18 seconds. CPU system time: 3 seconds. Elapsed time: 73.785 seconds; current allocated memory: 365.985 MB.
 INFO: [HLS 200-1510] Running: export_design -format ip_catalog -vendor xilinx.com -library ip -version 1.1 
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 
@@ -1059,13 +1059,13 @@ INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 source run_ippack.tcl -notrace
 bad lexical cast: source type value could not be interpreted as target
     while executing
-"rdi::set_property core_revision 2504032017 {component component_1}"
+"rdi::set_property core_revision 2504060130 {component component_1}"
     invoked from within
 "set_property core_revision $Revision $core"
     (file "run_ippack.tcl" line 1011)
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  3 20:17:37 2025...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  6 01:30:42 2025...
 ERROR: [IMPL 213-28] Failed to generate IP.
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 8.54 seconds; current allocated memory: 370.449 MB.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 8.461 seconds; current allocated memory: 370.449 MB.
 command 'ap_source' returned error code
     while executing
 "source C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/runhls.tcl"
@@ -1073,8 +1073,8 @@ command 'ap_source' returned error code
     invoked from within
 "uplevel \#0 [list source $arg] "
 
-INFO: [HLS 200-112] Total CPU user time: 22 seconds. Total CPU system time: 5 seconds. Total elapsed time: 86.442 seconds; peak allocated memory: 945.500 MB.
-INFO: [Common 17-206] Exiting vitis_hls at Thu Apr  3 20:17:37 2025...
+INFO: [HLS 200-112] Total CPU user time: 21 seconds. Total CPU system time: 5 seconds. Total elapsed time: 84.103 seconds; peak allocated memory: 365.144 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Sun Apr  6 01:30:42 2025...
 
 ****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
   **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
@@ -1083,7 +1083,7 @@ INFO: [Common 17-206] Exiting vitis_hls at Thu Apr  3 20:17:37 2025...
 
 source C:/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running 'C:/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'Félix-Antoine' on host 'desktop-e4odho5' (Windows NT_amd64 version 6.2) on Thu Apr 03 20:17:39 -0400 2025
+INFO: [HLS 200-10] For user 'Félix-Antoine' on host 'desktop-e4odho5' (Windows NT_amd64 version 6.2) on Sun Apr 06 01:30:44 -0400 2025
 INFO: [HLS 200-10] In directory 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1'
 Sourcing Tcl script 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/runhls.tcl'
 INFO: [HLS 200-1510] Running: open_project bd_0837_hsc_0 
@@ -1142,7 +1142,7 @@ WARNING: [HLS 200-484] The 'config_schedule -verbose' command is deprecated and 
 INFO: [HLS 200-1510] Running: config_rtl -prefix bd_0837_hsc_0_ 
 WARNING: [HLS 200-483] The 'config_rtl -prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_prefix' as its replacement.
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.075 seconds; current allocated memory: 165.832 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.068 seconds; current allocated memory: 165.846 MB.
 INFO: [HLS 200-10] Analyzing design file 'c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_2/src/v_hscaler.cpp' ... 
 WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:156:3
 Resolution: For help on HLS 214-114 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=214-114.html
@@ -1266,7 +1266,7 @@ WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:/tr
 WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1499:38
 WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1696:38
 WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1739:38
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 32.341 seconds; current allocated memory: 172.560 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 32.314 seconds; current allocated memory: 172.560 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' (C:/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:283:50)
 INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' (C:/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:286:25)
@@ -1497,14 +1497,14 @@ INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Sca
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Scalars' into 'hscale_core_polyphase(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned short&, unsigned int&, unsigned char&, short (*) [6], ap_uint<9>*, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&) (.1)' (C:/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Scalars' into 'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char const&, bool&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&) (.1)' (C:/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
 INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Scalars' into 'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char const&, bool&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&) (.1)' (C:/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 24.068 seconds; current allocated memory: 175.864 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 175.866 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 22.392 seconds; current allocated memory: 175.867 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 175.868 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.299 seconds; current allocated memory: 188.609 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.284 seconds; current allocated memory: 188.612 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 WARNING: [SYNCHK 200-23] C:/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_ref.h:414: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.511 seconds; current allocated memory: 206.246 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.504 seconds; current allocated memory: 206.248 MB.
 WARNING: [XFORM 203-803] Dropped interface mode 'ap_auto' on 'ColorMode' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:120) as it is incompatible with its interface mode 's_axilite'.
 INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_1342_1' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1342) in function 'MultiPixStream2AXIvideo' automatically.
 INFO: [XFORM 203-510] Pipelining loop 'loop_init_coeff_tap' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:611) in function 'hscale_core_polyphase' automatically.
@@ -1592,21 +1592,21 @@ INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (C:/travail/s4In
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1244:2) in function 'AXIvideo2MultiPixStream'... converting 13 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'v_vcresampler_core' (C:/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:145:9)...3 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'v_hcresampler_core' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1399)...6 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 4.053 seconds; current allocated memory: 247.537 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.528 seconds; current allocated memory: 247.538 MB.
 INFO: [XFORM 203-541] Flattening a loop nest 'loop_init_coeff_phase' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:608:11) in function 'hscale_core_polyphase'.
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_y.val.V[0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1639).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_y.val.V[0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1639).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_c.val.V[1]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1640).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_c.val.V[0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1640).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_c.val.V[1]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1640).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_c.val.V[1]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1640).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_c.val.V[0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1640).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_c.val.V[1]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1640).
 INFO: [HLS 200-472] Inferring partial write operation for 'linebuf_y.val.V[0]' (c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_2/src/hls/hls_video_mem.h:798:17)
 INFO: [HLS 200-472] Inferring partial write operation for 'linebuf_c.val.V[0]' (c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_2/src/hls/hls_video_mem.h:798:17)
 INFO: [HLS 200-472] Inferring partial write operation for 'linebuf_c.val.V[1]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:1792:34)
 INFO: [HLS 200-472] Inferring partial write operation for 'FiltCoeff[0][0]' (C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/bd_0837_hsc_0/prj/.autopilot/db/v_hscaler.cpp:614:36)
 WARNING: [HLS 200-1614] Cosimulation may deadlock if process AXIvideo2MultiPixStream has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream or using '::common::get_param hls.config_cosim.top_streamed_array true' in the TCL script.
 WARNING: [HLS 200-1449] Process hscale_core_polyphase has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.248 seconds; current allocated memory: 367.851 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.221 seconds; current allocated memory: 367.852 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'v_hscaler' ...
 WARNING: [SYN 201-103] Legalizing function name 'v_hscaler.entry4' to 'v_hscaler_entry4'.
@@ -1648,13 +1648,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.658 seconds; current allocated memory: 368.144 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.648 seconds; current allocated memory: 368.144 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.149 seconds; current allocated memory: 368.197 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.145 seconds; current allocated memory: 368.197 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_hscaler_entry32' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1689,13 +1689,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.564 seconds; current allocated memory: 368.245 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.545 seconds; current allocated memory: 368.246 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 368.317 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.148 seconds; current allocated memory: 368.318 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'Block_split1_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1730,13 +1730,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.568 seconds; current allocated memory: 368.362 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.555 seconds; current allocated memory: 368.362 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 368.408 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.149 seconds; current allocated memory: 368.408 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'Block_split12_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1771,13 +1771,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.58 seconds; current allocated memory: 368.471 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.603 seconds; current allocated memory: 368.472 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.158 seconds; current allocated memory: 368.541 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 368.541 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiPixStream' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1818,13 +1818,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.726 seconds; current allocated memory: 368.777 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.691 seconds; current allocated memory: 368.777 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 369.123 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.183 seconds; current allocated memory: 369.123 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_hcresampler_core26' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1871,7 +1871,7 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.74 seconds; current allocated memory: 369.478 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.715 seconds; current allocated memory: 369.479 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
@@ -1914,13 +1914,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.734 seconds; current allocated memory: 369.935 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.724 seconds; current allocated memory: 369.936 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.165 seconds; current allocated memory: 369.976 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.159 seconds; current allocated memory: 369.976 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'hscale_polyphase' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2070,13 +2070,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.671 seconds; current allocated memory: 370.689 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.851 seconds; current allocated memory: 370.689 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.314 seconds; current allocated memory: 371.472 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.309 seconds; current allocated memory: 371.472 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'hscale_core_polyphase' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2120,7 +2120,7 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.024 seconds; current allocated memory: 372.164 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.006 seconds; current allocated memory: 372.164 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
@@ -2132,7 +2132,7 @@ WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_4_0' w
 WARNING: [BIND 205-102] The specified resource core for memory 'FiltCoeff_5_0' will be ignored if a simpler one can be used.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.455 seconds; current allocated memory: 373.075 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.449 seconds; current allocated memory: 373.075 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_hcresampler_core' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2179,13 +2179,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.067 seconds; current allocated memory: 373.432 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.034 seconds; current allocated memory: 373.432 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.253 seconds; current allocated memory: 373.855 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.215 seconds; current allocated memory: 373.855 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_vcresampler_core' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2230,13 +2230,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.914 seconds; current allocated memory: 374.140 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.897 seconds; current allocated memory: 374.140 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.216 seconds; current allocated memory: 374.464 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.213 seconds; current allocated memory: 374.464 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvideo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2275,13 +2275,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.875 seconds; current allocated memory: 374.703 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.858 seconds; current allocated memory: 374.703 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.215 seconds; current allocated memory: 374.998 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 374.998 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_hscaler' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2318,48 +2318,48 @@ INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
 WARNING: [HLS 200-1020] Increasing the depth of FIFO bPassThruHcr2_c (from Block_split12_proc_U0 to v_hcresampler_core_U0) to 6 to improve performance and/or avoid deadlocks.
 WARNING: [HLS 200-1020] Increasing the depth of FIFO bPassThruVcr_c (from Block_split12_proc_U0 to v_vcresampler_core_U0) to 7 to improve performance and/or avoid deadlocks.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.826 seconds; current allocated memory: 375.219 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.812 seconds; current allocated memory: 375.220 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.154 seconds; current allocated memory: 375.635 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.111 seconds; current allocated memory: 375.636 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_hscaler_entry4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_hscaler_entry4'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.581 seconds; current allocated memory: 375.727 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.556 seconds; current allocated memory: 375.727 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_hscaler_entry32' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_hscaler_entry32'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.187 seconds; current allocated memory: 375.924 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.181 seconds; current allocated memory: 375.924 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Block_split1_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_split1_proc'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.186 seconds; current allocated memory: 376.147 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.176 seconds; current allocated memory: 376.147 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Block_split12_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_split12_proc'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.306 seconds; current allocated memory: 376.378 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.183 seconds; current allocated memory: 376.379 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiPixStream' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiPixStream'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.226 seconds; current allocated memory: 377.123 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.223 seconds; current allocated memory: 377.124 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_hcresampler_core26' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_hcresampler_core26'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.358 seconds; current allocated memory: 378.810 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.35 seconds; current allocated memory: 378.811 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reg_ap_uint_9_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_ap_uint_9_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.52 seconds; current allocated memory: 380.328 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.539 seconds; current allocated memory: 380.329 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'hscale_polyphase' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2371,28 +2371,28 @@ INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_16s_26s_27_4_1': 3 
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_16s_27s_27_4_1': 3 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mux_83_8_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'hscale_polyphase'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.353 seconds; current allocated memory: 382.135 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.345 seconds; current allocated memory: 382.136 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'hscale_core_polyphase' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'hscale_core_polyphase'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.942 seconds; current allocated memory: 386.425 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.944 seconds; current allocated memory: 386.426 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_hcresampler_core' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_hcresampler_core'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.976 seconds; current allocated memory: 390.009 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.955 seconds; current allocated memory: 390.010 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_vcresampler_core' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_vcresampler_core'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.501 seconds; current allocated memory: 392.107 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.497 seconds; current allocated memory: 392.108 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvideo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Generating core module 'mux_32_8_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.472 seconds; current allocated memory: 393.879 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.468 seconds; current allocated memory: 393.880 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_hscaler' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2422,7 +2422,7 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'v_hscaler/m_axis_video_V_d
 INFO: [RTGEN 206-500] Setting interface mode on function 'v_hscaler' to 's_axilite & ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Bundling port 'Height', 'WidthIn', 'WidthOut', 'ColorMode', 'PixelRate', 'ColorModeOut', 'hfltCoeff', 'phasesH' to AXI-Lite port CTRL.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_hscaler'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.908 seconds; current allocated memory: 395.968 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.901 seconds; current allocated memory: 395.969 MB.
 INFO: [RTMG 210-278] Implementing memory 'bd_0837_hsc_0_hscale_core_polyphase_FiltCoeff_0_0_ram (RAM_1P_LUTRAM)' using distributed RAMs.
 INFO: [RTMG 210-278] Implementing memory 'bd_0837_hsc_0_v_vcresampler_core_linebuf_y_val_V_0_ram (RAM)' using auto RAMs.
 INFO: [RTMG 210-278] Implementing memory 'bd_0837_hsc_0_v_vcresampler_core_linebuf_c_val_V_0_ram (RAM)' using auto RAMs.
@@ -2444,12 +2444,12 @@ INFO: [RTMG 210-285] Implementing FIFO 'start_for_AXIvideo2MultiPixStream_U0_U(b
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_hcresampler_core_U0_U(bd_0837_hsc_0_start_for_v_hcresampler_core_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_v_vcresampler_core_U0_U(bd_0837_hsc_0_start_for_v_vcresampler_core_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPixStream2AXIvideo_U0_U(bd_0837_hsc_0_start_for_MultiPixStream2AXIvideo_U0)' using Shift Registers.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 4.862 seconds; current allocated memory: 402.358 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 4.876 seconds; current allocated memory: 402.358 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for v_hscaler with prefix bd_0837_hsc_0_.
 INFO: [VLOG 209-307] Generating Verilog RTL for v_hscaler with prefix bd_0837_hsc_0_.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 101.88 MHz
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 25 seconds. CPU system time: 4 seconds. Elapsed time: 90.512 seconds; current allocated memory: 403.511 MB.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 24 seconds. CPU system time: 4 seconds. Elapsed time: 89.218 seconds; current allocated memory: 403.512 MB.
 INFO: [HLS 200-1510] Running: export_design -format ip_catalog -vendor xilinx.com -library ip -version 1.1 
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 
@@ -2461,13 +2461,13 @@ INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 source run_ippack.tcl -notrace
 bad lexical cast: source type value could not be interpreted as target
     while executing
-"rdi::set_property core_revision 2504032019 {component component_1}"
+"rdi::set_property core_revision 2504060132 {component component_1}"
     invoked from within
 "set_property core_revision $Revision $core"
     (file "run_ippack.tcl" line 1015)
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  3 20:19:22 2025...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  6 01:32:24 2025...
 ERROR: [IMPL 213-28] Failed to generate IP.
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 8.901 seconds; current allocated memory: 407.852 MB.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 8.772 seconds; current allocated memory: 407.853 MB.
 command 'ap_source' returned error code
     while executing
 "source C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/runhls.tcl"
@@ -2475,9 +2475,9 @@ command 'ap_source' returned error code
     invoked from within
 "uplevel \#0 [list source $arg] "
 
-INFO: [HLS 200-112] Total CPU user time: 28 seconds. Total CPU system time: 6 seconds. Total elapsed time: 103.241 seconds; peak allocated memory: 402.358 MB.
-INFO: [Common 17-206] Exiting vitis_hls at Thu Apr  3 20:19:22 2025...
-compile_c: Time (s): cpu = 00:00:01 ; elapsed = 00:03:13 . Memory (MB): peak = 1116.984 ; gain = 0.000
+INFO: [HLS 200-112] Total CPU user time: 27 seconds. Total CPU system time: 6 seconds. Total elapsed time: 99.844 seconds; peak allocated memory: 402.358 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Sun Apr  6 01:32:24 2025...
+compile_c: Time (s): cpu = 00:00:01 ; elapsed = 00:03:08 . Memory (MB): peak = 1113.105 ; gain = 0.000
 Command: synth_design -top atelier4_wrapper -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
@@ -2485,9 +2485,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 26780
+INFO: [Synth 8-7075] Helper process launched with PID 16584
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1158.977 ; gain = 41.992
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1160.059 ; gain = 46.953
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'atelier4_wrapper' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/atelier4_wrapper.vhd:46]
 INFO: [Synth 8-3491] module 'atelier4' declared at 'c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:14' bound to instance 'atelier4_i' of component 'atelier4' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/atelier4_wrapper.vhd:79]
@@ -6848,24 +6848,40 @@ INFO: [Synth 8-3491] module 'atelier4_testPatternGen2_0_0' declared at 'c:/trava
 INFO: [Synth 8-638] synthesizing module 'atelier4_testPatternGen2_0_0' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/synth/atelier4_testPatternGen2_0_0.vhd:68]
 INFO: [Synth 8-3491] module 'testPatternGen2' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:34' bound to instance 'U0' of component 'testPatternGen2' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/synth/atelier4_testPatternGen2_0_0.vhd:97]
 INFO: [Synth 8-638] synthesizing module 'testPatternGen2' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:46]
-INFO: [Synth 8-3491] module 'controller' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/controller.vhd:25' bound to instance 'inst_controller' of component 'controller' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:137]
-INFO: [Synth 8-638] synthesizing module 'controller' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/controller.vhd:52]
-INFO: [Synth 8-256] done synthesizing module 'controller' (258#1) [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/controller.vhd:52]
-INFO: [Synth 8-3491] module 'viewport' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/viewport.vhd:26' bound to instance 'inst_viewport' of component 'viewport' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:157]
+INFO: [Synth 8-3491] module 'controller' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/controller.vhd:25' bound to instance 'inst_controller' of component 'controller' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/controller.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'controller' (258#1) [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/controller.vhd:69]
+INFO: [Synth 8-3491] module 'viewport' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/viewport.vhd:26' bound to instance 'inst_viewport' of component 'viewport' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:270]
 INFO: [Synth 8-638] synthesizing module 'viewport' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/viewport.vhd:37]
 INFO: [Synth 8-256] done synthesizing module 'viewport' (259#1) [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/viewport.vhd:37]
-INFO: [Synth 8-3491] module 'background_buffer_2' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/background_buffer_2.vhd:34' bound to instance 'inst_background_buffer' of component 'background_buffer_2' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:169]
+INFO: [Synth 8-3491] module 'background_buffer_2' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/background_buffer_2.vhd:34' bound to instance 'inst_background_buffer' of component 'background_buffer_2' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:282]
 INFO: [Synth 8-638] synthesizing module 'background_buffer_2' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/background_buffer_2.vhd:47]
 INFO: [Synth 8-256] done synthesizing module 'background_buffer_2' (260#1) [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/background_buffer_2.vhd:47]
-INFO: [Synth 8-3491] module 'bg_tile_buffer_2' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/bg_tile_buffer_2.vhd:26' bound to instance 'inst_bg_tile_buffer' of component 'bg_tile_buffer_2' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:182]
+INFO: [Synth 8-3491] module 'bg_tile_buffer_2' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/bg_tile_buffer_2.vhd:26' bound to instance 'inst_bg_tile_buffer' of component 'bg_tile_buffer_2' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:295]
 INFO: [Synth 8-638] synthesizing module 'bg_tile_buffer_2' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/bg_tile_buffer_2.vhd:39]
 INFO: [Synth 8-256] done synthesizing module 'bg_tile_buffer_2' (261#1) [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/bg_tile_buffer_2.vhd:39]
-INFO: [Synth 8-3491] module 'color_mux' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/color_mux.vhd:34' bound to instance 'inst_color_mux' of component 'color_mux' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:195]
+INFO: [Synth 8-3491] module 'color_mux' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/color_mux.vhd:34' bound to instance 'inst_color_mux' of component 'color_mux' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:310]
 INFO: [Synth 8-638] synthesizing module 'color_mux' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/color_mux.vhd:39]
 INFO: [Synth 8-226] default block is never used [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/color_mux.vhd:75]
 INFO: [Synth 8-256] done synthesizing module 'color_mux' (262#1) [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/color_mux.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'testPatternGen2' (263#1) [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'atelier4_testPatternGen2_0_0' (264#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/synth/atelier4_testPatternGen2_0_0.vhd:68]
+INFO: [Synth 8-3491] module 'actor_manager' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/actor_manager.vhd:5' bound to instance 'inst_actor_manager' of component 'actor_manager' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:315]
+INFO: [Synth 8-638] synthesizing module 'actor_manager' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/actor_manager.vhd:26]
+INFO: [Synth 8-3491] module 'actor' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/actor.vhd:34' bound to instance 'actor_inst' of component 'actor' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/actor_manager.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'actor' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/actor.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'actor' (263#1) [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/actor.vhd:62]
+INFO: [Synth 8-3491] module 'actor' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/actor.vhd:34' bound to instance 'actor_inst' of component 'actor' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/actor_manager.vhd:86]
+INFO: [Synth 8-3491] module 'actor' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/actor.vhd:34' bound to instance 'actor_inst' of component 'actor' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/actor_manager.vhd:86]
+INFO: [Synth 8-3491] module 'actor' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/actor.vhd:34' bound to instance 'actor_inst' of component 'actor' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/actor_manager.vhd:86]
+INFO: [Synth 8-3491] module 'actor' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/actor.vhd:34' bound to instance 'actor_inst' of component 'actor' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/actor_manager.vhd:86]
+INFO: [Synth 8-3491] module 'actor' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/actor.vhd:34' bound to instance 'actor_inst' of component 'actor' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/actor_manager.vhd:86]
+INFO: [Synth 8-3491] module 'actor' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/actor.vhd:34' bound to instance 'actor_inst' of component 'actor' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/actor_manager.vhd:86]
+INFO: [Synth 8-3491] module 'actor' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/actor.vhd:34' bound to instance 'actor_inst' of component 'actor' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/actor_manager.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'actor_manager' (264#1) [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/actor_manager.vhd:26]
+INFO: [Synth 8-3491] module 'actor_tile_buffer' declared at 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/actor_tile_buffer.vhd:26' bound to instance 'inst_actor_tile_buffer' of component 'actor_tile_buffer' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:335]
+INFO: [Synth 8-638] synthesizing module 'actor_tile_buffer' [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/actor_tile_buffer.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'actor_tile_buffer' (265#1) [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/actor_tile_buffer.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'testPatternGen2' (266#1) [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/new/testPatternGen2.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'atelier4_testPatternGen2_0_0' (267#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_testPatternGen2_0_0/synth/atelier4_testPatternGen2_0_0.vhd:68]
 INFO: [Synth 8-3491] module 'atelier4_v_axi4s_vid_out_0_0' declared at 'c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_axi4s_vid_out_0_0/synth/atelier4_v_axi4s_vid_out_0_0.v:57' bound to instance 'v_axi4s_vid_out_0' of component 'atelier4_v_axi4s_vid_out_0_0' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1431]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_PIXELS_PER_CLOCK bound to: 1 - type: integer 
@@ -7860,29 +7876,29 @@ INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/travail/s4InfoAtelier4/s
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b00 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f' (353#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (356#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b01 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (353#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (356#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b10 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (353#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (356#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b11 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (353#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'address_decoder' (354#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (356#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (357#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
 INFO: [Synth 8-226] default block is never used [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (355#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (356#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (358#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (359#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
 INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/4318/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
 	Parameter C_DW bound to: 32 - type: integer 
 	Parameter C_AW bound to: 9 - type: integer 
@@ -7932,10 +7948,10 @@ INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized4' (356#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (357#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/4318/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
-INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (358#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/4318/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
-INFO: [Synth 8-256] done synthesizing module 'bd_0837_reset_sel_axis_0' (359#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_5/synth/bd_0837_reset_sel_axis_0.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized4' (359#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (360#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/4318/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (361#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/4318/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-256] done synthesizing module 'bd_0837_reset_sel_axis_0' (362#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_5/synth/bd_0837_reset_sel_axis_0.vhd:86]
 INFO: [Synth 8-3491] module 'bd_0837_rst_axis_0' declared at 'c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_4/synth/bd_0837_rst_axis_0.vhd:59' bound to instance 'rst_axis' of component 'bd_0837_rst_axis_0' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:724]
 INFO: [Synth 8-638] synthesizing module 'bd_0837_rst_axis_0' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_4/synth/bd_0837_rst_axis_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -7989,9 +8005,9 @@ INFO: [Synth 8-638] synthesizing module 'lpf__parameterized1' [c:/travail/s4Info
 	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
 	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
 INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
-INFO: [Synth 8-256] done synthesizing module 'lpf__parameterized1' (359#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset__parameterized3' (359#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-INFO: [Synth 8-256] done synthesizing module 'bd_0837_rst_axis_0' (360#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_4/synth/bd_0837_rst_axis_0.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'lpf__parameterized1' (362#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset__parameterized3' (362#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_0837_rst_axis_0' (363#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_4/synth/bd_0837_rst_axis_0.vhd:74]
 INFO: [Synth 8-3491] module 'bd_0837_smartconnect_0_0' declared at 'c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/ip/ip_0/synth/bd_0837_smartconnect_0_0.v:57' bound to instance 'smartconnect_0' of component 'bd_0837_smartconnect_0_0' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:737]
 INFO: [Synth 8-638] synthesizing module 'bd_0cc7_psr_aclk_0' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_1/synth/bd_0cc7_psr_aclk_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -8004,7 +8020,7 @@ INFO: [Synth 8-638] synthesizing module 'bd_0cc7_psr_aclk_0' [c:/travail/s4InfoA
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
 INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_1/synth/bd_0cc7_psr_aclk_0.vhd:129]
-INFO: [Synth 8-256] done synthesizing module 'bd_0cc7_psr_aclk_0' (362#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_1/synth/bd_0cc7_psr_aclk_0.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'bd_0cc7_psr_aclk_0' (365#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/ip/ip_1/synth/bd_0cc7_psr_aclk_0.vhd:74]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_0cc7_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/synth/bd_0cc7.v:1583]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_0cc7_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/synth/bd_0cc7.v:1583]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_0cc7_psr_aclk_0' is unconnected for instance 'psr_aclk' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_1/synth/bd_0cc7.v:1583]
@@ -8223,8 +8239,8 @@ INFO: [Synth 8-3491] module 'bd_0837_xlslice_1_0' declared at 'c:/travail/s4Info
 	Parameter DIN_WIDTH bound to: 2 - type: integer 
 	Parameter DIN_FROM bound to: 1 - type: integer 
 	Parameter DIN_TO bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bd_0837' (479#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'atelier4_v_proc_ss_0_0' (480#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/synth/atelier4_v_proc_ss_0_0.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'bd_0837' (482#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/bd_0/synth/bd_0837.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'atelier4_v_proc_ss_0_0' (483#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_proc_ss_0_0/synth/atelier4_v_proc_ss_0_0.vhd:102]
 INFO: [Synth 8-3491] module 'atelier4_v_tc_0_0' declared at 'c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_tc_0_0/synth/atelier4_v_tc_0_0.vhd:59' bound to instance 'v_tc_0' of component 'atelier4_v_tc_0_0' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:1508]
 INFO: [Synth 8-638] synthesizing module 'atelier4_v_tc_0_0' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_tc_0_0/synth/atelier4_v_tc_0_0.vhd:75]
 	Parameter C_HAS_AXI4_LITE bound to: 0 - type: integer 
@@ -8313,22 +8329,22 @@ INFO: [Synth 8-638] synthesizing module 'atelier4_v_tc_0_0' [c:/travail/s4InfoAt
 	Parameter C_GEN_FIELDID_EN bound to: 0 - type: integer 
 	Parameter C_DET_FIELDID_EN bound to: 0 - type: integer 
 INFO: [Synth 8-3491] module 'v_tc' declared at 'c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ipshared/cd2e/hdl/v_tc_v6_2_vh_rfs.vhd:7343' bound to instance 'U0' of component 'v_tc' [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_tc_0_0/synth/atelier4_v_tc_0_0.vhd:236]
-INFO: [Synth 8-256] done synthesizing module 'atelier4_v_tc_0_0' (485#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_tc_0_0/synth/atelier4_v_tc_0_0.vhd:75]
-INFO: [Synth 8-256] done synthesizing module 'atelier4' (486#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:50]
-INFO: [Synth 8-256] done synthesizing module 'atelier4_wrapper' (487#1) [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/atelier4_wrapper.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'atelier4_v_tc_0_0' (488#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/ip/atelier4_v_tc_0_0/synth/atelier4_v_tc_0_0.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'atelier4' (489#1) [c:/travail/s4InfoAtelier4/s4InfoAtelier4.gen/sources_1/bd/atelier4/synth/atelier4.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'atelier4_wrapper' (490#1) [C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/atelier4_wrapper.vhd:46]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1994.102 ; gain = 877.117
+Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1999.328 ; gain = 886.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1994.102 ; gain = 877.117
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1999.328 ; gain = 886.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1994.102 ; gain = 877.117
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1999.328 ; gain = 886.223
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2566.148 ; gain = 30.375
+Netlist sorting complete. Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2568.941 ; gain = 29.734
 INFO: [Netlist 29-17] Analyzing 393 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -8448,22 +8464,22 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/atelier4_wra
 INFO: [Project 1-1715] 8 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 3214.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 3219.047 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 387 instances were transformed.
   FDR => FDRE: 378 instances
   SRL16 => SRL16E: 9 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.949 . Memory (MB): peak = 3214.461 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.894 . Memory (MB): peak = 3219.047 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:34 ; elapsed = 00:01:36 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Finished Constraint Validation : Time (s): cpu = 00:01:31 ; elapsed = 00:01:34 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:34 ; elapsed = 00:01:36 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:31 ; elapsed = 00:01:34 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -8715,7 +8731,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for atelier4_i/smartconnect_1/inst/s0
 Applied set_property KEEP_HIERARCHY = SOFT for atelier4_i/smartconnect_1/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for atelier4_i/smartconnect_1/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_vdma_v6_3_10_axis_dwidth_converter_v1_0_axisc_upsizer'
 INFO: [Synth 8-802] inferred FSM for state register 'dmacntrl_cs_reg' in module 'axi_vdma_sm'
@@ -9100,7 +9116,7 @@ INFO: [Synth 8-3971] The signal "bd_0837_hsc_0_CTRL_s_axi_ram__parameterized0:/g
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 INFO: [Synth 8-3971] The signal "bd_0837_vsc_0_CTRL_s_axi_ram:/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:57 ; elapsed = 00:02:01 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:53 ; elapsed = 00:01:57 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'atelier4_i/v_proc_ss_0/U0/hsc/inst/MultiPixStream2AXIvideo_U0/regslice_both_AXI_video_strm_V_id_V_U' (bd_0837_hsc_0_regslice_both__parameterized1) to 'atelier4_i/v_proc_ss_0/U0/hsc/inst/MultiPixStream2AXIvideo_U0/regslice_both_AXI_video_strm_V_dest_V_U'
 INFO: [Synth 8-223] decloning instance 'atelier4_i/v_proc_ss_0/U0/vsc/inst/MultiPixStream2AXIvideo_U0/regslice_both_AXI_video_strm_V_id_V_U' (bd_0837_vsc_0_regslice_both__parameterized1) to 'atelier4_i/v_proc_ss_0/U0/vsc/inst/MultiPixStream2AXIvideo_U0/regslice_both_AXI_video_strm_V_dest_V_U'
@@ -9121,12 +9137,12 @@ Detailed RTL Component Info :
 	   2 Input   12 Bit       Adders := 14    
 	   3 Input   12 Bit       Adders := 3     
 	   4 Input   11 Bit       Adders := 12    
-	   3 Input   11 Bit       Adders := 2     
+	   3 Input   11 Bit       Adders := 10    
 	   2 Input   11 Bit       Adders := 14    
-	   2 Input   10 Bit       Adders := 8     
+	   2 Input   10 Bit       Adders := 16    
 	   4 Input   10 Bit       Adders := 8     
-	   3 Input   10 Bit       Adders := 3     
-	   2 Input    9 Bit       Adders := 7     
+	   3 Input   10 Bit       Adders := 11    
+	   2 Input    9 Bit       Adders := 15    
 	   3 Input    9 Bit       Adders := 3     
 	   4 Input    9 Bit       Adders := 2     
 	   2 Input    8 Bit       Adders := 22    
@@ -9140,7 +9156,7 @@ Detailed RTL Component Info :
 	   2 Input    5 Bit       Adders := 26    
 	   4 Input    5 Bit       Adders := 7     
 	   2 Input    4 Bit       Adders := 93    
-	   3 Input    4 Bit       Adders := 5     
+	   3 Input    4 Bit       Adders := 21    
 	   4 Input    4 Bit       Adders := 6     
 	   8 Input    4 Bit       Adders := 6     
 	   3 Input    3 Bit       Adders := 11    
@@ -9190,16 +9206,16 @@ Detailed RTL Component Info :
 	               13 Bit    Registers := 11    
 	               12 Bit    Registers := 43    
 	               11 Bit    Registers := 51    
-	               10 Bit    Registers := 39    
-	                9 Bit    Registers := 25    
+	               10 Bit    Registers := 48    
+	                9 Bit    Registers := 34    
 	                8 Bit    Registers := 289   
 	                7 Bit    Registers := 31    
 	                6 Bit    Registers := 141   
-	                5 Bit    Registers := 69    
-	                4 Bit    Registers := 182   
-	                3 Bit    Registers := 314   
+	                5 Bit    Registers := 71    
+	                4 Bit    Registers := 223   
+	                3 Bit    Registers := 315   
 	                2 Bit    Registers := 176   
-	                1 Bit    Registers := 2425  
+	                1 Bit    Registers := 2430  
 +---RAMs : 
 	              76K Bit	(2048 X 38 bit)          RAMs := 1     
 	              74K Bit	(2048 X 37 bit)          RAMs := 1     
@@ -9208,6 +9224,7 @@ Detailed RTL Component Info :
 	              30K Bit	(1280 X 24 bit)          RAMs := 6     
 	              27K Bit	(1024 X 27 bit)          RAMs := 1     
 	              20K Bit	(640 X 32 bit)          RAMs := 1     
+	              20K Bit	(4096 X 5 bit)          RAMs := 1     
 	              10K Bit	(1280 X 8 bit)          RAMs := 7     
 	              10K Bit	(2048 X 5 bit)          RAMs := 1     
 	               9K Bit	(128 X 75 bit)          RAMs := 1     
@@ -9258,14 +9275,14 @@ Detailed RTL Component Info :
 	   2 Input   11 Bit        Muxes := 11    
 	   4 Input   11 Bit        Muxes := 1     
 	   4 Input   10 Bit        Muxes := 3     
-	   2 Input   10 Bit        Muxes := 7     
-	   8 Input   10 Bit        Muxes := 1     
-	   2 Input    9 Bit        Muxes := 14    
+	   2 Input   10 Bit        Muxes := 8     
+	   8 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 15    
 	   5 Input    9 Bit        Muxes := 1     
 	   3 Input    9 Bit        Muxes := 1     
-	   8 Input    9 Bit        Muxes := 1     
-	   2 Input    8 Bit        Muxes := 269   
-	   8 Input    8 Bit        Muxes := 7     
+	   8 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 270   
+	   8 Input    8 Bit        Muxes := 8     
 	   3 Input    8 Bit        Muxes := 3     
 	   7 Input    8 Bit        Muxes := 2     
 	   2 Input    7 Bit        Muxes := 47    
@@ -9277,24 +9294,25 @@ Detailed RTL Component Info :
 	   3 Input    6 Bit        Muxes := 4     
 	   8 Input    6 Bit        Muxes := 1     
 	   5 Input    5 Bit        Muxes := 4     
-	   2 Input    5 Bit        Muxes := 50    
+	   2 Input    5 Bit        Muxes := 51    
 	   4 Input    5 Bit        Muxes := 6     
 	   3 Input    5 Bit        Muxes := 2     
-	   8 Input    5 Bit        Muxes := 3     
-	   2 Input    4 Bit        Muxes := 46    
+	   8 Input    5 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 52    
 	  11 Input    4 Bit        Muxes := 1     
 	   3 Input    4 Bit        Muxes := 4     
 	   4 Input    4 Bit        Muxes := 4     
 	   9 Input    4 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 6     
 	  13 Input    4 Bit        Muxes := 1     
 	  30 Input    4 Bit        Muxes := 1     
-	   2 Input    3 Bit        Muxes := 107   
+	   2 Input    3 Bit        Muxes := 108   
 	   4 Input    3 Bit        Muxes := 29    
 	   6 Input    3 Bit        Muxes := 4     
 	   5 Input    3 Bit        Muxes := 4     
 	   3 Input    3 Bit        Muxes := 10    
 	  11 Input    3 Bit        Muxes := 10    
-	   8 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 3     
 	  32 Input    3 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 462   
 	   3 Input    2 Bit        Muxes := 14    
@@ -9303,12 +9321,12 @@ Detailed RTL Component Info :
 	   7 Input    2 Bit        Muxes := 6     
 	   6 Input    2 Bit        Muxes := 2     
 	  13 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 1328  
+	   2 Input    1 Bit        Muxes := 1341  
 	   9 Input    1 Bit        Muxes := 1     
 	   6 Input    1 Bit        Muxes := 151   
 	   4 Input    1 Bit        Muxes := 84    
 	  11 Input    1 Bit        Muxes := 1     
-	   8 Input    1 Bit        Muxes := 6     
+	   8 Input    1 Bit        Muxes := 11    
 	   3 Input    1 Bit        Muxes := 53    
 	   7 Input    1 Bit        Muxes := 45    
 	   5 Input    1 Bit        Muxes := 37    
@@ -10234,7 +10252,7 @@ INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_LITE_
 INFO: [Synth 8-3332] Sequential element (GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_LITE_IS_ASYNC.GEN_ASYNC_LITE_ACCESS.LITE_WVALID_MM2S_CDC_I/GENERATE_PULSE_P_S_CDC_OPEN_ENDED.P_IN_CROSS2SCNDRY_s_out_d7) is unused and will be removed from module axi_vdma_reg_if.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:27 ; elapsed = 00:02:33 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:25 ; elapsed = 00:02:31 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -10267,9 +10285,10 @@ Block RAM: Preliminary Mapping	Report (see note below)
 |U0/vsc/inst/vscale_core_polyphase_U0                                                                                                                                                                                           | LineBuf_val_V_3_U/bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0_ram_U/ram_reg  | 1 K x 24(READ_FIRST)   | W |   | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
 |U0/vsc/inst/vscale_core_polyphase_U0                                                                                                                                                                                           | LineBuf_val_V_4_U/bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0_ram_U/ram_reg  | 1 K x 24(READ_FIRST)   | W |   | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
 |U0/vsc/inst/vscale_core_polyphase_U0                                                                                                                                                                                           | LineBuf_val_V_5_U/bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0_ram_U/ram_reg  | 1 K x 24(READ_FIRST)   | W |   | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
-|atelier4_i/i_4_0/testPatternGen2_0                                                                                                                                                                                             | U0/inst_background_buffer/s_buffer_reg                                               | 8 K x 5(READ_FIRST)    | W |   | 8 K x 5(WRITE_FIRST)   |   | R | Port A and B     | 1      | 1      | 
-|atelier4_i/i_4_0/testPatternGen2_0                                                                                                                                                                                             | U0/inst_bg_tile_buffer/s_tiles_reg                                                   | 2 K x 5(READ_FIRST)    | W |   | 2 K x 5(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-|atelier4_i/i_4_0/v_axi4s_vid_out_0/inst/\COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                                                                     | gen_wr_a.gen_word_narrow.mem_reg                                                     | 1 K x 27(READ_FIRST)   | W |   | 1 K x 27(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|atelier4_i/i_4_1/testPatternGen2_0                                                                                                                                                                                             | U0/inst_background_buffer/s_buffer_reg                                               | 8 K x 5(READ_FIRST)    | W |   | 8 K x 5(WRITE_FIRST)   |   | R | Port A and B     | 1      | 1      | 
+|atelier4_i/i_4_1/testPatternGen2_0                                                                                                                                                                                             | U0/inst_bg_tile_buffer/s_tiles_reg                                                   | 2 K x 5(READ_FIRST)    | W |   | 2 K x 5(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|atelier4_i/i_4_1/testPatternGen2_0                                                                                                                                                                                             | U0/inst_actor_tile_buffer/s_tiles_reg                                                | 4 K x 5(READ_FIRST)    | W |   | 4 K x 5(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|atelier4_i/i_4_1/v_axi4s_vid_out_0/inst/\COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                                                                     | gen_wr_a.gen_word_narrow.mem_reg                                                     | 1 K x 27(READ_FIRST)   | W |   | 1 K x 27(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
@@ -10359,7 +10378,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:37 ; elapsed = 00:02:43 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:35 ; elapsed = 00:02:41 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -10367,7 +10386,7 @@ Start Timing Optimization
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:45 ; elapsed = 00:02:51 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Finished Timing Optimization : Time (s): cpu = 00:02:43 ; elapsed = 00:02:49 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -10398,9 +10417,10 @@ Block RAM: Final Mapping	Report
 |U0/vsc/inst/vscale_core_polyphase_U0                                                                                                                                                                                           | LineBuf_val_V_3_U/bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0_ram_U/ram_reg  | 1 K x 24(READ_FIRST)   | W |   | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
 |U0/vsc/inst/vscale_core_polyphase_U0                                                                                                                                                                                           | LineBuf_val_V_4_U/bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0_ram_U/ram_reg  | 1 K x 24(READ_FIRST)   | W |   | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
 |U0/vsc/inst/vscale_core_polyphase_U0                                                                                                                                                                                           | LineBuf_val_V_5_U/bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0_ram_U/ram_reg  | 1 K x 24(READ_FIRST)   | W |   | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
-|atelier4_i/i_4_0/testPatternGen2_0                                                                                                                                                                                             | U0/inst_background_buffer/s_buffer_reg                                               | 8 K x 5(READ_FIRST)    | W |   | 8 K x 5(WRITE_FIRST)   |   | R | Port A and B     | 1      | 1      | 
-|atelier4_i/i_4_0/testPatternGen2_0                                                                                                                                                                                             | U0/inst_bg_tile_buffer/s_tiles_reg                                                   | 2 K x 5(READ_FIRST)    | W |   | 2 K x 5(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
-|atelier4_i/i_4_0/v_axi4s_vid_out_0/inst/\COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                                                                     | gen_wr_a.gen_word_narrow.mem_reg                                                     | 1 K x 27(READ_FIRST)   | W |   | 1 K x 27(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|atelier4_i/i_4_1/testPatternGen2_0                                                                                                                                                                                             | U0/inst_background_buffer/s_buffer_reg                                               | 8 K x 5(READ_FIRST)    | W |   | 8 K x 5(WRITE_FIRST)   |   | R | Port A and B     | 1      | 1      | 
+|atelier4_i/i_4_1/testPatternGen2_0                                                                                                                                                                                             | U0/inst_bg_tile_buffer/s_tiles_reg                                                   | 2 K x 5(READ_FIRST)    | W |   | 2 K x 5(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|atelier4_i/i_4_1/testPatternGen2_0                                                                                                                                                                                             | U0/inst_actor_tile_buffer/s_tiles_reg                                                | 4 K x 5(READ_FIRST)    | W |   | 4 K x 5(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|atelier4_i/i_4_1/v_axi4s_vid_out_0/inst/\COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst                                                                     | gen_wr_a.gen_word_narrow.mem_reg                                                     | 1 K x 27(READ_FIRST)   | W |   | 1 K x 27(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 
@@ -10443,9 +10463,10 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance atelier4_i/i_4_0/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance atelier4_i/i_4_0/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance atelier4_i/i_4_0/testPatternGen2_0/U0/inst_bg_tile_buffer/s_tiles_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance atelier4_i/i_4_1/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance atelier4_i/i_4_1/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance atelier4_i/i_4_1/testPatternGen2_0/U0/inst_bg_tile_buffer/s_tiles_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance atelier4_i/i_4_1/testPatternGen2_0/U0/inst_actor_tile_buffer/s_tiles_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance atelier4_i/v_proc_ss_0/U0/hsc/inst/CTRL_s_axi_U/int_hfltCoeff/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance atelier4_i/v_proc_ss_0/U0/hsc/inst/CTRL_s_axi_U/int_hfltCoeff/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance atelier4_i/v_proc_ss_0/U0/hsc/inst/CTRL_s_axi_U/int_phasesH/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
@@ -10471,7 +10492,7 @@ INFO: [Synth 8-7052] The timing for the instance atelier4_i/v_proc_ss_0/U0/vsc/i
 INFO: [Synth 8-7052] The timing for the instance atelier4_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/LineBuf_val_V_5_U/bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance atelier4_i/v_proc_ss_0/U0/vsc/inst/vscale_core_polyphase_U0/LineBuf_val_V_5_U/bd_0837_vsc_0_vscale_core_polyphase_LineBuf_val_V_0_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:59 ; elapsed = 00:03:09 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Finished Technology Mapping : Time (s): cpu = 00:02:56 ; elapsed = 00:03:06 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -10512,42 +10533,43 @@ INFO: [Synth 8-7052] The timing for the instance atelier4_i/v_proc_ss_0/U0/vsc/i
 INFO: [Synth 8-7052] The timing for the instance atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance atelier4_i/testPatternGen2_0/U0/inst_background_buffer/s_buffer_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance atelier4_i/testPatternGen2_0/U0/inst_bg_tile_buffer/s_tiles_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance atelier4_i/testPatternGen2_0/U0/inst_actor_tile_buffer/s_tiles_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3295] tying undriven pin CDC_SINGLE_REMAP_UNDERFLOW_INST/xpm_cdc_single_inst:src_in to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:07 ; elapsed = 00:03:18 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Finished IO Insertion : Time (s): cpu = 00:03:04 ; elapsed = 00:03:14 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:07 ; elapsed = 00:03:18 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:04 ; elapsed = 00:03:15 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:11 ; elapsed = 00:03:22 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:08 ; elapsed = 00:03:18 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:11 ; elapsed = 00:03:22 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:08 ; elapsed = 00:03:19 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:11 ; elapsed = 00:03:22 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:09 ; elapsed = 00:03:19 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:12 ; elapsed = 00:03:23 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:09 ; elapsed = 00:03:19 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -10624,14 +10646,14 @@ Report Cell Usage:
 +------+-----------+------+
 |1     |BIBUF      |   130|
 |2     |BUFG       |     3|
-|3     |CARRY4     |   423|
+|3     |CARRY4     |   551|
 |4     |DSP48E1    |    36|
 |7     |LUT1       |   983|
-|8     |LUT2       |  1298|
-|9     |LUT3       |  2994|
-|10    |LUT4       |  2101|
-|11    |LUT5       |  2045|
-|12    |LUT6       |  2660|
+|8     |LUT2       |  1482|
+|9     |LUT3       |  3108|
+|10    |LUT4       |  2440|
+|11    |LUT5       |  2075|
+|12    |LUT6       |  2754|
 |13    |MMCME2_ADV |     1|
 |14    |MUXF7      |    39|
 |15    |OSERDESE2  |     8|
@@ -10641,31 +10663,31 @@ Report Cell Usage:
 |20    |RAM32M     |   113|
 |21    |RAM64X1S   |   192|
 |22    |RAMB18E1   |    20|
-|30    |RAMB36E1   |    18|
-|36    |SRL16      |     9|
-|37    |SRL16E     |   662|
-|38    |FDCE       |   513|
-|39    |FDPE       |     6|
-|40    |FDR        |   240|
-|41    |FDRE       | 13371|
-|42    |FDSE       |   524|
-|43    |LD         |     4|
-|44    |IBUF       |     2|
-|45    |OBUFDS     |     4|
+|30    |RAMB36E1   |    19|
+|37    |SRL16      |     9|
+|38    |SRL16E     |   662|
+|39    |FDCE       |   513|
+|40    |FDPE       |     6|
+|41    |FDR        |   240|
+|42    |FDRE       | 13720|
+|43    |FDSE       |   524|
+|44    |LD         |     4|
+|45    |IBUF       |     2|
+|46    |OBUFDS     |     4|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:12 ; elapsed = 00:03:23 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:09 ; elapsed = 00:03:19 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 315 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:44 ; elapsed = 00:02:32 . Memory (MB): peak = 3214.461 ; gain = 877.117
-Synthesis Optimization Complete : Time (s): cpu = 00:03:12 ; elapsed = 00:03:24 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:43 ; elapsed = 00:02:31 . Memory (MB): peak = 3219.047 ; gain = 886.223
+Synthesis Optimization Complete : Time (s): cpu = 00:03:09 ; elapsed = 00:03:20 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.903 . Memory (MB): peak = 3214.461 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1101 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.921 . Memory (MB): peak = 3219.047 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1230 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 3214.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 3219.047 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 559 instances were transformed.
   FDR => FDRE: 240 instances
@@ -10676,10 +10698,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRL16 => SRL16E: 9 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-1315 Infos, 324 Warnings, 0 Critical Warnings and 0 Errors encountered.
+1333 Infos, 324 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:25 ; elapsed = 00:03:39 . Memory (MB): peak = 3214.461 ; gain = 2097.477
+synth_design: Time (s): cpu = 00:03:23 ; elapsed = 00:03:36 . Memory (MB): peak = 3219.047 ; gain = 2105.941
 INFO: [Common 17-1381] The checkpoint 'C:/travail/s4InfoAtelier4/s4InfoAtelier4.runs/synth_1/atelier4_wrapper.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 3214.461 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3219.047 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file atelier4_wrapper_utilization_synth.rpt -pb atelier4_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  3 20:23:07 2025...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  6 01:36:06 2025...

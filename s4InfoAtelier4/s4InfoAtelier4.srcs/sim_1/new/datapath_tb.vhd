@@ -89,6 +89,20 @@ begin
 
         wait for COMMAND_PERIOD;
         i_instruction <= "01000000010110101000000000000000";
+        
+        wait for COMMAND_PERIOD;
+        i_instruction <= "00010001000000001111100000000000";
+        
+        wait for COMMAND_PERIOD;
+        i_instruction <= "01100100000000001000000001000000";
+        
+        wait for COMMAND_PERIOD;
+        i_x <= std_logic_vector(to_unsigned(360, 12));
+        i_y <= std_logic_vector(to_unsigned(180, 12));
+        i_instruction <= "01100010101101000010110100000000";  
+        
+        wait for COMMAND_PERIOD;
+        i_instruction <= "01100010000000011000000011000000";       
         WAIT;
    end process;
 

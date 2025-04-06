@@ -1,0 +1,59 @@
+#include "scaler.h"
+#include "vdma.h"
+#include "xil_printf.h"
+#include "myColorRegister.h"
+#include "sleep.h"
+#include "instructions.h"
+#include "api/ppu/ppu.h"
+
+#define DEBUG
+
+int main()
+{
+	configureScaler();
+	configureVdma();
+
+	uint8_t ratActorID = 1;
+	uint8_t ratIdle1 = 1;
+
+		for(int i = 0; i < sizeof(left_brick_color_instructions)/sizeof(int); i++) {
+			MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0,  left_brick_color_instructions[i]);
+			usleep(1);
+		}
+		for(int i = 0; i < sizeof(right_brick_color_instructions)/sizeof(int); i++) {
+			MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0,  right_brick_color_instructions[i]);
+			usleep(1);
+		}
+		for(int i = 0; i < sizeof(rat_idle_1_color_instructions)/sizeof(int); i++) {
+			MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0,  rat_idle_1_color_instructions[i]);
+			usleep(1);
+		}
+
+		for(uint8_t i = 0; i < 64; i++) {
+			for(uint8_t j = 0; j < 128; j++) {
+				uint8_t tile_id = 0;
+				if((j % 2 == 0 && i % 2 == 0) || (j % 2 != 0 && i % 2 != 0)) {
+					tile_id = 1;
+				}
+				else{
+					tile_id = 2;
+				}
+				PPU_SetBackgroundTileID(tile_id, j, i);
+				usleep(1);
+			}
+		}
+
+		PPU_SetActorTileID(ratActorID, ratIdle1);
+		usleep(1);
+		PPU_SetActorPosition(320, 180, ratActorID);
+		usleep(1);
+		for(uint16_t i = 0; i < 512; i++) {
+			PPU_MoveActorPosition(1, 0, ratActorID);
+			usleep(1);
+			MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0, 0);
+			usleep(50000);
+		}
+		while(1) {
+		}
+	return 0;
+}

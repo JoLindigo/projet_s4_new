@@ -6760,3 +6760,1733 @@ con
 
 20:27:57 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
 20:31:25 INFO  : Disconnected from the channel tcfchan#28.
+16:59:23 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+16:59:27 INFO  : XSCT server has started successfully.
+16:59:27 INFO  : plnx-install-location is set to ''
+16:59:27 INFO  : Successfully done setting XSCT server connection channel  
+16:59:27 INFO  : Successfully done setting workspace for the tool. 
+16:59:33 INFO  : Platform repository initialization has completed.
+16:59:33 INFO  : Registering command handlers for Vitis TCF services
+16:59:39 INFO  : Successfully done query RDI_DATADIR 
+20:29:05 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+20:29:33 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+20:29:33 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+20:29:40 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+20:29:45 INFO  : The hardware specfication used by project 'bouya' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+20:29:45 INFO  : The file 'C:\travail\s4InfoAtelier4\bouya\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+20:29:45 INFO  : The updated bitstream files are copied from platform to folder 'C:\travail\s4InfoAtelier4\bouya\_ide\bitstream' in project 'bouya'.
+20:29:45 INFO  : The file 'C:\travail\s4InfoAtelier4\bouya\_ide\psinit\ps7_init.tcl' stored in project is removed.
+20:29:51 INFO  : The updated ps init files are copied from platform to folder 'C:\travail\s4InfoAtelier4\bouya\_ide\psinit' in project 'bouya'.
+20:30:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:30:00 INFO  : Jtag cable 'Digilent Zybo Z7 210351AF2428A' is selected.
+20:30:00 INFO  : 'jtag frequency' command is executed.
+20:30:00 INFO  : Context for 'APU' is selected.
+20:30:01 INFO  : System reset is completed.
+20:30:04 INFO  : 'after 3000' command is executed.
+20:30:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2428A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2428A-13722093-0"}' command is executed.
+20:30:05 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+20:30:05 INFO  : Context for 'APU' is selected.
+20:30:05 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+20:30:05 INFO  : 'configparams force-mem-access 1' command is executed.
+20:30:05 INFO  : Context for 'APU' is selected.
+20:30:05 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+20:30:06 INFO  : 'ps7_init' command is executed.
+20:30:06 INFO  : 'ps7_post_config' command is executed.
+20:30:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:30:06 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:30:06 INFO  : 'configparams force-mem-access 0' command is executed.
+20:30:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2428A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2428A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:30:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:30:06 INFO  : 'con' command is executed.
+20:30:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:30:06 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+21:13:39 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+21:13:40 INFO  : Registering command handlers for Vitis TCF services
+21:13:42 INFO  : XSCT server has started successfully.
+21:13:43 INFO  : Platform repository initialization has completed.
+21:13:46 INFO  : plnx-install-location is set to ''
+21:13:46 INFO  : Successfully done setting XSCT server connection channel  
+21:13:46 INFO  : Successfully done query RDI_DATADIR 
+21:13:46 INFO  : Successfully done setting workspace for the tool. 
+21:14:03 INFO  : Platform 'atelier4_wrapper' is added to custom repositories.
+21:20:42 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+21:20:42 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+21:20:43 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+21:20:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:20:54 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+21:20:54 INFO  : 'jtag frequency' command is executed.
+21:20:54 INFO  : Context for 'APU' is selected.
+21:20:54 INFO  : System reset is completed.
+21:20:57 INFO  : 'after 3000' command is executed.
+21:20:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+21:20:58 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+21:20:58 INFO  : Context for 'APU' is selected.
+21:20:58 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+21:20:58 INFO  : 'configparams force-mem-access 1' command is executed.
+21:20:58 INFO  : Context for 'APU' is selected.
+21:20:58 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+21:20:58 INFO  : 'ps7_init' command is executed.
+21:20:58 INFO  : 'ps7_post_config' command is executed.
+21:20:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:20:59 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:20:59 INFO  : 'configparams force-mem-access 0' command is executed.
+21:20:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:20:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:20:59 INFO  : 'con' command is executed.
+21:20:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:20:59 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+21:26:38 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+21:26:45 INFO  : Disconnected from the channel tcfchan#3.
+21:26:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:26:45 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+21:26:45 INFO  : 'jtag frequency' command is executed.
+21:26:45 INFO  : Context for 'APU' is selected.
+21:26:45 INFO  : System reset is completed.
+21:26:48 INFO  : 'after 3000' command is executed.
+21:26:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+21:26:50 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+21:26:50 INFO  : Context for 'APU' is selected.
+21:26:50 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+21:26:50 INFO  : 'configparams force-mem-access 1' command is executed.
+21:26:50 INFO  : Context for 'APU' is selected.
+21:26:50 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+21:26:50 INFO  : 'ps7_init' command is executed.
+21:26:50 INFO  : 'ps7_post_config' command is executed.
+21:26:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:26:50 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:26:50 INFO  : 'configparams force-mem-access 0' command is executed.
+21:26:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:26:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:26:51 INFO  : 'con' command is executed.
+21:26:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:26:51 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+21:28:12 INFO  : Disconnected from the channel tcfchan#5.
+21:28:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:28:12 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+21:28:12 INFO  : 'jtag frequency' command is executed.
+21:28:12 INFO  : Context for 'APU' is selected.
+21:28:12 INFO  : System reset is completed.
+21:28:15 INFO  : 'after 3000' command is executed.
+21:28:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+21:28:17 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+21:28:17 INFO  : Context for 'APU' is selected.
+21:28:17 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+21:28:17 INFO  : 'configparams force-mem-access 1' command is executed.
+21:28:17 INFO  : Context for 'APU' is selected.
+21:28:17 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+21:28:17 INFO  : 'ps7_init' command is executed.
+21:28:17 INFO  : 'ps7_post_config' command is executed.
+21:28:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:28:17 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:28:17 INFO  : 'configparams force-mem-access 0' command is executed.
+21:28:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:28:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:28:18 INFO  : 'con' command is executed.
+21:28:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:28:18 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+22:55:11 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+22:55:18 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+22:55:18 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+22:55:24 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+22:55:26 INFO  : The hardware specfication used by project 'bouya' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+22:55:26 INFO  : The file 'C:\travail\s4InfoAtelier4\bouya\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+22:55:26 INFO  : The updated bitstream files are copied from platform to folder 'C:\travail\s4InfoAtelier4\bouya\_ide\bitstream' in project 'bouya'.
+22:55:26 INFO  : The file 'C:\travail\s4InfoAtelier4\bouya\_ide\psinit\ps7_init.tcl' stored in project is removed.
+22:55:31 INFO  : The updated ps init files are copied from platform to folder 'C:\travail\s4InfoAtelier4\bouya\_ide\psinit' in project 'bouya'.
+22:55:39 INFO  : Disconnected from the channel tcfchan#6.
+22:55:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:55:39 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+22:55:39 INFO  : 'jtag frequency' command is executed.
+22:55:39 INFO  : Context for 'APU' is selected.
+22:55:40 INFO  : System reset is completed.
+22:55:43 INFO  : 'after 3000' command is executed.
+22:55:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+22:55:44 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+22:55:44 INFO  : Context for 'APU' is selected.
+22:55:44 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+22:55:44 INFO  : 'configparams force-mem-access 1' command is executed.
+22:55:44 INFO  : Context for 'APU' is selected.
+22:55:44 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+22:55:44 INFO  : 'ps7_init' command is executed.
+22:55:44 INFO  : 'ps7_post_config' command is executed.
+22:55:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:55:45 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:55:45 INFO  : 'configparams force-mem-access 0' command is executed.
+22:55:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:55:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:55:45 INFO  : 'con' command is executed.
+22:55:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:55:45 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+22:57:43 INFO  : Disconnected from the channel tcfchan#9.
+22:57:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:57:43 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+22:57:43 INFO  : 'jtag frequency' command is executed.
+22:57:43 INFO  : Context for 'APU' is selected.
+22:57:44 INFO  : System reset is completed.
+22:57:47 INFO  : 'after 3000' command is executed.
+22:57:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+22:57:48 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+22:57:48 INFO  : Context for 'APU' is selected.
+22:57:48 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+22:57:48 INFO  : 'configparams force-mem-access 1' command is executed.
+22:57:48 INFO  : Context for 'APU' is selected.
+22:57:48 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+22:57:48 INFO  : 'ps7_init' command is executed.
+22:57:48 INFO  : 'ps7_post_config' command is executed.
+22:57:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:57:49 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:57:49 INFO  : 'configparams force-mem-access 0' command is executed.
+22:57:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:57:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:57:49 INFO  : 'con' command is executed.
+22:57:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:57:49 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+22:57:53 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+22:58:48 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+22:59:51 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+22:59:59 INFO  : Disconnected from the channel tcfchan#10.
+22:59:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:59:59 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+22:59:59 INFO  : 'jtag frequency' command is executed.
+22:59:59 INFO  : Context for 'APU' is selected.
+22:59:59 INFO  : System reset is completed.
+23:00:02 INFO  : 'after 3000' command is executed.
+23:00:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:00:03 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:00:03 INFO  : Context for 'APU' is selected.
+23:00:03 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:00:03 INFO  : 'configparams force-mem-access 1' command is executed.
+23:00:03 INFO  : Context for 'APU' is selected.
+23:00:03 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:00:04 INFO  : 'ps7_init' command is executed.
+23:00:04 INFO  : 'ps7_post_config' command is executed.
+23:00:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:00:04 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:00:04 INFO  : 'configparams force-mem-access 0' command is executed.
+23:00:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:00:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:00:04 INFO  : 'con' command is executed.
+23:00:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:00:04 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:01:35 INFO  : Disconnected from the channel tcfchan#14.
+23:01:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:01:35 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:01:35 INFO  : 'jtag frequency' command is executed.
+23:01:35 INFO  : Context for 'APU' is selected.
+23:01:35 INFO  : System reset is completed.
+23:01:38 INFO  : 'after 3000' command is executed.
+23:01:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:01:39 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:01:39 INFO  : Context for 'APU' is selected.
+23:01:39 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:01:39 INFO  : 'configparams force-mem-access 1' command is executed.
+23:01:39 INFO  : Context for 'APU' is selected.
+23:01:39 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:01:40 INFO  : 'ps7_init' command is executed.
+23:01:40 INFO  : 'ps7_post_config' command is executed.
+23:01:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:01:40 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:01:40 INFO  : 'configparams force-mem-access 0' command is executed.
+23:01:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:01:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:01:40 INFO  : 'con' command is executed.
+23:01:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:01:40 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:01:47 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+23:01:53 INFO  : Disconnected from the channel tcfchan#15.
+23:01:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:01:54 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:01:54 INFO  : 'jtag frequency' command is executed.
+23:01:54 INFO  : Context for 'APU' is selected.
+23:01:54 INFO  : System reset is completed.
+23:01:57 INFO  : 'after 3000' command is executed.
+23:01:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:01:58 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:01:58 INFO  : Context for 'APU' is selected.
+23:01:58 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:01:58 INFO  : 'configparams force-mem-access 1' command is executed.
+23:01:58 INFO  : Context for 'APU' is selected.
+23:01:58 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:01:58 INFO  : 'ps7_init' command is executed.
+23:01:58 INFO  : 'ps7_post_config' command is executed.
+23:01:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:01:59 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:01:59 INFO  : 'configparams force-mem-access 0' command is executed.
+23:01:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:01:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:01:59 INFO  : 'con' command is executed.
+23:01:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:01:59 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:03:18 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+23:03:29 INFO  : Disconnected from the channel tcfchan#17.
+23:03:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:03:29 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:03:29 INFO  : 'jtag frequency' command is executed.
+23:03:29 INFO  : Context for 'APU' is selected.
+23:03:29 INFO  : System reset is completed.
+23:03:32 INFO  : 'after 3000' command is executed.
+23:03:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:03:33 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:03:33 INFO  : Context for 'APU' is selected.
+23:03:33 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:03:33 INFO  : 'configparams force-mem-access 1' command is executed.
+23:03:33 INFO  : Context for 'APU' is selected.
+23:03:33 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:03:34 INFO  : 'ps7_init' command is executed.
+23:03:34 INFO  : 'ps7_post_config' command is executed.
+23:03:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:03:34 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:03:34 INFO  : 'configparams force-mem-access 0' command is executed.
+23:03:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:03:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:03:34 INFO  : 'con' command is executed.
+23:03:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:03:34 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:03:58 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+23:04:08 INFO  : Disconnected from the channel tcfchan#19.
+23:04:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:04:08 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:04:08 INFO  : 'jtag frequency' command is executed.
+23:04:08 INFO  : Context for 'APU' is selected.
+23:04:08 INFO  : System reset is completed.
+23:04:11 INFO  : 'after 3000' command is executed.
+23:04:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:04:12 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:04:12 INFO  : Context for 'APU' is selected.
+23:04:12 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:04:12 INFO  : 'configparams force-mem-access 1' command is executed.
+23:04:12 INFO  : Context for 'APU' is selected.
+23:04:12 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:04:13 INFO  : 'ps7_init' command is executed.
+23:04:13 INFO  : 'ps7_post_config' command is executed.
+23:04:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:04:13 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:04:13 INFO  : 'configparams force-mem-access 0' command is executed.
+23:04:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:04:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:04:13 INFO  : 'con' command is executed.
+23:04:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:04:13 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:05:13 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+23:05:22 INFO  : Disconnected from the channel tcfchan#21.
+23:05:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:05:22 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:05:22 INFO  : 'jtag frequency' command is executed.
+23:05:22 INFO  : Context for 'APU' is selected.
+23:05:22 INFO  : System reset is completed.
+23:05:25 INFO  : 'after 3000' command is executed.
+23:05:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:05:26 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:05:26 INFO  : Context for 'APU' is selected.
+23:05:26 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:05:26 INFO  : 'configparams force-mem-access 1' command is executed.
+23:05:26 INFO  : Context for 'APU' is selected.
+23:05:26 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:05:27 INFO  : 'ps7_init' command is executed.
+23:05:27 INFO  : 'ps7_post_config' command is executed.
+23:05:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:05:27 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:05:27 INFO  : 'configparams force-mem-access 0' command is executed.
+23:05:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:05:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:05:27 INFO  : 'con' command is executed.
+23:05:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:05:27 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:06:13 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+23:06:21 INFO  : Disconnected from the channel tcfchan#23.
+23:06:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:06:21 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:06:21 INFO  : 'jtag frequency' command is executed.
+23:06:21 INFO  : Context for 'APU' is selected.
+23:06:21 INFO  : System reset is completed.
+23:06:24 INFO  : 'after 3000' command is executed.
+23:06:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:06:25 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:06:25 INFO  : Context for 'APU' is selected.
+23:06:26 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:06:26 INFO  : 'configparams force-mem-access 1' command is executed.
+23:06:26 INFO  : Context for 'APU' is selected.
+23:06:26 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:06:26 INFO  : 'ps7_init' command is executed.
+23:06:26 INFO  : 'ps7_post_config' command is executed.
+23:06:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:26 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:06:26 INFO  : 'configparams force-mem-access 0' command is executed.
+23:06:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:06:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:26 INFO  : 'con' command is executed.
+23:06:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:06:26 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:06:40 INFO  : Disconnected from the channel tcfchan#25.
+23:06:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:06:41 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:06:41 INFO  : 'jtag frequency' command is executed.
+23:06:41 INFO  : Context for 'APU' is selected.
+23:06:41 INFO  : System reset is completed.
+23:06:44 INFO  : 'after 3000' command is executed.
+23:06:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:06:45 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:06:45 INFO  : Context for 'APU' is selected.
+23:06:45 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:06:45 INFO  : 'configparams force-mem-access 1' command is executed.
+23:06:45 INFO  : Context for 'APU' is selected.
+23:06:45 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:06:45 INFO  : 'ps7_init' command is executed.
+23:06:45 INFO  : 'ps7_post_config' command is executed.
+23:06:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:46 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:06:46 INFO  : 'configparams force-mem-access 0' command is executed.
+23:06:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:06:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:46 INFO  : 'con' command is executed.
+23:06:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:06:46 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:06:47 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+23:06:54 INFO  : Disconnected from the channel tcfchan#26.
+23:06:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:06:54 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:06:54 INFO  : 'jtag frequency' command is executed.
+23:06:54 INFO  : Context for 'APU' is selected.
+23:06:54 INFO  : System reset is completed.
+23:06:57 INFO  : 'after 3000' command is executed.
+23:06:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:06:58 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:06:58 INFO  : Context for 'APU' is selected.
+23:06:58 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:06:58 INFO  : 'configparams force-mem-access 1' command is executed.
+23:06:58 INFO  : Context for 'APU' is selected.
+23:06:58 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:06:59 INFO  : 'ps7_init' command is executed.
+23:06:59 INFO  : 'ps7_post_config' command is executed.
+23:06:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:59 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:06:59 INFO  : 'configparams force-mem-access 0' command is executed.
+23:06:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:06:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:59 INFO  : 'con' command is executed.
+23:06:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:06:59 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:07:50 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+23:07:59 INFO  : Disconnected from the channel tcfchan#28.
+23:07:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:08:00 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:08:00 INFO  : 'jtag frequency' command is executed.
+23:08:00 INFO  : Context for 'APU' is selected.
+23:08:00 INFO  : System reset is completed.
+23:08:03 INFO  : 'after 3000' command is executed.
+23:08:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:08:04 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:08:04 INFO  : Context for 'APU' is selected.
+23:08:04 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:08:04 INFO  : 'configparams force-mem-access 1' command is executed.
+23:08:04 INFO  : Context for 'APU' is selected.
+23:08:04 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:08:04 INFO  : 'ps7_init' command is executed.
+23:08:04 INFO  : 'ps7_post_config' command is executed.
+23:08:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:08:05 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:08:05 INFO  : 'configparams force-mem-access 0' command is executed.
+23:08:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:08:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:08:05 INFO  : 'con' command is executed.
+23:08:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:08:05 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:08:35 INFO  : Disconnected from the channel tcfchan#30.
+23:08:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:08:36 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:08:36 INFO  : 'jtag frequency' command is executed.
+23:08:36 INFO  : Context for 'APU' is selected.
+23:08:36 INFO  : System reset is completed.
+23:08:39 INFO  : 'after 3000' command is executed.
+23:08:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:08:40 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:08:40 INFO  : Context for 'APU' is selected.
+23:08:40 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:08:40 INFO  : 'configparams force-mem-access 1' command is executed.
+23:08:40 INFO  : Context for 'APU' is selected.
+23:08:40 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:08:40 INFO  : 'ps7_init' command is executed.
+23:08:40 INFO  : 'ps7_post_config' command is executed.
+23:08:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:08:41 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:08:41 INFO  : 'configparams force-mem-access 0' command is executed.
+23:08:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:08:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:08:41 INFO  : 'con' command is executed.
+23:08:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:08:41 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:12:29 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+23:12:39 INFO  : Disconnected from the channel tcfchan#31.
+23:12:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:12:41 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:12:41 INFO  : 'jtag frequency' command is executed.
+23:12:41 INFO  : Context for 'APU' is selected.
+23:12:41 INFO  : System reset is completed.
+23:12:44 INFO  : 'after 3000' command is executed.
+23:12:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:12:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:12:46 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:12:46 INFO  : Context for 'APU' is selected.
+23:12:46 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:12:46 INFO  : 'configparams force-mem-access 1' command is executed.
+23:12:46 INFO  : Context for 'APU' is selected.
+23:12:46 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:12:46 INFO  : 'ps7_init' command is executed.
+23:12:46 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:12:46 INFO  : 'ps7_post_config' command is executed.
+23:12:46 INFO  : 'jtag frequency' command is executed.
+23:12:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:12:46 INFO  : Context for 'APU' is selected.
+23:12:46 ERROR : Code 16 Time 1743909166741 Format {Invalid context}
+23:12:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+----------------End of Script----------------
+
+23:12:46 ERROR : Code 16 Time 1743909166741 Format {Invalid context}
+23:12:47 INFO  : System reset is completed.
+23:12:50 INFO  : 'after 3000' command is executed.
+23:12:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:12:51 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:12:51 INFO  : Context for 'APU' is selected.
+23:12:51 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:12:51 INFO  : 'configparams force-mem-access 1' command is executed.
+23:12:51 INFO  : Context for 'APU' is selected.
+23:12:51 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:12:51 INFO  : 'ps7_init' command is executed.
+23:12:51 INFO  : 'ps7_post_config' command is executed.
+23:12:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:12:52 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:12:52 INFO  : 'configparams force-mem-access 0' command is executed.
+23:12:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:12:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:12:52 INFO  : 'con' command is executed.
+23:12:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:12:52 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:14:49 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+23:14:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:14:56 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:14:56 INFO  : 'jtag frequency' command is executed.
+23:14:56 INFO  : Context for 'APU' is selected.
+23:14:56 INFO  : System reset is completed.
+23:14:59 INFO  : 'after 3000' command is executed.
+23:14:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:15:00 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:15:00 INFO  : Context for 'APU' is selected.
+23:15:01 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:15:01 INFO  : 'configparams force-mem-access 1' command is executed.
+23:15:01 INFO  : Context for 'APU' is selected.
+23:15:01 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:15:01 INFO  : 'ps7_init' command is executed.
+23:15:01 INFO  : 'ps7_post_config' command is executed.
+23:15:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:15:01 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:15:01 INFO  : 'configparams force-mem-access 0' command is executed.
+23:15:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:15:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:15:02 INFO  : 'con' command is executed.
+23:15:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:15:02 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:15:15 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+23:15:34 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+23:15:43 INFO  : Disconnected from the channel tcfchan#33.
+23:15:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:15:43 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:15:43 INFO  : 'jtag frequency' command is executed.
+23:15:43 INFO  : Context for 'APU' is selected.
+23:15:43 INFO  : System reset is completed.
+23:15:46 INFO  : 'after 3000' command is executed.
+23:15:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:15:48 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:15:48 INFO  : Context for 'APU' is selected.
+23:15:48 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:15:48 INFO  : 'configparams force-mem-access 1' command is executed.
+23:15:48 INFO  : Context for 'APU' is selected.
+23:15:48 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:15:48 INFO  : 'ps7_init' command is executed.
+23:15:48 INFO  : 'ps7_post_config' command is executed.
+23:15:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:15:49 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:15:49 INFO  : 'configparams force-mem-access 0' command is executed.
+23:15:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:15:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:15:49 INFO  : 'con' command is executed.
+23:15:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:15:49 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:16:05 INFO  : Disconnected from the channel tcfchan#37.
+23:16:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:16:05 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:16:05 INFO  : 'jtag frequency' command is executed.
+23:16:05 INFO  : Context for 'APU' is selected.
+23:16:05 INFO  : System reset is completed.
+23:16:08 INFO  : 'after 3000' command is executed.
+23:16:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:16:10 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:16:10 INFO  : Context for 'APU' is selected.
+23:16:10 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:16:10 INFO  : 'configparams force-mem-access 1' command is executed.
+23:16:10 INFO  : Context for 'APU' is selected.
+23:16:10 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:16:10 INFO  : 'ps7_init' command is executed.
+23:16:10 INFO  : 'ps7_post_config' command is executed.
+23:16:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:16:10 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:16:10 INFO  : 'configparams force-mem-access 0' command is executed.
+23:16:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:16:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:16:11 INFO  : 'con' command is executed.
+23:16:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:16:11 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:16:58 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+23:17:06 INFO  : Disconnected from the channel tcfchan#38.
+23:17:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:17:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:17:06 INFO  : 'jtag frequency' command is executed.
+23:17:06 INFO  : Context for 'APU' is selected.
+23:17:06 INFO  : System reset is completed.
+23:17:09 INFO  : 'after 3000' command is executed.
+23:17:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:17:10 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:17:11 INFO  : Context for 'APU' is selected.
+23:17:11 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:17:11 INFO  : 'configparams force-mem-access 1' command is executed.
+23:17:11 INFO  : Context for 'APU' is selected.
+23:17:11 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:17:11 INFO  : 'ps7_init' command is executed.
+23:17:11 INFO  : 'ps7_post_config' command is executed.
+23:17:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:17:11 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:17:11 INFO  : 'configparams force-mem-access 0' command is executed.
+23:17:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:17:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:17:11 INFO  : 'con' command is executed.
+23:17:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:17:11 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:18:18 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+23:18:27 INFO  : Disconnected from the channel tcfchan#40.
+23:18:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:18:27 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:18:27 INFO  : 'jtag frequency' command is executed.
+23:18:27 INFO  : Context for 'APU' is selected.
+23:18:27 INFO  : System reset is completed.
+23:18:30 INFO  : 'after 3000' command is executed.
+23:18:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:18:32 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:18:32 INFO  : Context for 'APU' is selected.
+23:18:32 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:18:32 INFO  : 'configparams force-mem-access 1' command is executed.
+23:18:32 INFO  : Context for 'APU' is selected.
+23:18:32 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:18:32 INFO  : 'ps7_init' command is executed.
+23:18:32 INFO  : 'ps7_post_config' command is executed.
+23:18:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:18:33 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:18:33 INFO  : 'configparams force-mem-access 0' command is executed.
+23:18:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:18:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:18:33 INFO  : 'con' command is executed.
+23:18:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:18:33 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:37:08 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+23:37:15 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+23:37:27 INFO  : Disconnected from the channel tcfchan#42.
+23:37:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:37:27 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+23:37:27 INFO  : 'jtag frequency' command is executed.
+23:37:27 INFO  : Context for 'APU' is selected.
+23:37:27 INFO  : System reset is completed.
+23:37:30 INFO  : 'after 3000' command is executed.
+23:37:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+23:37:31 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+23:37:31 INFO  : Context for 'APU' is selected.
+23:37:31 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+23:37:31 INFO  : 'configparams force-mem-access 1' command is executed.
+23:37:31 INFO  : Context for 'APU' is selected.
+23:37:31 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+23:37:32 INFO  : 'ps7_init' command is executed.
+23:37:32 INFO  : 'ps7_post_config' command is executed.
+23:37:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:37:32 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:37:32 INFO  : 'configparams force-mem-access 0' command is executed.
+23:37:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:37:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:37:32 INFO  : 'con' command is executed.
+23:37:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:37:32 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+23:38:21 INFO  : Disconnected from the channel tcfchan#45.
+01:40:55 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\travail\s4InfoAtelier4\temp_xsdb_launch_script.tcl
+01:40:57 INFO  : XSCT server has started successfully.
+01:40:57 INFO  : plnx-install-location is set to ''
+01:40:57 INFO  : Successfully done setting XSCT server connection channel  
+01:40:57 INFO  : Successfully done setting workspace for the tool. 
+01:41:00 INFO  : Platform repository initialization has completed.
+01:41:01 INFO  : Registering command handlers for Vitis TCF services
+01:41:03 INFO  : Successfully done query RDI_DATADIR 
+01:41:18 INFO  : Hardware specification for platform project 'atelier4_wrapper' is updated.
+01:41:35 INFO  : Result from executing command 'getProjects': atelier4_wrapper
+01:41:35 INFO  : Result from executing command 'getPlatforms': atelier4_wrapper|C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/atelier4_wrapper.xpfm
+01:41:36 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+01:41:42 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+01:41:43 INFO  : The hardware specfication used by project 'bouya' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+01:41:43 INFO  : The file 'C:\travail\s4InfoAtelier4\bouya\_ide\bitstream\atelier4_wrapper.bit' stored in project is removed.
+01:41:43 INFO  : The updated bitstream files are copied from platform to folder 'C:\travail\s4InfoAtelier4\bouya\_ide\bitstream' in project 'bouya'.
+01:41:43 INFO  : The file 'C:\travail\s4InfoAtelier4\bouya\_ide\psinit\ps7_init.tcl' stored in project is removed.
+01:41:47 INFO  : The updated ps init files are copied from platform to folder 'C:\travail\s4InfoAtelier4\bouya\_ide\psinit' in project 'bouya'.
+01:41:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:41:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+01:41:53 INFO  : 'jtag frequency' command is executed.
+01:41:53 INFO  : Context for 'APU' is selected.
+01:41:53 INFO  : System reset is completed.
+01:41:56 INFO  : 'after 3000' command is executed.
+01:41:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+01:41:58 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+01:41:58 INFO  : Context for 'APU' is selected.
+01:41:58 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+01:41:58 INFO  : 'configparams force-mem-access 1' command is executed.
+01:41:58 INFO  : Context for 'APU' is selected.
+01:41:58 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+01:41:58 INFO  : 'ps7_init' command is executed.
+01:41:58 INFO  : 'ps7_post_config' command is executed.
+01:41:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:41:59 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:41:59 INFO  : 'configparams force-mem-access 0' command is executed.
+01:41:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:41:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:41:59 INFO  : 'con' command is executed.
+01:41:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:41:59 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+01:43:16 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+01:43:23 INFO  : Disconnected from the channel tcfchan#3.
+01:43:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:43:23 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+01:43:23 INFO  : 'jtag frequency' command is executed.
+01:43:23 INFO  : Context for 'APU' is selected.
+01:43:23 INFO  : System reset is completed.
+01:43:26 INFO  : 'after 3000' command is executed.
+01:43:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+01:43:27 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+01:43:27 INFO  : Context for 'APU' is selected.
+01:43:27 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+01:43:27 INFO  : 'configparams force-mem-access 1' command is executed.
+01:43:27 INFO  : Context for 'APU' is selected.
+01:43:27 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+01:43:28 INFO  : 'ps7_init' command is executed.
+01:43:28 INFO  : 'ps7_post_config' command is executed.
+01:43:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:43:28 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:43:28 INFO  : 'configparams force-mem-access 0' command is executed.
+01:43:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:43:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:43:28 INFO  : 'con' command is executed.
+01:43:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:43:28 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+01:46:39 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+01:46:46 INFO  : Disconnected from the channel tcfchan#5.
+01:46:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:46:46 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+01:46:46 INFO  : 'jtag frequency' command is executed.
+01:46:46 INFO  : Context for 'APU' is selected.
+01:46:46 INFO  : System reset is completed.
+01:46:49 INFO  : 'after 3000' command is executed.
+01:46:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+01:46:50 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+01:46:50 INFO  : Context for 'APU' is selected.
+01:46:50 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+01:46:50 INFO  : 'configparams force-mem-access 1' command is executed.
+01:46:50 INFO  : Context for 'APU' is selected.
+01:46:50 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+01:46:50 INFO  : 'ps7_init' command is executed.
+01:46:50 INFO  : 'ps7_post_config' command is executed.
+01:46:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:46:51 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:46:51 INFO  : 'configparams force-mem-access 0' command is executed.
+01:46:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:46:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:46:51 INFO  : 'con' command is executed.
+01:46:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:46:51 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+01:49:34 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+01:49:42 INFO  : Disconnected from the channel tcfchan#7.
+01:49:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:49:42 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+01:49:42 INFO  : 'jtag frequency' command is executed.
+01:49:42 INFO  : Context for 'APU' is selected.
+01:49:42 INFO  : System reset is completed.
+01:49:45 INFO  : 'after 3000' command is executed.
+01:49:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+01:49:47 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+01:49:47 INFO  : Context for 'APU' is selected.
+01:49:47 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+01:49:47 INFO  : 'configparams force-mem-access 1' command is executed.
+01:49:47 INFO  : Context for 'APU' is selected.
+01:49:47 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+01:49:47 INFO  : 'ps7_init' command is executed.
+01:49:47 INFO  : 'ps7_post_config' command is executed.
+01:49:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:49:48 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:49:48 INFO  : 'configparams force-mem-access 0' command is executed.
+01:49:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:49:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:49:48 INFO  : 'con' command is executed.
+01:49:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:49:48 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+01:52:21 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+01:52:28 INFO  : Disconnected from the channel tcfchan#8.
+01:52:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:52:28 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+01:52:28 INFO  : 'jtag frequency' command is executed.
+01:52:28 INFO  : Context for 'APU' is selected.
+01:52:29 INFO  : System reset is completed.
+01:52:32 INFO  : 'after 3000' command is executed.
+01:52:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+01:52:33 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+01:52:33 INFO  : Context for 'APU' is selected.
+01:52:33 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+01:52:33 INFO  : 'configparams force-mem-access 1' command is executed.
+01:52:33 INFO  : Context for 'APU' is selected.
+01:52:33 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+01:52:33 INFO  : 'ps7_init' command is executed.
+01:52:33 INFO  : 'ps7_post_config' command is executed.
+01:52:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:52:34 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:52:34 INFO  : 'configparams force-mem-access 0' command is executed.
+01:52:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:52:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:52:34 INFO  : 'con' command is executed.
+01:52:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:52:34 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+01:52:54 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+01:53:05 INFO  : Disconnected from the channel tcfchan#10.
+01:53:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:53:05 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+01:53:05 INFO  : 'jtag frequency' command is executed.
+01:53:05 INFO  : Context for 'APU' is selected.
+01:53:05 INFO  : System reset is completed.
+01:53:08 INFO  : 'after 3000' command is executed.
+01:53:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+01:53:10 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+01:53:10 INFO  : Context for 'APU' is selected.
+01:53:10 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+01:53:10 INFO  : 'configparams force-mem-access 1' command is executed.
+01:53:10 INFO  : Context for 'APU' is selected.
+01:53:10 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+01:53:10 INFO  : 'ps7_init' command is executed.
+01:53:10 INFO  : 'ps7_post_config' command is executed.
+01:53:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:53:11 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:53:11 INFO  : 'configparams force-mem-access 0' command is executed.
+01:53:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:53:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:53:11 INFO  : 'con' command is executed.
+01:53:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:53:11 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+01:55:13 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+01:55:19 INFO  : Disconnected from the channel tcfchan#12.
+01:55:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:55:19 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+01:55:19 INFO  : 'jtag frequency' command is executed.
+01:55:19 INFO  : Context for 'APU' is selected.
+01:55:20 INFO  : System reset is completed.
+01:55:23 INFO  : 'after 3000' command is executed.
+01:55:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+01:55:24 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+01:55:24 INFO  : Context for 'APU' is selected.
+01:55:24 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+01:55:24 INFO  : 'configparams force-mem-access 1' command is executed.
+01:55:24 INFO  : Context for 'APU' is selected.
+01:55:24 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+01:55:24 INFO  : 'ps7_init' command is executed.
+01:55:24 INFO  : 'ps7_post_config' command is executed.
+01:55:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:55:25 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:55:25 INFO  : 'configparams force-mem-access 0' command is executed.
+01:55:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:55:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:55:25 INFO  : 'con' command is executed.
+01:55:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:55:25 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+01:56:24 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+01:56:33 INFO  : Disconnected from the channel tcfchan#14.
+01:56:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:56:33 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+01:56:33 INFO  : 'jtag frequency' command is executed.
+01:56:33 INFO  : Context for 'APU' is selected.
+01:56:33 INFO  : System reset is completed.
+01:56:36 INFO  : 'after 3000' command is executed.
+01:56:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+01:56:37 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+01:56:37 INFO  : Context for 'APU' is selected.
+01:56:37 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+01:56:37 INFO  : 'configparams force-mem-access 1' command is executed.
+01:56:37 INFO  : Context for 'APU' is selected.
+01:56:37 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+01:56:37 INFO  : 'ps7_init' command is executed.
+01:56:37 INFO  : 'ps7_post_config' command is executed.
+01:56:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:56:38 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:56:38 INFO  : 'configparams force-mem-access 0' command is executed.
+01:56:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:56:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:56:38 INFO  : 'con' command is executed.
+01:56:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:56:38 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+01:56:59 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+01:57:13 INFO  : Disconnected from the channel tcfchan#16.
+01:57:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:57:14 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+01:57:14 INFO  : 'jtag frequency' command is executed.
+01:57:14 INFO  : Context for 'APU' is selected.
+01:57:14 INFO  : System reset is completed.
+01:57:17 INFO  : 'after 3000' command is executed.
+01:57:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+01:57:18 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+01:57:18 INFO  : Context for 'APU' is selected.
+01:57:18 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+01:57:18 INFO  : 'configparams force-mem-access 1' command is executed.
+01:57:18 INFO  : Context for 'APU' is selected.
+01:57:18 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+01:57:18 INFO  : 'ps7_init' command is executed.
+01:57:18 INFO  : 'ps7_post_config' command is executed.
+01:57:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:57:19 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:57:19 INFO  : 'configparams force-mem-access 0' command is executed.
+01:57:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:57:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:57:19 INFO  : 'con' command is executed.
+01:57:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:57:19 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+02:11:48 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+02:13:27 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+02:13:37 INFO  : Disconnected from the channel tcfchan#18.
+02:13:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:13:37 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+02:13:37 INFO  : 'jtag frequency' command is executed.
+02:13:37 INFO  : Context for 'APU' is selected.
+02:13:37 INFO  : System reset is completed.
+02:13:40 INFO  : 'after 3000' command is executed.
+02:13:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+02:13:42 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+02:13:42 INFO  : Context for 'APU' is selected.
+02:13:42 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+02:13:42 INFO  : 'configparams force-mem-access 1' command is executed.
+02:13:42 INFO  : Context for 'APU' is selected.
+02:13:42 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+02:13:42 INFO  : 'ps7_init' command is executed.
+02:13:42 INFO  : 'ps7_post_config' command is executed.
+02:13:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:13:43 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:13:43 INFO  : 'configparams force-mem-access 0' command is executed.
+02:13:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:13:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:13:43 INFO  : 'con' command is executed.
+02:13:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:13:43 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+02:14:44 INFO  : Checking for BSP changes to sync application flags for project 'bouya'...
+02:14:52 INFO  : Disconnected from the channel tcfchan#21.
+02:14:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:14:52 INFO  : Jtag cable 'Digilent Zybo Z7 210351A77E40A' is selected.
+02:14:52 INFO  : 'jtag frequency' command is executed.
+02:14:52 INFO  : Context for 'APU' is selected.
+02:14:52 INFO  : System reset is completed.
+02:14:55 INFO  : 'after 3000' command is executed.
+02:14:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}' command is executed.
+02:14:56 INFO  : Device configured successfully with "C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit"
+02:14:56 INFO  : Context for 'APU' is selected.
+02:14:56 INFO  : Hardware design and registers information is loaded from 'C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa'.
+02:14:56 INFO  : 'configparams force-mem-access 1' command is executed.
+02:14:56 INFO  : Context for 'APU' is selected.
+02:14:56 INFO  : Sourcing of 'C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl' is done.
+02:14:57 INFO  : 'ps7_init' command is executed.
+02:14:57 INFO  : 'ps7_post_config' command is executed.
+02:14:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:14:57 INFO  : The application 'C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:14:57 INFO  : 'configparams force-mem-access 0' command is executed.
+02:14:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77E40A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351A77E40A-13722093-0"}
+fpga -file C:/travail/s4InfoAtelier4/bouya/_ide/bitstream/atelier4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/travail/s4InfoAtelier4/atelier4_wrapper/export/atelier4_wrapper/hw/atelier4_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/travail/s4InfoAtelier4/bouya/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/travail/s4InfoAtelier4/bouya/Debug/bouya.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:14:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:14:57 INFO  : 'con' command is executed.
+02:14:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:14:57 INFO  : Launch script is exported to file 'C:\travail\s4InfoAtelier4\bouya_system\_ide\scripts\systemdebugger_bouya_system_standalone.tcl'
+02:21:58 INFO  : Disconnected from the channel tcfchan#23.

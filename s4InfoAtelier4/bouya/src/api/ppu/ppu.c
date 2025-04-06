@@ -49,7 +49,7 @@ void PPU_SetBackgroundTileColor(uint8_t pixelColIndex, uint8_t pixelRowIndex, ui
   instr.fields.tileID = tileID;
   instr.fields.pixelColorCode = pixelColorCode;
 
-  MYCUCKREGISTER_mWriteReg(XPAR_MYCUCKREGISTER_0_S00_AXI_BASEADDR, 0, instr.instruction);
+  MYCOLORREGISTER_mWriteReg(XPAR_MYCUCKREGISTER_0_S00_AXI_BASEADDR, 0, instr.instruction);
 }
 
 
@@ -62,7 +62,7 @@ void PPU_SetActorTileID(uint8_t actorID, uint8_t tileID) {
   instr.fields.actorID = actorID;
   instr.fields.tileID = tileID;
 
-  MYCUCKREGISTER_mWriteReg(XPAR_MYCUCKREGISTER_0_S00_AXI_BASEADDR, 0, instr.instruction);
+  MYCOLORREGISTER_mWriteReg(XPAR_MYCUCKREGISTER_0_S00_AXI_BASEADDR, 0, instr.instruction);
 }
 
 
@@ -79,7 +79,7 @@ void PPU_SetActorTileColor(uint8_t pixelColIndex, uint8_t pixelRowIndex, uint8_t
   instr.fields.tileID = tileID;
   instr.fields.pixelColorCode = pixelColorCode;
 
-  MYCUCKREGISTER_mWriteReg(XPAR_MYCUCKREGISTER_0_S00_AXI_BASEADDR, 0, instr.instruction);
+  MYCOLORREGISTER_mWriteReg(XPAR_MYCUCKREGISTER_0_S00_AXI_BASEADDR, 0, instr.instruction);
 }
 
 
@@ -94,7 +94,7 @@ void PPU_SetActorPosition(uint16_t x, uint16_t y, uint8_t actorID) {
   instr.fields.y = y;
   instr.fields.actorID = actorID;
 
-  MYCUCKREGISTER_mWriteReg(XPAR_MYCUCKREGISTER_0_S00_AXI_BASEADDR, 0, instr.instruction);
+  MYCOLORREGISTER_mWriteReg(XPAR_MYCUCKREGISTER_0_S00_AXI_BASEADDR, 0, instr.instruction);
 }
 
 
@@ -109,5 +109,5 @@ void PPU_MoveActorPosition(uint8_t deltaX, uint8_t deltaY, uint8_t actorID) {
   instr.fields.deltaY = deltaY;
   instr.fields.actorID = actorID;
 
-  MYCUCKREGISTER_mWriteReg(XPAR_MYCUCKREGISTER_0_S00_AXI_BASEADDR, 0, instr.instruction);
+  MYCOLORREGISTER_mWriteReg(XPAR_MYCUCKREGISTER_0_S00_AXI_BASEADDR, 0, instr.instruction);
 }

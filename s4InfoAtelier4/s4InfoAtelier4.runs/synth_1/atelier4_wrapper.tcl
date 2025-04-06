@@ -71,7 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 5
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -99,6 +98,9 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
+  C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/actor.vhd
+  C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/actor_manager.vhd
+  C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/actor_tile_buffer.vhd
   C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/background_buffer_2.vhd
   C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/new/bg_tile_buffer_2.vhd
   C:/travail/s4InfoAtelier4/s4InfoAtelier4.srcs/sources_1/imports/design/color_mux.vhd

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1743725747">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1743917335">
   <File Type="PA-TCL" Name="atelier4_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="atelier4_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="atelier4_wrapper_reports.tcl"/>
@@ -11,6 +11,28 @@
   <File Type="VDS-TIMING-PB" Name="atelier4_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/design/actor.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Users/Samuel/Documents/GitHub/Projet-session-Indigo/src/design/actor.vhd"/>
+        <Attr Name="ImportTime" Val="1741890111"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/actor_manager.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design/actor_tile_buffer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Users/Samuel/Documents/GitHub/Projet-session-Indigo/src/design/actor_tile_buffer.vhd"/>
+        <Attr Name="ImportTime" Val="1742826153"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/design/background_buffer_2.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -73,24 +95,6 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/archive_project_summary.txt"/>
-    <File Path="$PSRCDIR/sources_1/imports/design/actor.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Users/Samuel/Documents/GitHub/Projet-session-Indigo/src/design/actor.vhd"/>
-        <Attr Name="ImportTime" Val="1741890111"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/design/actor_tile_buffer.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Users/Samuel/Documents/GitHub/Projet-session-Indigo/src/design/actor_tile_buffer.vhd"/>
-        <Attr Name="ImportTime" Val="1742826153"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="atelier4_wrapper"/>

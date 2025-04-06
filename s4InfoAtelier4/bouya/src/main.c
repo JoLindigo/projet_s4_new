@@ -13,13 +13,31 @@ int main()
 	configureScaler();
 	configureVdma();
 
+	uint8_t ratActorID = 1;
+	uint8_t ratIdle1 = 1;
+	uint8_t ratRunning1 = 2;
+	uint8_t ratRunning2 = 3;
+	uint8_t animation = 0;
+
 		for(int i = 0; i < sizeof(left_brick_color_instructions)/sizeof(int); i++) {
 			MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0,  left_brick_color_instructions[i]);
 			usleep(1);
 		}
 		for(int i = 0; i < sizeof(right_brick_color_instructions)/sizeof(int); i++) {
-					MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0,  right_brick_color_instructions[i]);
-					usleep(1);
+			MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0,  right_brick_color_instructions[i]);
+			usleep(1);
+		}
+		for(int i = 0; i < sizeof(rat_idle_1_color_instructions)/sizeof(int); i++) {
+			MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0,  rat_idle_1_color_instructions[i]);
+			usleep(1);
+		}
+		for(int i = 0; i < sizeof(rat_idle_1_color_instructions)/sizeof(int); i++) {
+			MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0,  rat_running_1_color_instructions[i]);
+			usleep(1);
+		}
+		for(int i = 0; i < sizeof(rat_idle_1_color_instructions)/sizeof(int); i++) {
+			MYCOLORREGISTER_mWriteReg(XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR, 0,  rat_running_2_color_instructions[i]);
+			usleep(1);
 		}
 
 		for(uint8_t i = 0; i < 64; i++) {
@@ -35,12 +53,75 @@ int main()
 				usleep(1);
 			}
 		}
-		PPU_SetBackgroundTileID(1, 0, 0);
+
+		PPU_SetActorTileID(ratActorID, ratIdle1);
+		usleep(1);
+		PPU_SetActorPosition(0, 180, ratActorID);
+		usleep(1);
+		int count = 0;
+		animation = ratRunning1;
 		while(1) {
-			for(int i = 0; i < 512; i++) {
-				PPU_SetViewportOffset(i, i);
-				usleep(50000);
+			for(uint16_t i = 0; i < 200; i++) {
+				PPU_SetActorPosition(i, 180, ratActorID);
+				usleep(25000);
+				count++;
+				if(count == 3) {
+					if(animation == ratRunning1) {
+						animation = ratRunning2;
+					}
+					else {
+						animation = ratRunning1;
+					}
+					PPU_SetActorTileID(ratActorID, animation);
+					count = 0;
+				}
 			}
+			for(uint16_t i = 0; i < 50; i++) {
+				PPU_SetActorPosition(200 + i, 180 - i, ratActorID);
+				usleep(25000);
+				count++;
+				if(count == 3) {
+					if(animation == ratRunning1) {
+						animation = ratRunning2;
+					}
+					else {
+						animation = ratRunning1;
+					}
+					PPU_SetActorTileID(ratActorID, animation);
+					count = 0;
+				}
+			}
+			for(uint16_t i = 0; i < 50; i++) {
+				PPU_SetActorPosition(250 + i, 130 + i, ratActorID);
+				usleep(25000);
+				count++;
+				if(count == 3) {
+					if(animation == ratRunning1) {
+						animation = ratRunning2;
+					}
+					else {
+						animation = ratRunning1;
+					}
+					PPU_SetActorTileID(ratActorID, animation);
+					count = 0;
+				}
+			}
+			for(uint16_t i = 0; i < 340; i++) {
+				PPU_SetActorPosition(300 + i, 180, ratActorID);
+				usleep(25000);
+				count++;
+				if(count == 3) {
+					if(animation == ratRunning1) {
+						animation = ratRunning2;
+					}
+					else {
+						animation = ratRunning1;
+					}
+					PPU_SetActorTileID(ratActorID, animation);
+					count = 0;
+				}
+			}
+
 		}
 	return 0;
 }

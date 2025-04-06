@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Thu Apr  3 20:26:05 2025
+| Date             : Sun Apr  6 01:39:06 2025
 | Host             : DESKTOP-E4ODHO5 running 64-bit major release  (build 9200)
 | Command          : report_power -file atelier4_wrapper_power_routed.rpt -pb atelier4_wrapper_power_summary_routed.pb -rpx atelier4_wrapper_power_routed.rpx
 | Design           : atelier4_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.986        |
+| Total On-Chip Power (W)  | 1.988        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.853        |
+| Dynamic (W)              | 1.855        |
 | Device Static (W)        | 0.133        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 62.1         |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.032 |        9 |       --- |             --- |
-| Slice Logic              |     0.011 |    29074 |       --- |             --- |
-|   LUT as Logic           |     0.009 |     8867 |     17600 |           50.38 |
-|   Register               |    <0.001 |    13637 |     35200 |           38.74 |
-|   CARRY4                 |    <0.001 |      404 |      4400 |            9.18 |
+| Clocks                   |     0.033 |        9 |       --- |             --- |
+| Slice Logic              |     0.011 |    30333 |       --- |             --- |
+|   LUT as Logic           |     0.009 |     9437 |     17600 |           53.62 |
+|   CARRY4                 |    <0.001 |      532 |      4400 |           12.09 |
+|   Register               |    <0.001 |    13986 |     35200 |           39.73 |
 |   LUT as Distributed RAM |    <0.001 |      646 |      6000 |           10.77 |
 |   LUT as Shift Register  |    <0.001 |      376 |      6000 |            6.27 |
 |   F7/F8 Muxes            |    <0.001 |       39 |     17600 |            0.22 |
-|   Others                 |     0.000 |     1660 |       --- |             --- |
-| Signals                  |     0.012 |    21776 |       --- |             --- |
-| Block RAM                |     0.013 |       28 |        60 |           46.67 |
+|   Others                 |     0.000 |     1681 |       --- |             --- |
+| Signals                  |     0.012 |    22362 |       --- |             --- |
+| Block RAM                |     0.015 |       29 |        60 |           48.33 |
 | MMCM                     |     0.116 |        1 |         2 |           50.00 |
 | PLL                      |     0.135 |        1 |         2 |           50.00 |
 | DSPs                     |    <0.001 |       36 |        80 |           45.00 |
 | I/O                      |     0.132 |       10 |       100 |           10.00 |
 | PS7                      |     1.401 |        1 |       --- |             --- |
 | Static Power             |     0.133 |          |           |                 |
-| Total                    |     1.985 |          |           |                 |
+| Total                    |     1.988 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.092 |       0.082 |      0.009 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.094 |       0.085 |      0.009 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.141 |       0.132 |      0.009 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.041 |       0.040 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -88,7 +88,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.004 |       0.001 |      0.002 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.004 |       0.001 |      0.003 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -161,8 +161,8 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| atelier4_wrapper         |     1.853 |
-|   atelier4_i             |     1.853 |
+| atelier4_wrapper         |     1.855 |
+|   atelier4_i             |     1.855 |
 |     axi_vdma_0           |     0.014 |
 |       U0                 |     0.014 |
 |     clk_wiz_0            |     0.117 |
@@ -175,8 +175,8 @@ Table of Contents
 |       inst               |     0.004 |
 |     smartconnect_1       |     0.018 |
 |       inst               |     0.018 |
-|     testPatternGen2_0    |     0.003 |
-|       U0                 |     0.003 |
+|     testPatternGen2_0    |     0.006 |
+|       U0                 |     0.006 |
 |     v_axi4s_vid_out_0    |     0.002 |
 |       inst               |     0.002 |
 |     v_proc_ss_0          |     0.023 |
