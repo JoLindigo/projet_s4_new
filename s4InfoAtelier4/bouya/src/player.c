@@ -4,6 +4,7 @@ struct Player* initialize_player(){
     struct Player* player = malloc(sizeof(struct Player));
     player->x = 0;
     player->y = 0;
+    player->CurrentAnimation = IDLE;
     return player;
 }
 

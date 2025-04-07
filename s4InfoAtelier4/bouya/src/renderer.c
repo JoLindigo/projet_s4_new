@@ -1,4 +1,5 @@
 #include "renderer.h"
+#include "api/ppu/ppu.h"
 
 void init_renderer(){
 
