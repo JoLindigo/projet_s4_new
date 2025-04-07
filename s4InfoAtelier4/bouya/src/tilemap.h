@@ -1,10 +1,10 @@
 #ifndef _TILEMAP__H_
 #define _TILEMAP__H_
-enum TileType { EMPTY, WALL, FLOOR };
+enum TileType { EMPTY, WALL, WALL2 };
 
 struct Tile {
     enum TileType type;
-    int color;
+    int tileId;
 };
 
 struct TileMap {
