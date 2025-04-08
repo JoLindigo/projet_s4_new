@@ -1,7 +1,10 @@
 #include "tilemap.h"
+#include <stdlib.h>
+#include "api/ppu/ppu.h"
+#include "sleep.h"
 
-static struct Tile* initialize_default_tiles(){
-    struct Tile* tiles = calloc(32, sizeof(struct Tile*));
+struct Tile* initialize_default_tiles(){
+    struct Tile* tiles = calloc(32, sizeof(struct Tile));
     tiles[0].type = EMPTY;
     tiles[0].tileId = 0;
     tiles[1].type = WALL;
@@ -11,25 +14,24 @@ static struct Tile* initialize_default_tiles(){
     return tiles;
 }
 
-struct TileMap* initialize_map(int width, int height) {
-    struct TileMap* map = malloc(sizeof(struct TileMap));
-    map->width = width;
-    map->height = height;
+struct TileMap initialize_map(u16 width, u16 height) {
+    struct TileMap map;
+    map.width = width;
+    map.height = height;
 
     //Default tiles
     struct Tile* defaultTiles = initialize_default_tiles();
 
-
-    map->tiles = calloc(map->width, sizeof(struct Tile**));
-    for (int i = 0; i < map->width; i++) {
-        map->tiles[i] = calloc(map->width, sizeof(struct Tile*));
-        for (int j = 0; j < map->height; j++) {
-			if((j % 2 == 0 && i % 2 == 0) || (j % 2 != 0 && i % 2 != 0)) {
-				map->tiles[i][j] = defaultTiles[1];
+    for (u16 i = 0; i < map.width; i++) {
+        for (u16 j = 0; j < map.height; j++) {
+			u8 tileId = 0;
+			if((i % 2 == 0 && j % 2 == 0) || (i % 2 != 0 && j % 2 != 0)) {
+				tileId = defaultTiles[1].tileId;
 			}
 			else{
-				map->tiles[i][j] = defaultTiles[2];
+				tileId = defaultTiles[2].tileId;
 			}
+			PPU_SetBackgroundTileID(tileId, i, j);
         }
     }
 

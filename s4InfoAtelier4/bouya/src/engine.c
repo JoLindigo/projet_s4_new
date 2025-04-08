@@ -1,39 +1,37 @@
 #include "engine.h"
+#include "api/ppu/ppu.h"
 
-void ShiftBackground(struct Renderer* r, struct TileMap* tm, uint8_t* gameTime){
-	if(*gameTime >= r->lastBackgroundShift + 10){
-		for(uint8_t i = 0; i < tm->width; i++) {
-			for(uint8_t j = 0; j < tm->height; j++) {
-				uint8_t newX = i+1;
-				if(newX == tm->width){
-					tm->tiles[i][j] = tm->tiles[0][j];
-				}else{
-					tm->tiles[i][j] = tm->tiles[newX][j];
-				}
-			}
-		}
+void ShiftBackground(struct Renderer* r, struct TileMap* tm, u32* gameTime){
+	if(*gameTime >= r->lastBackgroundShift && *gameTime <= 128000){
 		r->isBackgroundDirty = 1;
-		r->lastBackgroundShift = *gameTime;
+		r->backgroundOffset = r->backgroundOffset + 1;
+		print("background dirty");
+		if(*gameTime + 2000 >= 128000){
+			r->lastBackgroundShift = 2000;
+		}else {
+			r->lastBackgroundShift = *gameTime + 2000;
+		}
 	}
 }
 
 
 void ENGINE_Start(){
-    static uint8_t gameTime = 0;
+    u32 gameTime = 0;
     XTime tStartTime, tElapsedTime;
-    static int width = 340;
-    static int height = 120;
+    u16 width = 128;
+    u16 height = 64;
 
-    struct Player* p = initialize_player();
-    struct TileMap* tm = initialize_map(width, height);
+    struct Player p = initialize_player();
+    struct Renderer r = init_renderer();
+    struct TileMap tm = initialize_map(width, height);
     XTime_GetTime(&tStartTime);
-    struct Renderer* r = init_renderer();
 
     while (1) {
     	XTime_GetTime(&tElapsedTime);
-        gameTime = (tElapsedTime - tStartTime) / COUNTS_PER_SECOND;
-        ShiftBackground(r, tm, &gameTime);
-        draw(r, p, tm, &gameTime);
+        gameTime = ((u32)tElapsedTime - (u32)tStartTime) / (u32)(COUNTS_PER_SECOND / 10000);
+        printf("%d \n", gameTime);
+        ShiftBackground(&r, &tm, &gameTime);
+        draw(&r, &p, tm, &gameTime);
     }
 }
 

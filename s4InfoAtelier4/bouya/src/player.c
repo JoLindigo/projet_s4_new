@@ -1,10 +1,10 @@
 #include "player.h"
 
-struct Player* initialize_player(){
-    struct Player* player = malloc(sizeof(struct Player));
-    player->x = 90;
-    player->y = 90;
-    player->CurrentAnimation = RUNNING;
+struct Player initialize_player(){
+    struct Player player;
+    player.x = 90;
+    player.y = 64;
+    player.CurrentAnimation = RUNNING;
     return player;
 }
 

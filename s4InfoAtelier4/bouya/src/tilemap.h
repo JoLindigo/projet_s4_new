@@ -1,19 +1,21 @@
 #ifndef _TILEMAP__H_
 #define _TILEMAP__H_
+#include "common.h"
+
 enum TileType { EMPTY, WALL, WALL2 };
 
 struct Tile {
     enum TileType type;
-    int tileId;
+    u8 tileId;
 };
 
 struct TileMap {
-    struct Tile** tiles;
-    int width;
-    int height;
+    u16 width;
+    u16 height;
+    struct Tile tiles[64][64];
 };
 
-static struct Tile* initialize_default_tiles();
-struct TileMap* initialize_map();
+struct Tile* initialize_default_tiles();
+struct TileMap initialize_map(u16 width, u16 height);
 
 #endif

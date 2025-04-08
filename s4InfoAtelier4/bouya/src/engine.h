@@ -2,7 +2,7 @@
 #define _ENGINE_H__
 #include "renderer.h"
 #include "xtime_l.h"
-
+#include <stdio.h>
 void ENGINE_Start();
 
 #endif
