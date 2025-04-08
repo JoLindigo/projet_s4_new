@@ -11,6 +11,8 @@ static struct Tile* initialize_default_tiles(){
     tiles[1].color = 1;
     tiles[2].type = FLOOR;
     tiles[2].color = 2;
+    tiles[3].type = OBSTACLE;
+    tiles[3].color = 3;
     return tiles;
 }
 

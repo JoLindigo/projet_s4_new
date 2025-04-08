@@ -1,6 +1,6 @@
 #ifndef _TILEMAP__H_
 #define _TILEMAP__H_
-enum TileType { EMPTY, WALL, FLOOR };
+enum TileType { EMPTY, WALL, FLOOR, OBSTACLE };
 
 struct Tile {
     enum TileType type;
