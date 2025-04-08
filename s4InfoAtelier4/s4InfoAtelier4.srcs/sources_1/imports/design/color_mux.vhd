@@ -46,8 +46,8 @@ architecture Behavioral of color_mux is
     constant COLOR6 : std_logic_vector(23 downto 0) := x"530d0d";
     constant COLOR7 : std_logic_vector(23 downto 0) := x"6c141f";
     constant COLOR8 : std_logic_vector(23 downto 0) := x"000000";
-    constant COLOR9 : std_logic_vector(23 downto 0) := x"000000";
-    constant COLOR10 : std_logic_vector(23 downto 0) := x"000000";
+    constant COLOR9 : std_logic_vector(23 downto 0) := x"511336";
+    constant COLOR10 : std_logic_vector(23 downto 0) := x"340520";
     constant COLOR11 : std_logic_vector(23 downto 0) := x"000000";
     constant COLOR12 : std_logic_vector(23 downto 0) := x"000000";
     constant COLOR13 : std_logic_vector(23 downto 0) := x"000000";

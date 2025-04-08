@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Sun Apr  6 01:39:06 2025
+| Date             : Tue Apr  8 17:06:20 2025
 | Host             : DESKTOP-E4ODHO5 running 64-bit major release  (build 9200)
 | Command          : report_power -file atelier4_wrapper_power_routed.rpt -pb atelier4_wrapper_power_summary_routed.pb -rpx atelier4_wrapper_power_routed.rpx
 | Design           : atelier4_wrapper
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.033 |        9 |       --- |             --- |
-| Slice Logic              |     0.011 |    30333 |       --- |             --- |
-|   LUT as Logic           |     0.009 |     9437 |     17600 |           53.62 |
+| Slice Logic              |     0.011 |    30336 |       --- |             --- |
+|   LUT as Logic           |     0.010 |     9424 |     17600 |           53.55 |
 |   CARRY4                 |    <0.001 |      532 |      4400 |           12.09 |
 |   Register               |    <0.001 |    13986 |     35200 |           39.73 |
 |   LUT as Distributed RAM |    <0.001 |      646 |      6000 |           10.77 |
 |   LUT as Shift Register  |    <0.001 |      376 |      6000 |            6.27 |
 |   F7/F8 Muxes            |    <0.001 |       39 |     17600 |            0.22 |
 |   Others                 |     0.000 |     1681 |       --- |             --- |
-| Signals                  |     0.012 |    22362 |       --- |             --- |
+| Signals                  |     0.012 |    22381 |       --- |             --- |
 | Block RAM                |     0.015 |       29 |        60 |           48.33 |
 | MMCM                     |     0.116 |        1 |         2 |           50.00 |
 | PLL                      |     0.135 |        1 |         2 |           50.00 |
