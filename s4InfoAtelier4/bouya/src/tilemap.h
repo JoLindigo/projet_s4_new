@@ -2,7 +2,7 @@
 #define _TILEMAP__H_
 #include "common.h"
 
-enum TileType { EMPTY, WALL, WALL2 };
+enum TileType { EMPTY, WALL, WALL2, OBSTACLE };
 
 struct Tile {
     enum TileType type;
@@ -12,7 +12,7 @@ struct Tile {
 struct TileMap {
     u16 width;
     u16 height;
-    struct Tile tiles[64][64];
+    struct Tile tiles[128][64];
 };
 
 struct Tile* initialize_default_tiles();

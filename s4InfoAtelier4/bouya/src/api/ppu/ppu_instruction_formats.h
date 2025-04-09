@@ -23,9 +23,9 @@ typedef union {
 typedef union {
   struct {
     uint32_t PADDING      : 10;
-    uint32_t tileID       : 5;
     uint32_t tileRowIndex : 6;
     uint32_t tileColIndex : 7;
+    uint32_t tileID       : 5;
     uint32_t opCode       : 4;
   } fields;
 
@@ -88,9 +88,9 @@ typedef union {
 typedef union {
   struct {
     uint32_t PADDING : 6;
-    uint32_t actorID : 3;
     uint32_t y       : 9;
     uint32_t x       : 10;
+    uint32_t actorID : 3;
     uint32_t opCode  : 4;
   } fields;
 
@@ -103,10 +103,10 @@ typedef union {
   */
 typedef union {
   struct {
-    uint32_t PADDING : 5;
+    uint32_t PADDING : 17;
+    uint32_t deltaY  : 4;
+    uint32_t deltaX  : 4;
     uint32_t actorID : 3;
-    uint32_t deltaY  : 10;
-    uint32_t deltaX  : 10;
     uint32_t opCode  : 4;
   } fields;
 

@@ -5,6 +5,7 @@
 #include "mycolorRegister.h"
 #include "api/ppu/ppu.h"
 #include <stdio.h>
+#include "obstacle.h"
 
 
 struct Renderer{
@@ -17,6 +18,6 @@ struct Renderer{
 };
 
 struct Renderer init_renderer();
-void draw(struct Renderer* renderer, struct Player* p, struct TileMap tm, u32* gameTime);
+void draw(struct Renderer* renderer, struct Player* p, struct TileMap* tm, u32* gameTime);
 
 #endif

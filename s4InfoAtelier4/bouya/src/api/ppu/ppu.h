@@ -13,8 +13,8 @@
 #define OPCODE_SETACTORPOSITION       0b0110U
 #define OPCODE_SETVIEWPORTOFFSET      0b0111U
 
-#define XPAR_MYCOLORREGISTER_0_S00_AXI_BASEADDR 0x43C40000
-#define MYCOLORREGISTER_mWriteReg(BaseAddress, RegOffset, Data) \
+#define XPAR_MYCUCKREGISTER_0_S00_AXI_BASEADDR 0x43C40000
+#define MYCUCKREGISTER_mWriteReg(BaseAddress, RegOffset, Data) \
   	Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
 
 

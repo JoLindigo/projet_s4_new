@@ -2,8 +2,8 @@
 
 struct Player initialize_player(){
     struct Player player;
-    player.x = 90;
-    player.y = 64;
+    player.x = 120;
+    player.y = 194;
     player.CurrentAnimation = RUNNING;
     return player;
 }
